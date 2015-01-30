@@ -1,0 +1,341 @@
+ 
+\def\filename{leaflet-manual.tex}
+\def\fileversion{v1.0d}   % change this when leaflet-manual changed, too.
+\def\filedate{2012/06/04}
+\def\docdate {2012/06/04} % change this when leaflet-manual changed, too.
+\listfiles
+\errorcontextlines=99
+\documentclass[
+notumble,
+nofoldmark,
+%%dvipdfm,
+%%portrait,
+%%titlepage,
+%%nocombine,
+%%a3paper,
+%%debug,
+%%nospecialtricks,
+%%draft,
+]{leaflet}
+
+
+\renewcommand*\foldmarkrule{.3mm}
+\renewcommand*\foldmarklength{5mm}
+
+\usepackage[T1]{fontenc}
+% \usepackage[T3]{inputenc}
+\usepackage{textcomp}
+\usepackage{mathptmx}
+\usepackage{libertine}
+\usepackage[scaled=0.9]{helvet}
+\makeatletter
+\def\ptmTeX{T\kern-.1667em\lower.5ex\hbox{E}\kern-.075emX\@}
+\DeclareRobustCommand{\ptmLaTeX}{L\kern-.3em
+        {\setbox0\hbox{T}%
+         %\vb@xt@ % :-)
+         \vbox to\ht0{\hbox{%
+                            \csname S@\f@size\endcsname
+                            \fontsize\sf@size\z@
+                            \math@fontsfalse\selectfont
+                            A}%
+                      \vss}%
+        }%
+        \kern-.12em
+        \ptmTeX}
+\makeatother
+\let\TeX=\ptmTeX
+\let\LaTeX=\ptmLaTeX
+\usepackage{shortvrb}
+\MakeShortVerb{\|}
+\usepackage{url}
+\usepackage{graphicx}
+\usepackage[dvipsnames,usenames]{color}
+\definecolor{LIGHTGRAY}{gray}{.9}
+\definecolor{lspblue1}{RGB}{208, 236, 246}
+%%%%\renewcommand{\descfont}{\normalfont}
+\newcommand\Lpack[1]{\textsf{#1}}
+\newcommand\Lclass[1]{\textsf{#1}}
+\newcommand\Lopt[1]{\texttt{#1}}
+\newcommand\Lprog[1]{\textit{#1}}
+
+\newcommand*\defaultmarker{\textsuperscript\textasteriskcentered}
+
+\title{The document class \Lclass{leaflet}}
+\author{%
+  Rolf Niepraschk\\
+  Walter Schmidt\\
+  Hubert G\"a\ss lein}
+\date{Last updated~\docdate\\printed \today}
+
+\CutLine*{1}% Dotted line without scissors
+\CutLine*{6}%   
+
+% \AddToBackground{5}{%  Background of a small page
+%   \put(0,0){\textcolor{Cerulean}{\rule{\paperwidth}{\paperheight}}}}
+\AddToBackground*{1}{%  Background of a small page
+  \put(0,0){\textcolor{lspblue1}{\rule{\paperwidth}{\paperheight}}}}
+\AddToBackground*{2}{%  Background of a small page
+  \put(0,0){\textcolor{lspblue1}{\rule{\paperwidth}{\paperheight}}}}
+
+% \AddToBackground*{2}{% Background of a large page
+%   \put(\LenToUnit{.5\paperwidth},\LenToUnit{.5\paperheight}){%
+%     \makebox(0,0)[c]{%
+%       \resizebox{.9\paperwidth}{!}{\rotatebox{35.26}{%
+%         \textsf{\textbf{\textcolor{LIGHTGRAY}{BACKGROUND}}}}}}}}
+
+\AddToBackground{2}{
+    \put(0,580){
+        \includegraphics[width=3\paperwidth]{lsp-rainbow-large.png}%
+    } 
+}
+\AddToBackground{5}{
+    \put(0,-100){
+        \includegraphics[width=3\paperwidth]{lsp-rainbow-large.png}%
+    } 
+}
+
+\AddToBackground{2}{
+    \put(0,10){
+        \includegraphics[width=.3\paperwidth]{lsp-rainbow-large.png}%
+    } 
+}
+
+\AddToBackground{3}{
+    \put(0,10){
+        \includegraphics[width=.3\paperwidth]{lsp-rainbow-large.png}%
+    } 
+}
+
+\AddToBackground{4}{
+    \put(0,10){
+        \includegraphics[width=.3\paperwidth]{lsp-rainbow-large.png}%
+    } 
+}
+
+
+\begin{document}
+
+% \maketitle
+\thispagestyle{empty}
+
+%%\LARGE
+
+%%\tableofcontents
+\noindent 
+~
+\parbox{.1\paperwidth}{
+\vspace*{-.5cm}
+\includegraphics[width=.3\paperwidth]{langsci_logo_nocolor.pdf} 
+}
+\parbox{.8\paperwidth}{
+\raggedleft 
+\vspace*{-2.5cm}{\includegraphics[width=.4\paperwidth]{lsp-rainbow-large.png}}
+}
+
+\vspace*{12cm}
+
+\raggedleft{
+\mbox{\Huge Language Science Press}
+{\LARGE Open Access Monographs}}
+\raggedright 
+
+ \newpage
+
+\section{ \sffamily   \Large About}
+Vision [langfristig und prägnant. Nicht unbedingt direkt erreichbar]
+Alle linguistischen Inhalte sind allen Menschen in einer nachhaltigen Struktur entgeltfrei zugänglich. Die Zugehörigkeit zu einer Universität oder einem bestimmten Land darf für den Zugang keine Voraussetzung sein.
+Weiterhin:
+
+    Der Publikationsprozess entspricht den Anforderungen der Wissenschaftler
+
+    Die Wahl des Publikationsortes wirkt sich nicht negativ auf die Karrierechancen aus
+
+    Die  Verbreitung von Wissen erfolgt dezentral und ohne Beschränkungen
+
+    Wissen wird nicht mehr monolithisch präsentiert, sondern ist granular, persistent und vernetzt verfügbar 
+
+    Nicht-textuelle Bestandteile (Video, quantitative Daten) sind selbstverständliche Teile von Publikationen 
+
+Mission [Wozu braucht man Language Science Press?]
+Wir stellen eine  Plattform zur Verbreitung linguistischer Spitzenforschung zur Verfügung, auf der Wissenschaftscommunities möglichst autark ihre Forschungsergebnisse in Buchform als Open Access verbreiten können.
+Ziele [konkret und messbar]
+
+    Kundenzufriedenheit (Leser, Autoren, Herausgeber, Geldgeber)
+
+    Schaffung einer starken, von Wissenschaftlern besessenen internationalen Marke, die für Qualität und Innovation steht
+
+    Abdeckung aller Bereiche der Linguistik
+
+    Stetiger Output
+
+    Solide nachhaltige Struktur
+
+ 
+
+\newpage 
+
+
+\section{ \sffamily \Large Community}
+
+\begin{itemize}
+
+
+\item[$\rangle$]     Stefan Müller, Prof. (Freie Universität Berlin)
+\item[$\rangle$]     Matthias Hüning, Prof. Dr. (FU Berlin)
+\item[$\rangle$]     Anatol Stefanowitsch, Prof. (Freie Universität Berlin)
+\item[$\rangle$]     Alexander Koller, Prof. (Universität Potsdam)
+\item[$\rangle$]     Hans C. Boas, Prof. (University of Texas at Austin)
+\item[$\rangle$]     Frank Richter, PD Dr. (Eberhard-Karls-Universität Tübingen)
+\item[$\rangle$]     Gert Webelhuth, Prof. (Goethe-Universität Frankfurt am Main)
+\item[$\rangle$]     Gereon Müller, Prof. (Universität Leipzig)
+\item[$\rangle$]     Ivan Sag, Prof. (Stanford University)
+\item[$\rangle$]     Tibor Kiss, Prof. (Ruhr-Universität Bochum)
+\item[$\rangle$]     Martin Haspelmath, Prof. (MPI for Evolutionary Anthropology)
+\item[$\rangle$]     Jonas Kuhn, Prof. (University Stuttgart)
+\item[$\rangle$]     Manfred Sailer, Prof. (Goethe-Universität Frankfurt am Main)
+\item[$\rangle$]     Emily M. Bender, Prof. (University of Washington)
+\item[$\rangle$]     Friedemann Pulvermüller, Prof. (Freie Universität Berlin)
+\item[$\rangle$]     Frank Keller, Dr. (University of Edinburgh)
+\item[$\rangle$]     Adele Goldberg, Prof. (Princeton University)
+\item[$\rangle$]     Miriam Butt, Prof. (University of Konstanz)
+\item[$\rangle$]     Laura Kallmeyer, Prof. (University of Düsseldorf)
+\item[$\rangle$]     Shuly Wintner, Prof. (University of Haifa)
+\item[$\rangle$]     Martine Grice, Prof. (University of Cologne)
+\item[$\rangle$]     Uli Reich, Prof. (Freie Universität Berlin)
+\item[$\rangle$]     Anke Lüdeling, Prof. (Humboldt-Universität zu Berlin)
+\item[$\rangle$]     Artemis Alexiadou, Prof. (Universität Stuttgart)
+\end{itemize}
+
+ 
+\newpage 
+
+\section{ \sffamily \Large Series}
+ 
+\begin{itemize}
+\item[$\rangle$] African Language Grammars and Dictionaries
+\item[$\rangle$] Computational Models of Language Evolution
+\item[$\rangle$] Conceptual Foundations of Language Science
+\item[$\rangle$] Contemporary African Linguistics
+\item[$\rangle$] Empirically Oriented Theoretical Morphology and Syntax
+\item[$\rangle$] Implemented Grammars
+\item[$\rangle$] Language Variation
+\item[$\rangle$] Monographs on Comparative Niger-Congo
+\item[$\rangle$] Studies in Caribbean Languages
+\item[$\rangle$] Studies in Diversity Linguistics
+\item[$\rangle$] Studies in Laboratory Phonology
+\item[$\rangle$] Textbooks in Language Sciences
+\item[$\rangle$] Topics at the Grammar-Discourse Interface
+\item[$\rangle$] Translation and Multilingual Natural Language Processing
+\end{itemize}
+
+ 
+
+\newpage 
+
+\section{ \sffamily \Large Books}
+\begin{itemize}
+ \item[$\rangle$]    The Alor-Pantar languages: History and typology	 
+ \item[$\rangle$]    Prosodic detail in Neapolitan Italian	 
+ \item[$\rangle$]    Natural causes of language: Frames, biases, and cultural transmission	 
+ \item[$\rangle$]    A typology of marked-S languages	 
+ \item[$\rangle$]    A grammar of Pite Saami	 
+ \item[$\rangle$]     Adjective attribution	 
+ \item[$\rangle$]     Syntax und Valenz  
+ \item[$\rangle$]     Grammatical theory         
+ \item[$\rangle$]     How mobile robots can self-organize a vocabulary	 
+ \item[$\rangle$]     Language strategies for the domain of colour	 
+ \item[$\rangle$]     Grammaire des constructions elliptiques  
+ \item[$\rangle$]     The Talking Heads experiment: origins of words and meanings	  
+ \item[$\rangle$]    The evolution of case grammar	 
+ \item[$\rangle$]     The evolution of grounded spatial language	 
+ \item[$\rangle$]     EinfÃ¼hrung in die grammatische Beschreibung des Deutschen	 
+ \item[$\rangle$]     A grammar of Yakkha	 
+ \item[$\rangle$]     A grammar of Mauwake	  
+\end{itemize}
+
+   
+    
+   
+   
+   
+   
+\newpage 
+
+\section{ \sffamily \Large Contact}
+
+Press Contact\\
+Mailing Address\\
+
+Prof. Dr. Ste­fan Mül­ler\\
+Language Science Press\\
+Ha­bel­schwerd­ter Allee 45\\
+14 195 Ber­lin\\
+Germany\\
+
+Principal Contact\\
+
+Sebastian Nordhoff\\
+Language Science Press\\
+Ha­bel­schwerd­ter Allee 45\\
+14 195 Ber­lin\\
+Germany\\
+
+Email: sebastian.nordhoff@langsci-press.org
+
+http://www.langsci-press.org~
+
+\vspace*{2cm}
+% \framebox[3cm]{ \textbf{Mitmachen?}\\ Author\par Editor}
+
+\begin{tabular}{lr}
+\fbox{
+  \parbox{3cm}{ 
+    \textbf{Mitmachen?}\\ 
+    \begin{itemize}
+      \item[$\rangle$] author
+      \item[$\rangle$] editor
+      \item[$\rangle$] proofreader
+      \item[$\rangle$] typesetter
+      \item[$\rangle$] member
+      \item[$\rangle$] supporter
+      \item[$\rangle$] donate
+    \end{itemize}
+  }
+}
+&~
+\raisebox{-2.2cm}{
+\includegraphics[width=.4\textwidth]{qrcode.eps}
+}
+\end{tabular}
+
+
+% \fbox{
+% \textbf{Mitmachen?}
+% \\
+% Author
+% \\
+% Editor
+% \\
+% Proofreader
+% \\
+% Typesetter
+% \\
+% Membership
+% \\
+% Donate
+% 
+% }
+
+% \begin{itemize}
+%  \item[$\rangle$] autor
+% \item[$\rangle$] hrsg
+% \item[$\rangle$] proofreader
+% \end{itemize}
+
+
+
+\loggingall
+\end{document}
+\endinput
+%%
+%% End of file `leaflet-manual.tex'.
