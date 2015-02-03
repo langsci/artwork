@@ -17,8 +17,9 @@ nofoldmark,
 %%nospecialtricks,
 %%draft,
 ]{leaflet}
-
-
+\usepackage{tabularx}
+\usepackage{lipsum}
+\usepackage{eurosym}
 \renewcommand*\foldmarkrule{.3mm}
 \renewcommand*\foldmarklength{5mm}
 
@@ -52,6 +53,7 @@ nofoldmark,
 \usepackage[dvipsnames,usenames]{color}
 \definecolor{LIGHTGRAY}{gray}{.9}
 \definecolor{lspblue1}{RGB}{208, 236, 246}
+\usepackage{langscicolors}
 %%%%\renewcommand{\descfont}{\normalfont}
 \newcommand\Lpack[1]{\textsf{#1}}
 \newcommand\Lclass[1]{\textsf{#1}}
@@ -84,33 +86,37 @@ nofoldmark,
 %         \textsf{\textbf{\textcolor{LIGHTGRAY}{BACKGROUND}}}}}}}}
 
 \AddToBackground{2}{
-    \put(0,580){
-        \includegraphics[width=3\paperwidth]{lsp-rainbow-large.png}%
+    \put(-2,580){
+%         \includegraphics[width=3\paperwidth]{lsp-rainbow-large.png}%
+ \setlength{\tabcolsep}{0pt}
+	\begin{tabularx}{3\paperwidth}{X|X|X|X|X|X|X|X|X|X|X|X|X|X|X|X|X|X|X}
+&&&&&&&&&&&&&&&&&&
+\end{tabularx}
     } 
 }
 \AddToBackground{5}{
-    \put(0,-100){
+    \put(-2,-100){
         \includegraphics[width=3\paperwidth]{lsp-rainbow-large.png}%
     } 
 }
 
 \AddToBackground{2}{
-    \put(0,10){
+    \put(-2,10){
         \includegraphics[width=.3\paperwidth]{lsp-rainbow-large.png}%
     } 
 }
 
-\AddToBackground{3}{
-    \put(0,10){
-        \includegraphics[width=.3\paperwidth]{lsp-rainbow-large.png}%
-    } 
-}
+% \AddToBackground{3}{
+%     \put(-2,10){
+%         \includegraphics[width=.3\paperwidth]{lsp-rainbow-large.png}%
+%     } 
+% }
 
-\AddToBackground{4}{
-    \put(0,10){
-        \includegraphics[width=.3\paperwidth]{lsp-rainbow-large.png}%
-    } 
-}
+% \AddToBackground{4}{
+%     \put(-2,10){
+%         \includegraphics[width=.3\paperwidth]{lsp-rainbow-large.png}%
+%     } 
+% }
 
 
 \begin{document}
@@ -141,119 +147,132 @@ nofoldmark,
 
  \newpage
 
+
+
+\includegraphics[width=2\textwidth]{worldmap.png}
+
 \section{ \sffamily   \Large About}
-Vision [langfristig und prägnant. Nicht unbedingt direkt erreichbar]
-Alle linguistischen Inhalte sind allen Menschen in einer nachhaltigen Struktur entgeltfrei zugänglich. Die Zugehörigkeit zu einer Universität oder einem bestimmten Land darf für den Zugang keine Voraussetzung sein.
-Weiterhin:
 
-    Der Publikationsprozess entspricht den Anforderungen der Wissenschaftler
+High quality, peer-reviewed open-access books in linguistics
 
-    Die Wahl des Publikationsortes wirkt sich nicht negativ auf die Karrierechancen aus
+Free for both authors and readers
 
-    Die  Verbreitung von Wissen erfolgt dezentral und ohne Beschränkungen
+Published under a Creative Commons licence
 
-    Wissen wird nicht mehr monolithisch präsentiert, sondern ist granular, persistent und vernetzt verfügbar 
+General Editors are Stefan M\"uller (FU Berlin) and Martin Haspelmath (MPI for Evolutionary Anthropology)
 
-    Nicht-textuelle Bestandteile (Video, quantitative Daten) sind selbstverständliche Teile von Publikationen 
+Supported by a high-profile Advisory Board
 
-Mission [Wozu braucht man Language Science Press?]
-Wir stellen eine  Plattform zur Verbreitung linguistischer Spitzenforschung zur Verfügung, auf der Wissenschaftscommunities möglichst autark ihre Forschungsergebnisse in Buchform als Open Access verbreiten können.
-Ziele [konkret und messbar]
+Language Science Press is supported by the DFG with 500k\euro during the startup phase
 
-    Kundenzufriedenheit (Leser, Autoren, Herausgeber, Geldgeber)
+Our philosophy is that book publishing can be fully under the control of scholars because most of the traditional tasks of commercial publishers can be done more efficiently by scholars
 
-    Schaffung einer starken, von Wissenschaftlern besessenen internationalen Marke, die für Qualität und Innovation steht
+%     All books appear in a book series, and the series editors are responsible for acquiring, reviewing and selecting manuscripts for publication.
+%     The authors are responsible for typesetting in LaTeX (together with the series editors); automatic conversion from Word is possible in principle.
+%     The workflow is controlled by the publication management system OMP (Open Monograph Press).
+%     Books are freely available in their PDF version; paper versions can be bought from print-on-demand companies.
 
-    Abdeckung aller Bereiche der Linguistik
+% For some time now, all scholars have been accustomed to sharing their materials at no cost with their colleagues, often with the help of services like Academia.edu and ResearchGate. Scientific publication thus no longer serves the need of disseminating research results -- its purpose is to make the best work prominent enough to help build careers and to guide scholars in choosing what to read. This task of selecting the best work is carried out by the series editors of Language Science Press.
 
-    Stetiger Output
-
-    Solide nachhaltige Struktur
-
+% To see published and forthcoming books, consult our catalogue. 
+%Other pages of this site provide information for authors and information for series editors. We also provide templates for conversion from Word to LaTeX. The work of our volunteer supporters is appreciated in our Hall of Fame. Updates appear in our blog. 
  
 
 \newpage 
 
 
-\section{ \sffamily \Large Community}
+\vspace*{8.9cm} 
 
-\begin{itemize}
+For some time now, all scholars have been accustomed to sharing their materials at no cost with their colleagues, often with the help of services like Academia.edu and ResearchGate. Scientific publication thus no longer serves the need of disseminating research results -- its purpose is to make the best work prominent enough to help build careers and to guide scholars in choosing what to read. This task of selecting the best work is carried out by the series editors of Language Science Press.
 
-
-\item[$\rangle$]     Stefan Müller, Prof. (Freie Universität Berlin)
-\item[$\rangle$]     Matthias Hüning, Prof. Dr. (FU Berlin)
-\item[$\rangle$]     Anatol Stefanowitsch, Prof. (Freie Universität Berlin)
-\item[$\rangle$]     Alexander Koller, Prof. (Universität Potsdam)
-\item[$\rangle$]     Hans C. Boas, Prof. (University of Texas at Austin)
-\item[$\rangle$]     Frank Richter, PD Dr. (Eberhard-Karls-Universität Tübingen)
-\item[$\rangle$]     Gert Webelhuth, Prof. (Goethe-Universität Frankfurt am Main)
-\item[$\rangle$]     Gereon Müller, Prof. (Universität Leipzig)
-\item[$\rangle$]     Ivan Sag, Prof. (Stanford University)
-\item[$\rangle$]     Tibor Kiss, Prof. (Ruhr-Universität Bochum)
-\item[$\rangle$]     Martin Haspelmath, Prof. (MPI for Evolutionary Anthropology)
-\item[$\rangle$]     Jonas Kuhn, Prof. (University Stuttgart)
-\item[$\rangle$]     Manfred Sailer, Prof. (Goethe-Universität Frankfurt am Main)
-\item[$\rangle$]     Emily M. Bender, Prof. (University of Washington)
-\item[$\rangle$]     Friedemann Pulvermüller, Prof. (Freie Universität Berlin)
-\item[$\rangle$]     Frank Keller, Dr. (University of Edinburgh)
-\item[$\rangle$]     Adele Goldberg, Prof. (Princeton University)
-\item[$\rangle$]     Miriam Butt, Prof. (University of Konstanz)
-\item[$\rangle$]     Laura Kallmeyer, Prof. (University of Düsseldorf)
-\item[$\rangle$]     Shuly Wintner, Prof. (University of Haifa)
-\item[$\rangle$]     Martine Grice, Prof. (University of Cologne)
-\item[$\rangle$]     Uli Reich, Prof. (Freie Universität Berlin)
-\item[$\rangle$]     Anke Lüdeling, Prof. (Humboldt-Universität zu Berlin)
-\item[$\rangle$]     Artemis Alexiadou, Prof. (Universität Stuttgart)
-\end{itemize}
-
+Language Science Press is a scholar-owned press. We currently have 14 series with editorial board members from all over the world.
  
 \newpage 
 
 \section{ \sffamily \Large Series}
- 
-\begin{itemize}
-\item[$\rangle$] African Language Grammars and Dictionaries
-\item[$\rangle$] Computational Models of Language Evolution
-\item[$\rangle$] Conceptual Foundations of Language Science
-\item[$\rangle$] Contemporary African Linguistics
-\item[$\rangle$] Empirically Oriented Theoretical Morphology and Syntax
-\item[$\rangle$] Implemented Grammars
-\item[$\rangle$] Language Variation
-\item[$\rangle$] Monographs on Comparative Niger-Congo
-\item[$\rangle$] Studies in Caribbean Languages
-\item[$\rangle$] Studies in Diversity Linguistics
-\item[$\rangle$] Studies in Laboratory Phonology
-\item[$\rangle$] Textbooks in Language Sciences
-\item[$\rangle$] Topics at the Grammar-Discourse Interface
-\item[$\rangle$] Translation and Multilingual Natural Language Processing
-\end{itemize}
+\newcommand{\leftseries}[3]{   
+  \parbox{.1\textwidth}{~}
+  \parbox{.7\textwidth}{\raggedleft\small #1\\{\scriptsize #3}}
+  \parbox{.1\textwidth}{\includegraphics[width=.8cm]{#2.png}} 
+}
 
+\newcommand{\rightseries}[3]{   
+  \parbox{.1\textwidth}{\includegraphics[width=.8cm]{#2.png}}
+  \parbox{.7\textwidth}{\raggedright\small #1\\{\scriptsize #3}}
+  \parbox{.1\textwidth}{~} 
+}
+
+\leftseries{African Language Grammars and Dictionaries}{algad}{Adams Bodomo, Ken Hiraiwa, Firmin Ahoua}
+\rightseries{Computational Models of Language Evolution}{cmle}{Luc Steel, Remi van Trijp}
+
+\leftseries{Conceptual Foundations of Language Science}{cfls}{Mark Dingemanse, Nick Enfield}
+\rightseries{Contemporary African Linguistics}{cal}{Lee Bickmore, Akinbiyi Akinlabi}
+
+\leftseries{Empirically Oriented Theoretical Morphology and Syntax}{eotms}{Stefan M\"uller, Berthold Crysmann, Laura Kallmeyer}
+\rightseries{Implemented Grammars}{eotms-ig}{Stefan M\"uller, Berthold Crysmann, Laura Kallmeyer}
+
+\leftseries{Language Variation}{lv}{John Nerbonne, Dirk Geeraerts}
+\rightseries{\mbox{Monographs on Comparative Niger-Congo}}{mcnc}{Valentin Vydrin, Larry Hyman, Konstantin Pozdniakov, Guillaume Segerer, John Watters}
+
+\leftseries{Studies in Caribbean Languages}{scl}{John R. Rickford, Joseph Farquharson}
+\rightseries{Studies in Diversity Linguistics}{sidl}{Martin Haspelmath, Fernando Z\'u\~niga, Peter Arkadiev, Ruth Singer, Pilar Valenzuela}
+
+\leftseries{Studies in Laboratory Phonology}{silp}{Martine Vrice, Doris M\"ucke, Taehong Cho}
+\rightseries{Textbooks in Language Sciences}{tbls}{Stefan M\"uller, Martin Haspelmath, Claude Hag\`ege, Marianne Mithun, Anatol Stefanowitsch, Foong Ha Yap} 
+ 
+\leftseries{Topics at the Grammar-Discourse Interface}{tgdi}{Philippa Cook, Anke Holler, Cathrine Fabricius-Hansen}
+\rightseries{Translation and Multilingual Natural Language Processing}{tmnlp}{Reinhard Rapp, Silvia Hansen-Schirra, Oliver \v{C}ulo}
+  
+    
  
 
 \newpage 
 
-\section{ \sffamily \Large Books}
+\section{ \sffamily \Large Advisory Board}
+
 \begin{itemize}
- \item[$\rangle$]    The Alor-Pantar languages: History and typology	 
- \item[$\rangle$]    Prosodic detail in Neapolitan Italian	 
- \item[$\rangle$]    Natural causes of language: Frames, biases, and cultural transmission	 
- \item[$\rangle$]    A typology of marked-S languages	 
- \item[$\rangle$]    A grammar of Pite Saami	 
- \item[$\rangle$]     Adjective attribution	 
- \item[$\rangle$]     Syntax und Valenz  
- \item[$\rangle$]     Grammatical theory         
- \item[$\rangle$]     How mobile robots can self-organize a vocabulary	 
- \item[$\rangle$]     Language strategies for the domain of colour	 
- \item[$\rangle$]     Grammaire des constructions elliptiques  
- \item[$\rangle$]     The Talking Heads experiment: origins of words and meanings	  
- \item[$\rangle$]    The evolution of case grammar	 
- \item[$\rangle$]     The evolution of grounded spatial language	 
- \item[$\rangle$]     EinfÃ¼hrung in die grammatische Beschreibung des Deutschen	 
- \item[$\rangle$]     A grammar of Yakkha	 
- \item[$\rangle$]     A grammar of Mauwake	  
+ \item[$\rangle$] Artemis Alexiadou (Stuttgart)
+ \item[$\rangle$] Jim Blevins ( Cambridge)
+ \item[$\rangle$] Balthasar Bickel (Z\"urich)
+ \item[$\rangle$] Geert Booij (Leiden)
+ \item[$\rangle$] Miriam Butt (Konstanz)
+ \item[$\rangle$] Ewa D\k{a}browska (Northumbria U)
+ \item[$\rangle$] Arnulf Deppermann (IDS Mannheim)
+ \item[$\rangle$] Nomi Erteschik-Shir (Ben Gurion)
+ \item[$\rangle$] Martine Grice (U Cologne)
+ \item[$\rangle$] Mutsumi Imai (Keio University)
+ \item[$\rangle$] Laura Kallmeyer (D\"usseldorf)
+ \item[$\rangle$] Manfred Krifka (Berlin)
+ \item[$\rangle$] Mary Esther Kropp Dakubu (Ghana)
+ \item[$\rangle$] Aditi Lahiri (Oxford)
+ \item[$\rangle$] Stephen Levinson (MPI Nijmegen)
+ \item[$\rangle$] Anke L\"udeling (Berlin)
+ \item[$\rangle$] Detmar Meurers (T\"ubingen)
+ \item[$\rangle$] Sam Mchombo (Berkeley)
+ \item[$\rangle$] Rachel Nordlinger (Melbourne)
+ \item[$\rangle$] Jairo Nunes (São Paulo)
+ \item[$\rangle$] Steven Pinker (Harvard)
+ \item[$\rangle$] Friedemann Pulverm\"uller (Berlin)
+ \item[$\rangle$] Stuart Shieber (Harvard)
+ \item[$\rangle$] Dieter Stein (D\"usseldorf)  
 \end{itemize}
 
-   
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+     
     
    
    
@@ -261,52 +280,28 @@ Ziele [konkret und messbar]
    
 \newpage 
 
+\section{ \sffamily \Large Support us!}
+  
+    \begin{itemize}
+      \item[$\rangle$] submit your manuscript to one of the series
+      \item[$\rangle$] become a community proofreader 
+      \item[$\rangle$] become a community typesetter
+      \item[$\rangle$] become a public supporter
+      \item[$\rangle$] donate
+    \end{itemize} 
+
 \section{ \sffamily \Large Contact}
+ 
 
-Press Contact\\
-Mailing Address\\
+\includegraphics[width=.4\textwidth]{qrcode.eps}
 
-Prof. Dr. Ste­fan Mül­ler\\
-Language Science Press\\
-Ha­bel­schwerd­ter Allee 45\\
-14 195 Ber­lin\\
-Germany\\
+{\LARGE \sffamily www.langsci-press.org}
 
-Principal Contact\\
+{\LARGE \sffamily  contact@langsci-press.org}
 
-Sebastian Nordhoff\\
-Language Science Press\\
-Ha­bel­schwerd­ter Allee 45\\
-14 195 Ber­lin\\
-Germany\\
-
-Email: sebastian.nordhoff@langsci-press.org
-
-http://www.langsci-press.org~
-
-\vspace*{2cm}
 % \framebox[3cm]{ \textbf{Mitmachen?}\\ Author\par Editor}
 
-\begin{tabular}{lr}
-\fbox{
-  \parbox{3cm}{ 
-    \textbf{Mitmachen?}\\ 
-    \begin{itemize}
-      \item[$\rangle$] author
-      \item[$\rangle$] editor
-      \item[$\rangle$] proofreader
-      \item[$\rangle$] typesetter
-      \item[$\rangle$] member
-      \item[$\rangle$] supporter
-      \item[$\rangle$] donate
-    \end{itemize}
-  }
-}
-&~
-\raisebox{-2.2cm}{
-\includegraphics[width=.4\textwidth]{qrcode.eps}
-}
-\end{tabular}
+
 
 
 % \fbox{
