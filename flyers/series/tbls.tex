@@ -1,0 +1,185 @@
+ 
+\def\filename{leaflet-manual.tex}
+\def\fileversion{v1.0d}   % change this when leaflet-manual changed, too.
+\def\filedate{2012/06/04}
+\def\docdate {2012/06/04} % change this when leaflet-manual changed, too.
+\listfiles
+\errorcontextlines=99
+\documentclass[
+notumble,
+nofoldmark,
+%%dvipdfm,
+%%portrait,
+%%titlepage,
+%%nocombine,
+%%a3paper,
+%%debug,
+%%nospecialtricks,
+%%draft,
+]{leaflet}
+\usepackage{tabularx}
+\usepackage{lipsum}
+\usepackage{eurosym}
+\renewcommand*\foldmarkrule{.3mm}
+\renewcommand*\foldmarklength{5mm}
+
+\usepackage[T1]{fontenc}
+% \usepackage[T3]{inputenc}
+\usepackage{textcomp}
+\usepackage{mathptmx}
+\usepackage{libertine}
+\usepackage[scaled=0.9]{helvet}
+\makeatletter
+\def\ptmTeX{T\kern-.1667em\lower.5ex\hbox{E}\kern-.075emX\@}
+\DeclareRobustCommand{\ptmLaTeX}{L\kern-.3em
+        {\setbox0\hbox{T}%
+         %\vb@xt@ % :-)
+         \vbox to\ht0{\hbox{%
+                            \csname S@\f@size\endcsname
+                            \fontsize\sf@size\z@
+                            \math@fontsfalse\selectfont
+                            A}%
+                      \vss}%
+        }%
+        \kern-.12em
+        \ptmTeX}
+\makeatother
+\let\TeX=\ptmTeX
+\let\LaTeX=\ptmLaTeX
+\usepackage{shortvrb}
+\MakeShortVerb{\|}
+\usepackage{url}
+\usepackage{graphicx}
+\usepackage[dvipsnames,usenames]{color}
+\definecolor{LIGHTGRAY}{gray}{.9}
+\definecolor{lspblue1}{RGB}{208, 236, 246} 
+\definecolor{lspred2}{cmyk}{0.3,1,0.6,0}
+\usepackage{langscicolors} 
+\newcommand\Lpack[1]{\textsf{#1}}
+\newcommand\Lclass[1]{\textsf{#1}}
+\newcommand\Lopt[1]{\texttt{#1}}
+\newcommand\Lprog[1]{\textit{#1}}
+
+\newcommand*\defaultmarker{\textsuperscript\textasteriskcentered}
+
+ 
+
+\CutLine*{1}% Dotted line without scissors
+\CutLine*{3}%   
+\CutLine*{4}%   
+\CutLine*{6}%   
+
+\AddToBackground*{1}{%  Background of a small page
+  \put(0,0){\textcolor{lspred2}{\rule{\paperwidth}{\paperheight}}}}
+
+\AddToBackground*{2}{%  Background of a small page
+  \put(0,0){\textcolor{lspred2}{\rule{\paperwidth}{\paperheight}}}}
+ 
+\AddToBackground{2}{
+    \put(-2,0){
+        \includegraphics[width=.3\paperwidth]{lsp-rainbow-large.png}%
+    } 
+}
+
+\AddToBackground{3}{
+    \put(-2,0){
+        \includegraphics[width=.3\paperwidth]{lsp-rainbow-large.png}%
+    } 
+}
+
+\AddToBackground{4}{
+    \put(-2,0){
+        \includegraphics[width=.3\paperwidth]{lsp-rainbow-large.png}%
+    } 
+}
+
+
+\begin{document}
+\newsavebox{\pageone}
+\newsavebox{\pagetwo}
+
+\savebox{\pageone}{
+    \parbox{\textwidth}{
+    \color{LIGHTGRAY} 
+    \thispagestyle{empty}
+    
+    \noindent 
+    ~
+    \parbox{.088\paperwidth}{
+      \color{LIGHTGRAY}
+      \vspace*{-.5cm}
+      \includegraphics[width=.3\paperwidth]{langsci_logo_nocolor.pdf} 
+    }
+    \parbox{.8\paperwidth}{
+      \raggedleft 
+      \vspace*{-2.5cm}{\includegraphics[width=.4\paperwidth]{lsp-rainbow-large.png}}
+    }
+
+    \vspace*{11cm}
+
+    \raggedleft{
+    \mbox{\Huge Language Science Press}
+    {\LARGE Studies in Laboratory Phonology}}
+    \raggedright 
+
+    \medskip 
+This se­ries aims to pub­lish high-qual­i­ty textbooks in any area of the language sciences.
+}
+}
+
+\savebox{\pagetwo}{
+  \parbox{\textwidth}{
+    \color{LIGHTGRAY}
+    \section{\color{LIGHTGRAY} \sffamily \Large Editorial Board}    
+
+    \begin{itemize}
+    \item[$\rangle$] Stefan Müller (Freie Universität Berlin),
+    \item[$\rangle$] Martin Haspelmath (Max Planck Institute for Evolutionary Anthropology, Leipzig)
+    \item[$\rangle$] Claude Hagège (Collège de France)
+    \item[$\rangle$] Marianne Mithun (University of California, Santa Barbara)
+    \item[$\rangle$] Anatol Stefanowitsch (Freie Universität Berlin)
+    \item[$\rangle$] Foong Ha Yap (Hong Kong Polytechnic University)
+    \end{itemize}
+    
+    \section{\color{LIGHTGRAY} \sffamily \Large Support us!}
+	\begin{itemize}
+	  \item[$\rangle$] submit your manuscript 
+	  \item[$\rangle$] become a community proofreader 
+	  \item[$\rangle$] become a community typesetter
+	  \item[$\rangle$] become a public supporter
+	  \item[$\rangle$] donate
+	\end{itemize} 
+    \section{\color{LIGHTGRAY} \sffamily \Large Contact} 
+	\begin{itemize}
+	  \item[$\rangle$] \sffamily www.langsci-press.org/catalog/series/silp
+	  \item[$\rangle$]\sffamily  silp@langsci-press.org 
+	\end{itemize} 
+  }
+}
+
+\usebox{\pageone}
+
+\newpage
+
+\usebox{\pagetwo}
+
+\newpage
+
+\usebox{\pagetwo}
+
+\newpage
+
+\usebox{\pagetwo}
+
+\newpage
+
+\usebox{\pageone}
+
+\newpage
+
+\usebox{\pageone}
+ 
+
+\loggingall
+\end{document}
+\endinput 

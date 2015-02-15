@@ -1,0 +1,197 @@
+ 
+\def\filename{leaflet-manual.tex}
+\def\fileversion{v1.0d}   % change this when leaflet-manual changed, too.
+\def\filedate{2012/06/04}
+\def\docdate {2012/06/04} % change this when leaflet-manual changed, too.
+\listfiles
+\errorcontextlines=99
+\documentclass[
+notumble,
+nofoldmark,
+%%dvipdfm,
+%%portrait,
+%%titlepage,
+%%nocombine,
+%%a3paper,
+%%debug,
+%%nospecialtricks,
+%%draft,
+]{leaflet}
+\usepackage{tabularx}
+\usepackage{lipsum}
+\usepackage{eurosym}
+\renewcommand*\foldmarkrule{.3mm}
+\renewcommand*\foldmarklength{5mm}
+
+\usepackage[T1]{fontenc}
+% \usepackage[T3]{inputenc}
+\usepackage{textcomp}
+\usepackage{mathptmx}
+\usepackage{libertine}
+\usepackage[scaled=0.9]{helvet}
+\makeatletter
+\def\ptmTeX{T\kern-.1667em\lower.5ex\hbox{E}\kern-.075emX\@}
+\DeclareRobustCommand{\ptmLaTeX}{L\kern-.3em
+        {\setbox0\hbox{T}%
+         %\vb@xt@ % :-)
+         \vbox to\ht0{\hbox{%
+                            \csname S@\f@size\endcsname
+                            \fontsize\sf@size\z@
+                            \math@fontsfalse\selectfont
+                            A}%
+                      \vss}%
+        }%
+        \kern-.12em
+        \ptmTeX}
+\makeatother
+\let\TeX=\ptmTeX
+\let\LaTeX=\ptmLaTeX
+\usepackage{shortvrb}
+\MakeShortVerb{\|}
+\usepackage{url}
+\usepackage{graphicx}
+\usepackage[dvipsnames,usenames]{color}
+\definecolor{LIGHTGRAY}{gray}{.9}
+\definecolor{lspblue1}{RGB}{208, 236, 246} 
+\definecolor{lspred2}{cmyk}{0.3,1,0.6,0}
+\usepackage{langscicolors} 
+\newcommand\Lpack[1]{\textsf{#1}}
+\newcommand\Lclass[1]{\textsf{#1}}
+\newcommand\Lopt[1]{\texttt{#1}}
+\newcommand\Lprog[1]{\textit{#1}}
+
+\newcommand*\defaultmarker{\textsuperscript\textasteriskcentered}
+
+ 
+
+\CutLine*{1}% Dotted line without scissors
+\CutLine*{3}%   
+\CutLine*{4}%   
+\CutLine*{6}%   
+
+\AddToBackground*{1}{%  Background of a small page
+  \put(0,0){\textcolor{lspred2}{\rule{\paperwidth}{\paperheight}}}}
+
+\AddToBackground*{2}{%  Background of a small page
+  \put(0,0){\textcolor{lspred2}{\rule{\paperwidth}{\paperheight}}}}
+ 
+\AddToBackground{2}{
+    \put(-2,0){
+        \includegraphics[width=.3\paperwidth]{lsp-rainbow-large.png}%
+    } 
+}
+
+\AddToBackground{3}{
+    \put(-2,0){
+        \includegraphics[width=.3\paperwidth]{lsp-rainbow-large.png}%
+    } 
+}
+
+\AddToBackground{4}{
+    \put(-2,0){
+        \includegraphics[width=.3\paperwidth]{lsp-rainbow-large.png}%
+    } 
+}
+
+
+\begin{document}
+\newsavebox{\pageone}
+\newsavebox{\pagetwo}
+
+\savebox{\pageone}{
+    \parbox{\textwidth}{
+    \color{LIGHTGRAY} 
+    \thispagestyle{empty}
+    
+    \noindent 
+    ~
+    \parbox{.088\paperwidth}{
+      \color{LIGHTGRAY}
+      \vspace*{-.5cm}
+      \includegraphics[width=.3\paperwidth]{langsci_logo_nocolor.pdf} 
+    }
+    \parbox{.8\paperwidth}{
+      \raggedleft 
+      \vspace*{-2.5cm}{\includegraphics[width=.4\paperwidth]{lsp-rainbow-large.png}}
+    }
+
+    \vspace*{11cm}
+
+    \raggedleft{
+    \mbox{\Huge Language Science Press}
+    {\LARGE Studies in Laboratory Phonology}}
+    \raggedright 
+
+    \medskip 
+No scientific work proceeds without conceptual foundations. In language science, our concepts about language underlie our thinking and organize our work. They determine our assumptions, direct our attention, and guide our hypotheses and our reasoning. Only with clarity about conceptual foundations can we pose coherent research questions, design critical experiments, and collect crucial data.
+This series publishes short and accessible books that explore well-defined topics in the conceptual foundations of language science. The series provides a venue for conceptual arguments and explorations that do not require the traditional book-length treatment, yet that demand more space than a typical journal article allows.
+We welcome original submissions, as well as expanded versions of previously published full-length articles or chapters that fit the series theme. Topics may cover any conceptual or theoretical issue of importance for research on language, from sound to syntax to semantics, from language contact to acquisition to the ethnography of speaking. To be considered for this series, a book must be short (length around 35,000 words, or 90 pages) and must be written in clear, accessible prose, to maximize its appeal across the fields of language science. Queries should be sent to the series editors.  }
+}
+
+\savebox{\pagetwo}{
+  \parbox{\textwidth}{
+    \color{LIGHTGRAY}
+    \section{\color{LIGHTGRAY} \sffamily \Large Editorial Board}    
+
+    \begin{itemize}
+    \item[$\rangle$] Mark Dingemanse (Max Planck Institute, Nijmegen) 
+    \item[$\rangle$] N. J. Enfield (University of Sydney, Australia)
+    \end{itemize}
+    \begin{itemize}
+    \item[$\rangle$] Balthasar Bickel (University of Zürich)
+    \item[$\rangle$] Claire Bowern (Yale University)
+    \item[$\rangle$] Elizabeth Couper-Kuhlen (University of Helsinki)
+    \item[$\rangle$] William Croft (University of New Mexico)
+    \item[$\rangle$] Rose-Marie Déchaine (University of British Columbia)
+    \item[$\rangle$] William A. Foley (University of Sydney)
+    \item[$\rangle$] William F. Hanks (University of California at Berkeley)
+    \item[$\rangle$] Paul Kockelman (Yale University)
+    \item[$\rangle$] Keren Rice (University of Toronto)
+    \item[$\rangle$] Sharon Rose (University of California, San Diego)
+    \item[$\rangle$] Frederick J. Newmeyer (University of Washington)
+    \item[$\rangle$] Wendy Sandler (University of Haifa)
+    \item[$\rangle$] Dan Sperber (Central European University, Budapest)
+    \end{itemize}
+    
+    \section{\color{LIGHTGRAY} \sffamily \Large Support us!}
+	\begin{itemize}
+	  \item[$\rangle$] submit your manuscript 
+	  \item[$\rangle$] become a community proofreader 
+	  \item[$\rangle$] become a community typesetter
+	  \item[$\rangle$] become a public supporter
+	  \item[$\rangle$] donate
+	\end{itemize} 
+    \section{\color{LIGHTGRAY} \sffamily \Large Contact} 
+	\begin{itemize}
+	  \item[$\rangle$] \sffamily www.langsci-press.org/catalog/series/silp
+	  \item[$\rangle$]\sffamily  silp@langsci-press.org 
+	\end{itemize} 
+  }
+}
+
+\usebox{\pageone}
+
+\newpage
+
+\usebox{\pagetwo}
+
+\newpage
+
+\usebox{\pagetwo}
+
+\newpage
+
+\usebox{\pagetwo}
+
+\newpage
+
+\usebox{\pageone}
+
+\newpage
+
+\usebox{\pageone}
+ 
+
+\loggingall
+\end{document}
+\endinput 

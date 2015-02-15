@@ -1,0 +1,196 @@
+ 
+\def\filename{leaflet-manual.tex}
+\def\fileversion{v1.0d}   % change this when leaflet-manual changed, too.
+\def\filedate{2012/06/04}
+\def\docdate {2012/06/04} % change this when leaflet-manual changed, too.
+\listfiles
+\errorcontextlines=99
+\documentclass[
+notumble,
+nofoldmark,
+%%dvipdfm,
+%%portrait,
+%%titlepage,
+%%nocombine,
+%%a3paper,
+%%debug,
+%%nospecialtricks,
+%%draft,
+]{leaflet}
+\usepackage{tabularx}
+\usepackage{lipsum}
+\usepackage{eurosym}
+\renewcommand*\foldmarkrule{.3mm}
+\renewcommand*\foldmarklength{5mm}
+
+\usepackage[T1]{fontenc}
+% \usepackage[T3]{inputenc}
+\usepackage{textcomp}
+\usepackage{mathptmx}
+\usepackage{libertine}
+\usepackage[scaled=0.9]{helvet}
+\makeatletter
+\def\ptmTeX{T\kern-.1667em\lower.5ex\hbox{E}\kern-.075emX\@}
+\DeclareRobustCommand{\ptmLaTeX}{L\kern-.3em
+        {\setbox0\hbox{T}%
+         %\vb@xt@ % :-)
+         \vbox to\ht0{\hbox{%
+                            \csname S@\f@size\endcsname
+                            \fontsize\sf@size\z@
+                            \math@fontsfalse\selectfont
+                            A}%
+                      \vss}%
+        }%
+        \kern-.12em
+        \ptmTeX}
+\makeatother
+\let\TeX=\ptmTeX
+\let\LaTeX=\ptmLaTeX
+\usepackage{shortvrb}
+\MakeShortVerb{\|}
+\usepackage{url}
+\usepackage{graphicx}
+\usepackage[dvipsnames,usenames]{color}
+\definecolor{LIGHTGRAY}{gray}{.9}
+\definecolor{lspblue1}{RGB}{208, 236, 246} 
+\definecolor{lspred2}{cmyk}{0.3,1,0.6,0}
+\usepackage{langscicolors} 
+\newcommand\Lpack[1]{\textsf{#1}}
+\newcommand\Lclass[1]{\textsf{#1}}
+\newcommand\Lopt[1]{\texttt{#1}}
+\newcommand\Lprog[1]{\textit{#1}}
+
+\newcommand*\defaultmarker{\textsuperscript\textasteriskcentered}
+
+ 
+
+\CutLine*{1}% Dotted line without scissors
+\CutLine*{3}%   
+\CutLine*{4}%   
+\CutLine*{6}%   
+
+\AddToBackground*{1}{%  Background of a small page
+  \put(0,0){\textcolor{lspred2}{\rule{\paperwidth}{\paperheight}}}}
+
+\AddToBackground*{2}{%  Background of a small page
+  \put(0,0){\textcolor{lspred2}{\rule{\paperwidth}{\paperheight}}}}
+ 
+\AddToBackground{2}{
+    \put(-2,0){
+        \includegraphics[width=.3\paperwidth]{lsp-rainbow-large.png}%
+    } 
+}
+
+\AddToBackground{3}{
+    \put(-2,0){
+        \includegraphics[width=.3\paperwidth]{lsp-rainbow-large.png}%
+    } 
+}
+
+\AddToBackground{4}{
+    \put(-2,0){
+        \includegraphics[width=.3\paperwidth]{lsp-rainbow-large.png}%
+    } 
+}
+
+
+\begin{document}
+\newsavebox{\pageone}
+\newsavebox{\pagetwo}
+
+\savebox{\pageone}{
+    \parbox{\textwidth}{
+    \color{LIGHTGRAY} 
+    \thispagestyle{empty}
+    
+    \noindent 
+    ~
+    \parbox{.088\paperwidth}{
+      \color{LIGHTGRAY}
+      \vspace*{-.5cm}
+      \includegraphics[width=.3\paperwidth]{langsci_logo_nocolor.pdf} 
+    }
+    \parbox{.8\paperwidth}{
+      \raggedleft 
+      \vspace*{-2.5cm}{\includegraphics[width=.4\paperwidth]{lsp-rainbow-large.png}}
+    }
+
+    \vspace*{11cm}
+
+    \raggedleft{
+    \mbox{\Huge Language Science Press}
+    {\LARGE Studies in Laboratory Phonology}}
+    \raggedright 
+
+    \medskip 
+This series publishes high quality research using computational methods to investigate fundamental questions in the origins and evolution of language, informed by observations from historical linguistics and/or child language development. The series will include new monographs, revised doctoral dissertations, edited volumes, and textbooks. 
+In order to be included in the series, the questions raised must be of relevance to evolutionary linguistics. There must be evidence of a working implementation that ideally can be accessed openly and, if empirical issues are considered, the data must ideally be available to compare them with the proposed models. The text must be of high quality and contain appropriate reference to prior work and the state of the art in the field.
+    }
+}
+
+\savebox{\pagetwo}{
+  \parbox{\textwidth}{
+    \color{LIGHTGRAY}
+    \section{\color{LIGHTGRAY} \sffamily \Large Editorial Board}    
+Editors
+    \begin{itemize}
+    \item[$\rangle$] Luc Steels (Universitat Pompeu Fabra Barcelona)
+    \item[$\rangle$] Remi van Trijp (Sony Computer Science Laboratory Paris)
+    \end{itemize}
+    
+    Editorial Board
+    
+    \begin{itemize}
+    \item[$\rangle$] Richard Blythe (Edinburgh University) 
+    \item[$\rangle$] William Croft (University of New Mexico)
+    \item[$\rangle$] Tao Gong (University of Hong Kong)
+    \item[$\rangle$] Takashi Hashimoto (Japan Advanced Institute of Science and Technology)
+    \item[$\rangle$] Vittorio Loreto (Sapienza University of Rome)
+    \item[$\rangle$] Thierry Poibeau (École Normale Supérieure Paris)
+    \item[$\rangle$] Andrew Smith (University of Stirling)
+    \item[$\rangle$] Freek Van de Velde (University of Leuven)
+    
+    \end{itemize}
+    
+    \section{\color{LIGHTGRAY} \sffamily \Large Support us!}
+	\begin{itemize}
+	  \item[$\rangle$] submit your manuscript 
+	  \item[$\rangle$] become a community proofreader 
+	  \item[$\rangle$] become a community typesetter
+	  \item[$\rangle$] become a public supporter
+	  \item[$\rangle$] donate
+	\end{itemize} 
+    \section{\color{LIGHTGRAY} \sffamily \Large Contact} 
+	\begin{itemize}
+	  \item[$\rangle$] \sffamily www.langsci-press.org/catalog/series/silp
+	  \item[$\rangle$]\sffamily  silp@langsci-press.org 
+	\end{itemize} 
+  }
+}
+
+\usebox{\pageone}
+
+\newpage
+
+\usebox{\pagetwo}
+
+\newpage
+
+\usebox{\pagetwo}
+
+\newpage
+
+\usebox{\pagetwo}
+
+\newpage
+
+\usebox{\pageone}
+
+\newpage
+
+\usebox{\pageone}
+ 
+
+\loggingall
+\end{document}
+\endinput 

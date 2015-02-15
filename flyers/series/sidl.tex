@@ -1,0 +1,206 @@
+ 
+\def\filename{leaflet-manual.tex}
+\def\fileversion{v1.0d}   % change this when leaflet-manual changed, too.
+\def\filedate{2012/06/04}
+\def\docdate {2012/06/04} % change this when leaflet-manual changed, too.
+\listfiles
+\errorcontextlines=99
+\documentclass[
+notumble,
+nofoldmark,
+%%dvipdfm,
+%%portrait,
+%%titlepage,
+%%nocombine,
+%%a3paper,
+%%debug,
+%%nospecialtricks,
+%%draft,
+]{leaflet}
+\usepackage{tabularx}
+\usepackage{lipsum}
+\usepackage{eurosym}
+\renewcommand*\foldmarkrule{.3mm}
+\renewcommand*\foldmarklength{5mm}
+
+\usepackage[T1]{fontenc}
+% \usepackage[T3]{inputenc}
+\usepackage{textcomp}
+\usepackage{mathptmx}
+\usepackage{libertine}
+\usepackage[scaled=0.9]{helvet}
+\makeatletter
+\def\ptmTeX{T\kern-.1667em\lower.5ex\hbox{E}\kern-.075emX\@}
+\DeclareRobustCommand{\ptmLaTeX}{L\kern-.3em
+        {\setbox0\hbox{T}%
+         %\vb@xt@ % :-)
+         \vbox to\ht0{\hbox{%
+                            \csname S@\f@size\endcsname
+                            \fontsize\sf@size\z@
+                            \math@fontsfalse\selectfont
+                            A}%
+                      \vss}%
+        }%
+        \kern-.12em
+        \ptmTeX}
+\makeatother
+\let\TeX=\ptmTeX
+\let\LaTeX=\ptmLaTeX
+\usepackage{shortvrb}
+\MakeShortVerb{\|}
+\usepackage{url}
+\usepackage{graphicx}
+\usepackage[dvipsnames,usenames]{color}
+\definecolor{LIGHTGRAY}{gray}{.9}
+\definecolor{lspblue1}{RGB}{208, 236, 246} 
+\definecolor{lspred2}{cmyk}{0.3,1,0.6,0}
+\usepackage{langscicolors} 
+\newcommand\Lpack[1]{\textsf{#1}}
+\newcommand\Lclass[1]{\textsf{#1}}
+\newcommand\Lopt[1]{\texttt{#1}}
+\newcommand\Lprog[1]{\textit{#1}}
+
+\newcommand*\defaultmarker{\textsuperscript\textasteriskcentered}
+
+ 
+
+\CutLine*{1}% Dotted line without scissors
+\CutLine*{3}%   
+\CutLine*{4}%   
+\CutLine*{6}%   
+
+\AddToBackground*{1}{%  Background of a small page
+  \put(0,0){\textcolor{lspred2}{\rule{\paperwidth}{\paperheight}}}}
+
+\AddToBackground*{2}{%  Background of a small page
+  \put(0,0){\textcolor{lspred2}{\rule{\paperwidth}{\paperheight}}}}
+ 
+\AddToBackground{2}{
+    \put(-2,0){
+        \includegraphics[width=.3\paperwidth]{lsp-rainbow-large.png}%
+    } 
+}
+
+\AddToBackground{3}{
+    \put(-2,0){
+        \includegraphics[width=.3\paperwidth]{lsp-rainbow-large.png}%
+    } 
+}
+
+\AddToBackground{4}{
+    \put(-2,0){
+        \includegraphics[width=.3\paperwidth]{lsp-rainbow-large.png}%
+    } 
+}
+
+
+\begin{document}
+\newsavebox{\pageone}
+\newsavebox{\pagetwo}
+
+\savebox{\pageone}{
+    \parbox{\textwidth}{
+    \color{LIGHTGRAY} 
+    \thispagestyle{empty}
+    
+    \noindent 
+    ~
+    \parbox{.088\paperwidth}{
+      \color{LIGHTGRAY}
+      \vspace*{-.5cm}
+      \includegraphics[width=.3\paperwidth]{langsci_logo_nocolor.pdf} 
+    }
+    \parbox{.8\paperwidth}{
+      \raggedleft 
+      \vspace*{-2.5cm}{\includegraphics[width=.4\paperwidth]{lsp-rainbow-large.png}}
+    }
+
+    \vspace*{11cm}
+
+    \raggedleft{
+    \mbox{\Huge Language Science Press}
+    {\LARGE Studies in Laboratory Phonology}}
+    \raggedright 
+
+    \medskip 
+    
+    This book series will publish book-length studies on individual less-widely studied languages (especially, but not only reference grammars), as well as works in broadly comparative typological linguistics that takes into account the world-wide diversity of human languages. Work on individual languages and broadly comparative work is of a different nature, but this book series sees the two as closely related: Comparative studies need in-depth work on individual languages from around the world to build on, and descriptive work is done best in a comparative perspective.
+
+    
+  }
+}
+
+\savebox{\pagetwo}{
+  \parbox{\textwidth}{
+    \color{LIGHTGRAY}
+    \section{\color{LIGHTGRAY} \sffamily \Large Editorial Board}    
+
+    \begin{itemize}
+    \item[$\rangle$] Martin Haspelmath
+    \end{itemize}
+    \begin{itemize}
+    \item[$\rangle$] Fernando Zúñiga (University of Berne)
+    \item[$\rangle$] Peter Arkadiev (Institute of Slavic Studies RAS, Moscow)
+    \item[$\rangle$] Ruth Singer (University of Melbourne)
+    \item[$\rangle$] Pilar Valenzuela (Chapman University, California)
+    \end{itemize}
+    \begin{itemize}
+    \item[$\rangle$] Gregory D.S. Anderson (Living Tongues Institute for Endangered Languages, Oregon)
+    \item[$\rangle$] Isabelle Bril (CNRS-LACITO, Paris)
+    \item[$\rangle$] Sonia Cristofaro (University of Pavia)
+    \item[$\rangle$] Rik De Busser (National Chenchi University, Taiwan)
+    \item[$\rangle$] Mark Dingemanse (MPI Nijmegen)
+    \item[$\rangle$] Matthew S. Dryer (University at Buffalo)
+    \item[$\rangle$] Ekkehard König (Freie Universität Berlin)
+    \item[$\rangle$] Maria Koptjevskaja-Tamm (Stockholm University)
+    \item[$\rangle$] Stephen Matthews (University of Hong Kong)
+    \item[$\rangle$] Matti Miestamo (Stockholm University)
+    \item[$\rangle$] Andrey Shluinsky (Institute of Linguistics RAS, Moscow)
+    \item[$\rangle$] Aaron Sonnenschein (California State University, Los Angeles)
+    \item[$\rangle$] Siri Tuttle (University of Alaska, Fairbanks)
+    \item[$\rangle$] Martine Vanhove (CNRS-LLACAN, Paris)
+    \item[$\rangle$] Honore Watanabe (ILCAA, Tokyo)
+    \end{itemize}
+    
+    \section{\color{LIGHTGRAY} \sffamily \Large Support us!}
+	\begin{itemize}
+	  \item[$\rangle$] submit your manuscript 
+	  \item[$\rangle$] become a community proofreader 
+	  \item[$\rangle$] become a community typesetter
+	  \item[$\rangle$] become a public supporter
+	  \item[$\rangle$] donate
+	\end{itemize} 
+    \section{\color{LIGHTGRAY} \sffamily \Large Contact} 
+	\begin{itemize}
+	  \item[$\rangle$] \sffamily www.langsci-press.org/catalog/series/silp
+	  \item[$\rangle$]\sffamily  silp@langsci-press.org 
+	\end{itemize} 
+  }
+}
+
+\usebox{\pageone}
+
+\newpage
+
+\usebox{\pagetwo}
+
+\newpage
+
+\usebox{\pagetwo}
+
+\newpage
+
+\usebox{\pagetwo}
+
+\newpage
+
+\usebox{\pageone}
+
+\newpage
+
+\usebox{\pageone}
+ 
+
+\loggingall
+\end{document}
+\endinput 

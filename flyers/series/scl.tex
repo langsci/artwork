@@ -1,0 +1,206 @@
+ 
+\def\filename{leaflet-manual.tex}
+\def\fileversion{v1.0d}   % change this when leaflet-manual changed, too.
+\def\filedate{2012/06/04}
+\def\docdate {2012/06/04} % change this when leaflet-manual changed, too.
+\listfiles
+\errorcontextlines=99
+\documentclass[
+notumble,
+nofoldmark,
+%%dvipdfm,
+%%portrait,
+%%titlepage,
+%%nocombine,
+%%a3paper,
+%%debug,
+%%nospecialtricks,
+%%draft,
+]{leaflet}
+\usepackage{tabularx}
+\usepackage{lipsum}
+\usepackage{eurosym}
+\renewcommand*\foldmarkrule{.3mm}
+\renewcommand*\foldmarklength{5mm}
+
+\usepackage[T1]{fontenc}
+% \usepackage[T3]{inputenc}
+\usepackage{textcomp}
+\usepackage{mathptmx}
+\usepackage{libertine}
+\usepackage[scaled=0.9]{helvet}
+\makeatletter
+\def\ptmTeX{T\kern-.1667em\lower.5ex\hbox{E}\kern-.075emX\@}
+\DeclareRobustCommand{\ptmLaTeX}{L\kern-.3em
+        {\setbox0\hbox{T}%
+         %\vb@xt@ % :-)
+         \vbox to\ht0{\hbox{%
+                            \csname S@\f@size\endcsname
+                            \fontsize\sf@size\z@
+                            \math@fontsfalse\selectfont
+                            A}%
+                      \vss}%
+        }%
+        \kern-.12em
+        \ptmTeX}
+\makeatother
+\let\TeX=\ptmTeX
+\let\LaTeX=\ptmLaTeX
+\usepackage{shortvrb}
+\MakeShortVerb{\|}
+\usepackage{url}
+\usepackage{graphicx}
+\usepackage[dvipsnames,usenames]{color}
+\definecolor{LIGHTGRAY}{gray}{.9}
+\definecolor{lspblue1}{RGB}{208, 236, 246} 
+\definecolor{lspred2}{cmyk}{0.3,1,0.6,0}
+\usepackage{langscicolors} 
+\newcommand\Lpack[1]{\textsf{#1}}
+\newcommand\Lclass[1]{\textsf{#1}}
+\newcommand\Lopt[1]{\texttt{#1}}
+\newcommand\Lprog[1]{\textit{#1}}
+
+\newcommand*\defaultmarker{\textsuperscript\textasteriskcentered}
+
+ 
+
+\CutLine*{1}% Dotted line without scissors
+\CutLine*{3}%   
+\CutLine*{4}%   
+\CutLine*{6}%   
+
+\AddToBackground*{1}{%  Background of a small page
+  \put(0,0){\textcolor{lspred2}{\rule{\paperwidth}{\paperheight}}}}
+
+\AddToBackground*{2}{%  Background of a small page
+  \put(0,0){\textcolor{lspred2}{\rule{\paperwidth}{\paperheight}}}}
+ 
+\AddToBackground{2}{
+    \put(-2,0){
+        \includegraphics[width=.3\paperwidth]{lsp-rainbow-large.png}%
+    } 
+}
+
+\AddToBackground{3}{
+    \put(-2,0){
+        \includegraphics[width=.3\paperwidth]{lsp-rainbow-large.png}%
+    } 
+}
+
+\AddToBackground{4}{
+    \put(-2,0){
+        \includegraphics[width=.3\paperwidth]{lsp-rainbow-large.png}%
+    } 
+}
+
+
+\begin{document}
+\newsavebox{\pageone}
+\newsavebox{\pagetwo}
+
+\savebox{\pageone}{
+    \parbox{\textwidth}{
+    \color{LIGHTGRAY} 
+    \thispagestyle{empty}
+    
+    \noindent 
+    ~
+    \parbox{.088\paperwidth}{
+      \color{LIGHTGRAY}
+      \vspace*{-.5cm}
+      \includegraphics[width=.3\paperwidth]{langsci_logo_nocolor.pdf} 
+    }
+    \parbox{.8\paperwidth}{
+      \raggedleft 
+      \vspace*{-2.5cm}{\includegraphics[width=.4\paperwidth]{lsp-rainbow-large.png}}
+    }
+
+    \vspace*{11cm}
+
+    \raggedleft{
+    \mbox{\Huge Language Science Press}
+    {\LARGE Studies in Laboratory Phonology}}
+    \raggedright 
+
+    \medskip 
+
+ This series publishes scholarly monographs and edited volumes on languages of the Caribbean, and Caribbean languages used in diaspora communities worldwide. The use of the term 'Caribbean' here should be taken to mean the Caribbean Basin, and specifically to language varieties spoken along the northern coast of South America, and the Atlantic coast of North and Central America. In keeping with the tradition of the Society we will also consider books on Gullah and AAVE. The series welcomes works in all descriptive and theoretical frameworks regardless of the sub-discipline of linguistics. We are also interested in interdisciplinary works which explore the respective interface between language and areas such as law, mathematics, media, music, psychology, sociology.
+ }
+}
+
+\savebox{\pagetwo}{
+  \parbox{\textwidth}{
+    \color{LIGHTGRAY}
+    \section{\color{LIGHTGRAY} \sffamily \Large Editorial Board}    
+Chief Editor
+    \begin{itemize}
+    \item[$\rangle$] John R. Rickford (Stanford University)
+    \end{itemize}
+    
+    Managing Editor 
+    \begin{itemize}
+    \item[$\rangle$] Joseph T. Farquharson (Universität Bielefeld) 
+    \end{itemize}
+    
+    \begin{itemize}
+    \item[$\rangle$] Jeannette Allsopp (University of the West Indies, Cave Hill)
+    \item[$\rangle$] Celia Blake (University of the West Indies, Mona)
+    \item[$\rangle$] Keren Cumberbatch (University of the West Indies, Mona)
+    \item[$\rangle$] Hubert Devonish (University of the West Indies, Mona)
+    \item[$\rangle$] Nicholas Faraclas (University of Puerto Rico, Río Piedras)
+    \item[$\rangle$] Jo-Anne S. Ferreira (University of the West Indies, St. Augustine)
+    \item[$\rangle$] Michèle Kennedy (University of the West Indies, Mona)
+    \item[$\rangle$] Silvia Kouwenberg (University of the West Indies, Mona)
+    \item[$\rangle$] Barbara Lalla (University of the West Indies, St. Augustine)
+    \item[$\rangle$] Isabelle Léglise (CNRS)
+    \item[$\rangle$] Bettina Migge (University College Dublin)
+    \item[$\rangle$] Susanne Mühleisen (University of Bayreuth)
+    \item[$\rangle$] Emmanuel Nikiema (University of Toronto)
+    \item[$\rangle$] Robin Sabino (Auburn University)
+    \item[$\rangle$] Don Walicek (University of Puerto Rico, Río Piedras)
+    \item[$\rangle$] John Wells (University College London)
+    \item[$\rangle$] Lise Winer (McGill University)
+    \end{itemize}
+    
+    \section{\color{LIGHTGRAY} \sffamily \Large Support us!}
+	\begin{itemize}
+	  \item[$\rangle$] submit your manuscript 
+	  \item[$\rangle$] become a community proofreader 
+	  \item[$\rangle$] become a community typesetter
+	  \item[$\rangle$] become a public supporter
+	  \item[$\rangle$] donate
+	\end{itemize} 
+    \section{\color{LIGHTGRAY} \sffamily \Large Contact} 
+	\begin{itemize}
+	  \item[$\rangle$] \sffamily www.langsci-press.org/catalog/series/silp
+	  \item[$\rangle$]\sffamily  silp@langsci-press.org 
+	\end{itemize} 
+  }
+}
+
+\usebox{\pageone}
+
+\newpage
+
+\usebox{\pagetwo}
+
+\newpage
+
+\usebox{\pagetwo}
+
+\newpage
+
+\usebox{\pagetwo}
+
+\newpage
+
+\usebox{\pageone}
+
+\newpage
+
+\usebox{\pageone}
+ 
+
+\loggingall
+\end{document}
+\endinput 
