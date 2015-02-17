@@ -52,7 +52,7 @@ nofoldmark,
 \usepackage{graphicx}
 \usepackage[dvipsnames,usenames]{color}
 \definecolor{LIGHTGRAY}{gray}{.9}
-\definecolor{lspblue1}{RGB}{208, 236, 246}
+\definecolor{lspblue1}{cmyk}{0.9,0.4,0.05,0}
 \usepackage{langscicolors}
 %%%%\renewcommand{\descfont}{\normalfont}
 \newcommand\Lpack[1]{\textsf{#1}}
@@ -107,8 +107,8 @@ nofoldmark,
 
 
 \AddToBackground{6}{
-    \put(280,-10){
-        \includegraphics[width=1\paperwidth]{lsp-rainbow-large.png}%
+    \put(280,0){
+        \includegraphics[width=1\paperwidth,height=3.5cm]{lsp-rainbow-large.png}%
     } 
 }
 
@@ -137,7 +137,7 @@ nofoldmark,
 \thispagestyle{empty}
 
 %%\LARGE
-
+\color{LIGHTGRAY}
 %%\tableofcontents
 \noindent 
 ~
@@ -153,8 +153,8 @@ nofoldmark,
 \vspace*{12cm}
 
 \raggedleft{
-\mbox{\Huge Language Science Press}
-{\LARGE Open Access Monographs}}
+\Huge\sffamily \mbox{Language Science Press}\\[.3em]
+\LARGE\sffamily Open Access Monographs}
 \raggedright 
 
  \newpage
@@ -162,6 +162,7 @@ nofoldmark,
 
 
 \includegraphics[width=2\textwidth]{worldmap.png}
+
 
 \section{ \sffamily   \Large About}
 
@@ -202,6 +203,7 @@ Language Science Press is a scholar-owned press. We currently have 14 series wit
 \newpage 
 
 \section{ \sffamily \Large Series}
+
 \newcommand{\leftseries}[3]{   
   \parbox{.1\textwidth}{~}
   \parbox{.7\textwidth}{\raggedleft\small #1\\{\scriptsize #3}}
@@ -239,7 +241,7 @@ Language Science Press is a scholar-owned press. We currently have 14 series wit
  
 
 \newpage 
-
+\color{LIGHTGRAY}
 \section{ \sffamily \Large Advisory Board}
 
 \begin{itemize}
