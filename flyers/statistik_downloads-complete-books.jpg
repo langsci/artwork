@@ -1,0 +1,1526 @@
+  
+ <!DOCTYPE html>
+<html class=is-desktop>
+
+<head>
+    <title>Dashboard - Wikis der Freien Universität Berlin</title>
+
+        
+
+                        
+    
+                        
+    
+
+        <!-- using space sidebar -->
+            
+    
+    
+
+
+
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE,chrome=IE7">
+<meta charset="UTF-8">
+
+
+<!-- Deprecated since 3.4. To be removed in a future version of Confluence; use AJS.Confluence.getContextPath() -->
+<meta id="confluence-context-path" name="confluence-context-path" content="">
+<meta id="confluence-base-url" name="confluence-base-url" content="http://wikis.fu-berlin.de">
+
+<meta id="atlassian-token" name="atlassian-token" content="2968e01b9f5570026ed5e33c7291db7b10794bcd">
+
+
+<meta name="Generator" content="Adaptavist ThemeBuilder Engine 1.0.6">
+    
+<script type="text/javascript">
+    // Deprecated global variables. To be removed in a future version of Confluence.
+    var contextPath = '';
+</script>
+
+    
+
+<!-- include system css resources -->
+
+
+    <link type="text/css" rel="stylesheet" href="/s/d41d8cd98f00b204e9800998ecf8427e/en_GB-1988229788/4733/f235dd088df5682b0560ab6fc66ed22c9124c0be.121/751/_/download/superbatch/css/batch.css" media="all">
+<link type="text/css" rel="stylesheet" href="/s/d41d8cd98f00b204e9800998ecf8427e/en_GB-1988229788/4733/f235dd088df5682b0560ab6fc66ed22c9124c0be.121/751/_/download/superbatch/css/batch.css?media=print" media="print">
+<!--[if lt IE 9]>
+<link type="text/css" rel="stylesheet" href="/s/d41d8cd98f00b204e9800998ecf8427e/en_GB-1988229788/4733/f235dd088df5682b0560ab6fc66ed22c9124c0be.121/751/_/download/superbatch/css/batch.css?conditionalComment=lt+IE+9" media="all">
+<![endif]-->
+<!--[if lte IE 8]>
+<link type="text/css" rel="stylesheet" href="/s/d41d8cd98f00b204e9800998ecf8427e/en_GB-1988229788/4733/f235dd088df5682b0560ab6fc66ed22c9124c0be.121/751/_/download/superbatch/css/batch.css?conditionalComment=lte+IE+8" media="all">
+<![endif]-->
+<!--[if lte IE 9]>
+<link type="text/css" rel="stylesheet" href="/s/d41d8cd98f00b204e9800998ecf8427e/en_GB-1988229788/4733/f235dd088df5682b0560ab6fc66ed22c9124c0be.121/751/_/download/superbatch/css/batch.css?conditionalComment=lte+IE+9" media="all">
+<![endif]-->
+<link type="text/css" rel="stylesheet" href="/s/d41d8cd98f00b204e9800998ecf8427e/en_GB-1988229788/4733/f235dd088df5682b0560ab6fc66ed22c9124c0be.121/07c6fab583fc68978e6d869d371318be/_/download/contextbatch/css/dashboard,com.atlassian.confluence.extra.team-calendars.mycalendars/batch.css" media="all">
+<link type="text/css" rel="stylesheet" href="/s/d41d8cd98f00b204e9800998ecf8427e/en_GB-1988229788/4733/f235dd088df5682b0560ab6fc66ed22c9124c0be.121/07c6fab583fc68978e6d869d371318be/_/download/contextbatch/css/dashboard,com.atlassian.confluence.extra.team-calendars.mycalendars/batch.css?media=print" media="print">
+<!--[if lt IE 9]>
+<link type="text/css" rel="stylesheet" href="/s/d41d8cd98f00b204e9800998ecf8427e/en_GB-1988229788/4733/f235dd088df5682b0560ab6fc66ed22c9124c0be.121/07c6fab583fc68978e6d869d371318be/_/download/contextbatch/css/dashboard,com.atlassian.confluence.extra.team-calendars.mycalendars/batch.css?conditionalComment=lt+IE+9" media="all">
+<![endif]-->
+<!--[if IE]>
+<link type="text/css" rel="stylesheet" href="/s/d41d8cd98f00b204e9800998ecf8427e/en_GB-1988229788/4733/f235dd088df5682b0560ab6fc66ed22c9124c0be.121/07c6fab583fc68978e6d869d371318be/_/download/contextbatch/css/dashboard,com.atlassian.confluence.extra.team-calendars.mycalendars/batch.css?ieonly=true" media="all">
+<![endif]-->
+<link type="text/css" rel="stylesheet" href="/s/d41d8cd98f00b204e9800998ecf8427e/en_GB-1988229788/4733/f235dd088df5682b0560ab6fc66ed22c9124c0be.121/31382009af145943dad73a2c2c03c9ff/_/download/contextbatch/css/main/batch.css" media="all">
+<link type="text/css" rel="stylesheet" href="/s/d41d8cd98f00b204e9800998ecf8427e/en_GB-1988229788/4733/f235dd088df5682b0560ab6fc66ed22c9124c0be.121/ce659f9a01b017d903f275a95a75f339/_/download/contextbatch/css/atl.general/batch.css" media="all">
+<link type="text/css" rel="stylesheet" href="/s/d41d8cd98f00b204e9800998ecf8427e/en_GB-1988229788/4733/f235dd088df5682b0560ab6fc66ed22c9124c0be.121/2.0.22/_/download/batch/confluence.extra.information:information-plugin-adg-styles/confluence.extra.information:information-plugin-adg-styles.css" media="all">
+<link type="text/css" rel="stylesheet" href="/s/d41d8cd98f00b204e9800998ecf8427e/en_GB-1988229788/4733/f235dd088df5682b0560ab6fc66ed22c9124c0be.121/3.0.7/_/download/batch/confluence.extra.livesearch:livesearch-macro-web-resources/confluence.extra.livesearch:livesearch-macro-web-resources.css" media="all">
+<link type="text/css" rel="stylesheet" href="/s/d41d8cd98f00b204e9800998ecf8427e/en_GB-1988229788/4733/f235dd088df5682b0560ab6fc66ed22c9124c0be.121/6.3.8/_/download/batch/com.atlassian.confluence.plugins.confluence-space-ia:spacesidebar/com.atlassian.confluence.plugins.confluence-space-ia:spacesidebar.css" media="all">
+<!--[if lt IE 9]>
+<link type="text/css" rel="stylesheet" href="/s/d41d8cd98f00b204e9800998ecf8427e/en_GB-1988229788/4733/f235dd088df5682b0560ab6fc66ed22c9124c0be.121/6.3.8/_/download/batch/com.atlassian.confluence.plugins.confluence-space-ia:spacesidebar/com.atlassian.confluence.plugins.confluence-space-ia:spacesidebar.css?conditionalComment=lt+IE+9" media="all">
+<![endif]-->
+<link type="text/css" rel="stylesheet" href="/s/en_GB-1988229788/4733/f235dd088df5682b0560ab6fc66ed22c9124c0be.121/121/_/styles/colors.css" media="all">
+<link type="text/css" rel="stylesheet" href="/s/en_GB-1988229788/4733/f235dd088df5682b0560ab6fc66ed22c9124c0be.121/1.0.6/_/download/resources/com.adaptavist.confluence.theme.engine:themeengine/default-theme.css" media="all">
+<link type="text/css" rel="stylesheet" href="/s/en_GB-1988229788/4733/f235dd088df5682b0560ab6fc66ed22c9124c0be.121/121/_/styles/custom.css" media="all">
+
+<!-- end system css resources -->
+
+<link rel="stylesheet" type="text/css" href="/plugins/theme/engine/theme-resources.action?skinId=FUWIKI20&amp;resource=combinedcss&amp;hash=1415879206980sen_GB-19882297884733f235dd088df5682b0560ab6fc66ed22c9124c0be.121121_">
+<link rel="stylesheet" type="text/css" href="/plugins/theme/engine/theme-resources.action?skinId=FUWIKI20&amp;resource=importcss&amp;hash=1415879206980sen_GB-19882297884733f235dd088df5682b0560ab6fc66ed22c9124c0be.121121_">
+
+<META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+<META HTTP-EQUIV="Cache-Control" CONTENT="no-cache">
+<META HTTP-EQUIV="Expires" CONTENT="-1">
+
+    <meta name="robots" content="NOYDIR,NOODP">
+    <meta name="confluence-request-time" content="1424255141355">
+<!-- Deprecated since 3.4. To be removed in a future version of Confluence; use atl.header -->
+        
+    
+          
+            <meta name="ajs-use-keyboard-shortcuts" content="true">
+            <meta name="ajs-show-space-welcome-dialog" content="true">
+            <meta name="ajs-keyboardshortcut-hash" content="428457fc7d05c5ba585b2314d6aa489e">
+            <meta name="ajs-team-calendars-display-time-format" content="displayTimeFormat12">
+            <meta id="team-calendars-user-timezone" content="Europe/Berlin">
+            <script type="text/x-template" id="team-calendars-messages" title="team-calendars-messages">
+    <fieldset class="i18n hidden">
+                    <input type="hidden" name="calendar3.month.short.april" value="Apr">
+                    <input type="hidden" name="calendar3.month.short.november" value="Nov">
+                    <input type="hidden" name="calendar3.month.long.november" value="November">
+                    <input type="hidden" name="calendar3.day.short.friday" value="Fri">
+                    <input type="hidden" name="calendar3.month.long.february" value="February">
+                    <input type="hidden" name="calendar3.month.short.february" value="Feb">
+                    <input type="hidden" name="calendar3.day.long.wednesday" value="Wednesday">
+                    <input type="hidden" name="calendar3.month.long.december" value="December">
+                    <input type="hidden" name="calendar3.day.short.sunday" value="Sun">
+                    <input type="hidden" name="calendar3.month.long.april" value="April">
+                    <input type="hidden" name="calendar3.month.long.july" value="July">
+                    <input type="hidden" name="calendar3.month.long.september" value="September">
+                    <input type="hidden" name="calendar3.month.short.august" value="Aug">
+                    <input type="hidden" name="calendar3.month.short.june" value="Jun">
+                    <input type="hidden" name="calendar3.month.short.may" value="May">
+                    <input type="hidden" name="calendar3.day.short.tuesday" value="Tue">
+                    <input type="hidden" name="calendar3.day.short.wednesday" value="Wed">
+                    <input type="hidden" name="calendar3.day.long.thursday" value="Thursday">
+                    <input type="hidden" name="calendar3.month.long.march" value="March">
+                    <input type="hidden" name="calendar3.month.long.october" value="October">
+                    <input type="hidden" name="calendar3.day.short.saturday" value="Sat">
+                    <input type="hidden" name="calendar3.month.short.january" value="Jan">
+                    <input type="hidden" name="calendar3.month.long.may" value="May">
+                    <input type="hidden" name="calendar3.month.long.january" value="January">
+                    <input type="hidden" name="calendar3.month.short.october" value="Oct">
+                    <input type="hidden" name="calendar3.day.short.thursday" value="Thu">
+                    <input type="hidden" name="calendar3.day.long.friday" value="Friday">
+                    <input type="hidden" name="calendar3.day.long.sunday" value="Sunday">
+                    <input type="hidden" name="calendar3.month.long.june" value="June">
+                    <input type="hidden" name="calendar3.month.long.august" value="August">
+                    <input type="hidden" name="calendar3.day.long.tuesday" value="Tuesday">
+                    <input type="hidden" name="calendar3.day.long.saturday" value="Saturday">
+                    <input type="hidden" name="calendar3.month.short.september" value="Sep">
+                    <input type="hidden" name="calendar3.day.long.monday" value="Monday">
+                    <input type="hidden" name="calendar3.month.short.july" value="Jul">
+                    <input type="hidden" name="calendar3.month.short.march" value="Mar">
+                    <input type="hidden" name="calendar3.day.short.monday" value="Mon">
+                    <input type="hidden" name="calendar3.month.short.december" value="Dec">
+            </fieldset>
+</script>
+
+            
+
+    
+            
+    
+    
+            <meta name="ajs-drafts-count" content="">
+            <meta name="ajs-context-path" content="">
+            <meta name="ajs-base-url" content="http://wikis.fu-berlin.de">
+            <meta name="ajs-version-number" content="5.4.4">
+            <meta name="ajs-build-number" content="4733">
+            <meta name="ajs-remote-user" content="snordhoff">
+            <meta name="ajs-static-resource-url-prefix" content="/s/de_DE-1988229788/4733/f235dd088df5682b0560ab6fc66ed22c9124c0be.121/_">
+            <meta name="ajs-global-settings-attachment-max-size" content="31457280">
+            <meta name="ajs-user-locale" content="en_GB">
+            <meta name="ajs-enabled-dark-features" content="sync.event">
+            <meta name="ajs-atl-token" content="2968e01b9f5570026ed5e33c7291db7b10794bcd">
+            <meta name="ajs-confluence-flavour" content="VANILLA">
+            <meta name="ajs-editor.loader.resources" content="&lt;link type=&quot;text/css&quot; rel=&quot;stylesheet&quot; href=&quot;/s/d41d8cd98f00b204e9800998ecf8427e/en_GB-1988229788/4733/f235dd088df5682b0560ab6fc66ed22c9124c0be.121/149347e4c1e5367463c1a727ce55760c/_/download/contextbatch/css/editor,macro-browser,fullpage-editor,-dashboard,-com.atlassian.confluence.extra.team-calendars.mycalendars/batch.css&quot; media=&quot;all&quot;&gt;
+&lt;link type=&quot;text/css&quot; rel=&quot;stylesheet&quot; href=&quot;/s/d41d8cd98f00b204e9800998ecf8427e/en_GB-1988229788/4733/f235dd088df5682b0560ab6fc66ed22c9124c0be.121/149347e4c1e5367463c1a727ce55760c/_/download/contextbatch/css/editor,macro-browser,fullpage-editor,-dashboard,-com.atlassian.confluence.extra.team-calendars.mycalendars/batch.css?media=%28max-width%3A+1450px%29&quot; media=&quot;(max-width: 1450px)&quot;&gt;
+&lt;!--[if lt IE 9]&gt;
+&lt;link type=&quot;text/css&quot; rel=&quot;stylesheet&quot; href=&quot;/s/d41d8cd98f00b204e9800998ecf8427e/en_GB-1988229788/4733/f235dd088df5682b0560ab6fc66ed22c9124c0be.121/149347e4c1e5367463c1a727ce55760c/_/download/contextbatch/css/editor,macro-browser,fullpage-editor,-dashboard,-com.atlassian.confluence.extra.team-calendars.mycalendars/batch.css?conditionalComment=lt+IE+9&quot; media=&quot;all&quot;&gt;
+&lt;![endif]--&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;/s/d41d8cd98f00b204e9800998ecf8427e/en_GB-1988229788/4733/f235dd088df5682b0560ab6fc66ed22c9124c0be.121/149347e4c1e5367463c1a727ce55760c/_/download/contextbatch/js/editor,macro-browser,fullpage-editor,-dashboard,-com.atlassian.confluence.extra.team-calendars.mycalendars/batch.js&quot; &gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;/s/d41d8cd98f00b204e9800998ecf8427e/en_GB-1988229788/4733/f235dd088df5682b0560ab6fc66ed22c9124c0be.121/1.1.2/_/download/batch/com.atlassian.confluence.plugins.editor.confluence-source-editor:atlassian-source-editor-javascript/com.atlassian.confluence.plugins.editor.confluence-source-editor:atlassian-source-editor-javascript.js&quot; &gt;&lt;/script&gt;
+">
+            <meta name="ajs-date.format" content="dd.MM.yyyy">
+    
+    <link rel="shortcut icon" href="/plugins/servlet/theme/engine/resource/FUWIKI20/favicon.ico">
+    <link rel="icon" type="image/png" href="/plugins/servlet/theme/engine/resource/FUWIKI20/favicon.ico">
+
+<link rel="search" type="application/opensearchdescription+xml" href="/opensearch/osd.action" title="Wikis der Freien Universität Berlin"/>
+    
+        <link rel="alternate" type="application/rss+xml"
+            title="RSS Dashboard RSS Feed"
+            href="/spaces/createrssfeed.action?types=page&amp;amp;types=blogpost&amp;amp;types=comment&amp;amp;spaces=&amp;amp;sort=modified&amp;amp;title=Dashboard+RSS+Feed&amp;amp;maxResults=15&amp;amp;publicFeed=false&amp;amp;os_authType=basic&amp;amp;rssType=rss2" />
+        <link rel="alternate" type="application/atom+xml"
+            title="ATOM Dashboard RSS Feed"
+            href="/spaces/createrssfeed.action?types=page&amp;amp;types=blogpost&amp;amp;types=comment&amp;amp;spaces=&amp;amp;sort=modified&amp;amp;title=Dashboard+RSS+Feed&amp;amp;maxResults=15&amp;amp;publicFeed=false&amp;amp;os_authType=basic&amp;amp;rssType=atom" />
+        
+
+    <!-- include system javascript resources -->
+    <script type="text/javascript" src="/s/d41d8cd98f00b204e9800998ecf8427e/en_GB-1988229788/4733/f235dd088df5682b0560ab6fc66ed22c9124c0be.121/751/_/download/superbatch/js/batch.js" ></script>
+<!--[if lte IE 8]>
+<script type="text/javascript" src="/s/d41d8cd98f00b204e9800998ecf8427e/en_GB-1988229788/4733/f235dd088df5682b0560ab6fc66ed22c9124c0be.121/751/_/download/superbatch/js/batch.js?conditionalComment=lte+IE+8" ></script>
+<![endif]-->
+<script type="text/javascript" src="/s/d41d8cd98f00b204e9800998ecf8427e/en_GB-1988229788/4733/f235dd088df5682b0560ab6fc66ed22c9124c0be.121/07c6fab583fc68978e6d869d371318be/_/download/contextbatch/js/dashboard,com.atlassian.confluence.extra.team-calendars.mycalendars/batch.js" ></script>
+<script type="text/javascript" src="/s/d41d8cd98f00b204e9800998ecf8427e/en_GB-1988229788/4733/f235dd088df5682b0560ab6fc66ed22c9124c0be.121/31382009af145943dad73a2c2c03c9ff/_/download/contextbatch/js/main/batch.js" ></script>
+<script type="text/javascript" src="/s/d41d8cd98f00b204e9800998ecf8427e/en_GB-1988229788/4733/f235dd088df5682b0560ab6fc66ed22c9124c0be.121/ce659f9a01b017d903f275a95a75f339/_/download/contextbatch/js/atl.general/batch.js" ></script>
+<script type="text/javascript" src="/s/d41d8cd98f00b204e9800998ecf8427e/en_GB-1988229788/4733/f235dd088df5682b0560ab6fc66ed22c9124c0be.121/1.0/_/download/batch/confluence.macros.profile:network-resources/confluence.macros.profile:network-resources.js" ></script>
+<script type="text/javascript" src="/s/d41d8cd98f00b204e9800998ecf8427e/en_GB-1988229788/4733/f235dd088df5682b0560ab6fc66ed22c9124c0be.121/3.0.7/_/download/batch/confluence.extra.livesearch:livesearch-macro-web-resources/confluence.extra.livesearch:livesearch-macro-web-resources.js" ></script>
+<script type="text/javascript" src="/s/d41d8cd98f00b204e9800998ecf8427e/en_GB-1988229788/4733/f235dd088df5682b0560ab6fc66ed22c9124c0be.121/6.3.8/_/download/batch/com.atlassian.confluence.plugins.confluence-space-ia:soy-resources/com.atlassian.confluence.plugins.confluence-space-ia:soy-resources.js" ></script>
+<script type="text/javascript" src="/s/d41d8cd98f00b204e9800998ecf8427e/en_GB-1988229788/4733/f235dd088df5682b0560ab6fc66ed22c9124c0be.121/5.4.4/_/download/batch/com.atlassian.confluence.plugins.editor-loader:background-loading-editor/com.atlassian.confluence.plugins.editor-loader:background-loading-editor.js" ></script>
+<script type="text/javascript" src="/s/d41d8cd98f00b204e9800998ecf8427e/en_GB-1988229788/4733/f235dd088df5682b0560ab6fc66ed22c9124c0be.121/6.3.8/_/download/batch/com.atlassian.confluence.plugins.confluence-space-ia:spacesidebar/com.atlassian.confluence.plugins.confluence-space-ia:spacesidebar.js" ></script>
+<script type="text/javascript" src="/s/d41d8cd98f00b204e9800998ecf8427e/en_GB-1988229788/4733/f235dd088df5682b0560ab6fc66ed22c9124c0be.121/1.3/_/download/batch/com.atlassian.mywork.mywork-confluence-host-plugin:mw-header-anchor/com.atlassian.mywork.mywork-confluence-host-plugin:mw-header-anchor.js" ></script>
+
+    
+
+        
+    <!-- end system javascript resources -->
+<script type="text/javascript" src="/plugins/theme/engine/theme-resources.action?skinId=FUWIKI20&amp;resource=javascript&amp;hash=1415879206980"></script>
+
+            <link media="all" href="/html/css/applman.css" rel="stylesheet" type="text/css">
+        
+
+    
+</head>
+
+<body id="com-atlassian-confluence" class="atb-body skin-FUWIKI20  nospacekey mode-dashboard context-global decorator-global action-dashboard flag-dashboard-fu flag-without-sidebar themeengine dashboard aui-layout aui-theme-default fu-wikis">
+
+        
+        <script type="text/javascript" src="/cedisadmin/announcement/restartMessage.js"></script>
+<script type="text/javascript">
+try {initMessage();}catch(e) {
+}
+</script>
+
+
+
+
+<!--themebody.vm-->
+                
+
+
+<div class="container">
+
+
+    <header class="cds-no-print">
+      <a id="seitenanfang" accesskey="O" rel="nofollow"></a>
+      <a class="fu-logo" title="Zur Startseite der Freien Universität Berlin" href="" accesskey="H" rel="nofollow">
+        <img src="/plugins/servlet/theme/engine/resource/FUWIKI20/fu_logo.gif" title="fu_logo.gif">
+        <span style="font-size: 24px;">Freie Universität Berlin</span>
+      </a>
+      <h1 class="hide" id="FreieUniversitätBerlin">Freie Universität Berlin</h1>
+      <hr class="hide" />
+        <ul class="top-nav noprint">
+          <li>
+            <a href="/dashboard.action" rel="nofollow">Wikis-Home</a>
+          </li>
+          <li>
+            <a href="http://www.cedis.fu-berlin.de/web20/wikis/nutzungsbedingungen/index.html" target="_blank" class="external-link" rel="nofollow">Nutzungsbedingungen</a>
+          </li>
+          <li>
+            <a href="http://wikis.fu-berlin.de/x/DwK4Gg" target="_blank" rel="nofollow">Wikis-FAQ</a>
+          </li>
+        </ul>
+        <div class="services noprint">
+          <div class="services-search">
+                
+    
+
+
+<div class="search-macro search-macro-medium">
+    <div class="aui-dd-parent"></div>
+    <form class="aui aui-dd-parent" name="livesearchForm" method="POST" action="/dosearchsite.action">
+        <fieldset class="search-macro-fields">
+            <div class="search-macro-query">
+                <input class="text" type="text" name="queryString" autocomplete="off" placeholder="">
+                            </div>
+                        <button type="submit" class="search-macro-button aui-button">
+                <span class="aui-icon aui-icon-small aui-iconfont-search">Search</span>
+            </button>
+                        <input type="hidden" name="where" value="conf_all">
+            <input type="hidden" name="additional" value="space name">
+            <input type="hidden" name="labels" value="">
+            <input type="hidden" name="contentType" value="">
+        </fieldset>
+    </form>
+</div>
+
+          </div>
+          <div class="services-print">
+            <a title="Diese Seite drucken" onclick="javascript:self.print();return false;" href="#" rel="nofollow">
+              <span class="icon-cds icon-cds-print" />
+            </a>
+          </div>
+          <div class="services-rss">
+            <a title="RSS-Feed abonnieren" href="configurerssfeed.action" rel="nofollow">
+              <span class="icon-cds icon-cds-rss" />
+            </a>
+          </div>
+        </div>
+      </header>
+    
+<ul id="assistive-skip-links" class="assistive">
+  <li><a href="#title-heading" rel="nofollow">Zu Inhalt springen</a></li>
+  <li><a href="\#breadcrumbs" rel="nofollow">Zu Breadcrumbs springen</a></li>
+  <li><a href="#header-menu-bar" rel="nofollow">Zu Überschriftmenü springen</a></li>
+  <li><a href="#navigation" rel="nofollow">Zu Aktionsmenü springen</a></li>
+  <li><a href="#quick-search-query" rel="nofollow">Zu Schnellsuche springen</a></li>
+</ul>
+<div id="page">
+  <div id="full-height-container">
+    <div id="header-precursor">
+      <div class="cell">
+            
+      </div>
+    </div>
+    
+    <div class="identity">
+      <h2 id="WikisderFreienUniversitätBerlin">
+        <a href="/dashboard.action" rel="nofollow">Wikis der Freien Universität Berlin</a>
+        
+
+
+
+      </h2>
+    </div>
+  
+<div class="cds-no-print">
+
+
+    <div style="background-image: url(/html/images/header-image.jpg);" class="header-image"> </div>
+  
+
+    
+
+
+  
+</div>
+<div class="cds-no-print">
+<div class="cds-dashboard-header-nav">
+  <nav class="aui-header aui-dropdown2-trigger-group" role="navigation">
+    <div class="aui-header-inner">
+      <div class="aui-header-primary">
+        <h1 class="aui-header-logo aui-header-logo-custom" id="logo">
+          <a href="/dashboard.action" class=""></a>
+
+        </h1>
+        <ul class="aui-nav" style="width:auto;">
+          <!-- remoteuser com.atlassian.confluence.user.ConfluenceUserImpl@3a74654c[snordhoff,ff8080824670d6f80146b447db920062] -->
+
+                          <li>
+            
+    
+        
+<a  id="space-directory-link" href="/spacedirectory/view.action"  class=" aui-nav-imagelink"   title="Spaces">
+            <span>Spaces</span>
+    </a>
+        </li>
+                    <li>
+            
+    
+        
+<a  id="people-directory-link" href="/peopledirectory.action"  class=" aui-nav-imagelink"   title="People">
+            <span>People</span>
+    </a>
+        </li>
+                    <li>
+            
+    
+        
+<a  href="/calendar/mycalendar.action"  class=" aui-nav-imagelink"   title="Calendars">
+            <span>Calendars</span>
+    </a>
+        </li>
+                                            <li>
+            
+    
+            
+<a  id="create-page-button" href="#"  class="aui-button aui-style aui-button-primary aui-nav-imagelink"   title="Create Content">
+            <span>Create</span>
+    </a>
+        </li>
+        
+          <!-- remoteuser com.atlassian.confluence.user.ConfluenceUserImpl@3a74654c[snordhoff,ff8080824670d6f80146b447db920062] -->
+
+      
+        </ul>
+      </div>
+      <div class="aui-header-secondary">
+        <ul class="aui-nav">
+          <li>
+            <!-- remoteuser com.atlassian.confluence.user.ConfluenceUserImpl@3a74654c[snordhoff,ff8080824670d6f80146b447db920062] -->
+
+      
+        <a id="help-menu-link" class="aui-nav-link aui-dropdown2-trigger" href="#" aria-haspopup="true" aria-owns="help-menu-link-content" title="Help">
+        <span class="aui-icon aui-icon-small aui-iconfont-help">Help</span>
+    </a>
+    <nav id="help-menu-link-content" class="aui-dropdown2 aui-style-default" aria-hidden="true">
+                    <div class="aui-dropdown2-section">
+                <ul  id="help-menu-link-leading" class="aui-list-truncate section-leading first">
+                                            <li>
+    
+            
+<a  id="confluence-help-link" href="http://docs.atlassian.com/confluence/docs-54/Getting+Help+And+Support" class="    "      title="Visit the Confluence documentation home"  target="_blank"
+>
+        Online Help
+</a>
+</li>
+                                            <li>
+    
+                
+<a  id="keyboard-shortcuts-link" href="#" class="    "      title="View available keyboard shortcuts" >
+        Keyboard Shortcuts
+</a>
+</li>
+                                            <li>
+    
+            
+<a  id="feed-builder-link" href="/dashboard/configurerssfeed.action" class="    "      title="Create your custom RSS feed." >
+        Feed Builder
+</a>
+</li>
+                                            <li>
+    
+            
+<a  id="whats-new-menu-link" href="http://docs.atlassian.com/confluence/docs-54/whatsnew/iframe?od=false&amp;a=false" class="    "      title="" >
+        What’s new
+</a>
+</li>
+                                            <li>
+    
+                
+<a  id="gadget-directory-link" href="#" class="   user-item administration-link "      title="Browse gadgets provided by Confluence" >
+        Available Gadgets
+</a>
+</li>
+                                            <li>
+    
+            
+<a  id="confluence-about-link" href="/aboutconfluencepage.action" class="    "      title="Get more information about Confluence" >
+        About Confluence
+</a>
+</li>
+                                    </ul>
+            </div>
+            </nav>
+    
+          </li>
+          <li>
+            <!-- remoteuser com.atlassian.confluence.user.ConfluenceUserImpl@3a74654c[snordhoff,ff8080824670d6f80146b447db920062] -->
+
+      
+    
+          </li>
+          <!-- remoteuser com.atlassian.confluence.user.ConfluenceUserImpl@3a74654c[snordhoff,ff8080824670d6f80146b447db920062] -->
+
+          <li>
+        
+    
+            
+<a  id="notifications-anchor" href="#"  class="mw-anchor read aui-nav-imagelink"   title="">
+            <span></span>
+    </a>
+    </li>
+    
+          <li>
+            <!-- remoteuser com.atlassian.confluence.user.ConfluenceUserImpl@3a74654c[snordhoff,ff8080824670d6f80146b447db920062] -->
+
+                                      
+        <a id="user-menu-link" class="aui-dropdown2-trigger " aria-haspopup="true" aria-owns="user-menu-link-content" data-username="snordhoff" href="#" title="Sebastian Nordhoff">
+                    <div class="aui-avatar aui-avatar-small">
+                <div class="aui-avatar-inner">
+                    <img src="/s/de_DE-1988229788/4733/f235dd088df5682b0560ab6fc66ed22c9124c0be.121/_/images/icons/profilepics/default.png"/>
+                </div>
+            </div>
+            <span class="aui-icon-dropdown"></span>
+        </a>
+        <nav id="user-menu-link-content" class="aui-dropdown2 aui-style-default">
+                            <div class="aui-dropdown2-section">
+                    <ul  id="user-menu-link-user-status"                        class="aui-list-truncate section-user-status first">
+                                                    <li>
+    
+            
+<a  id="create-user-status-link" href="/display/~snordhoff" class="   user-item update-user-status "      title="Update your status" >
+        Update Status…
+</a>
+</li>
+                                            </ul>
+                </div>
+                            <div class="aui-dropdown2-section">
+                    <ul  id="user-menu-link-user-preferences"                        class="aui-list-truncate section-user-preferences">
+                                                    <li>
+    
+            
+<a  id="view-user-history-link" href="/users/viewuserhistory.action" class="   user-item user-history popup-link "      title="" >
+        Recently Viewed
+</a>
+</li>
+                                            </ul>
+                </div>
+                            <div class="aui-dropdown2-section">
+                    <ul  id="user-menu-link-user-content"                        class="aui-list-truncate section-user-content">
+                                                    <li>
+    
+            
+<a  id="view-user-profile-link" href="/users/viewmyprofile.action" class="   user-item user-profile "      title="" >
+        Profile
+</a>
+</li>
+                                                    <li>
+    
+            
+<a  id="user-settings-link" href="/users/viewmysettings.action" class="   user-item "      title="" >
+        Settings
+</a>
+</li>
+                                                    <li>
+    
+            
+<a  href="/users/viewfollow.action?username=snordhoff" class="   follow-link "      title="" >
+        Network
+</a>
+</li>
+                                                    <li>
+    
+            
+<a  href="/display/status/snordhoff/list" class="   user-item list-user-status "      title="" >
+        Status Updates
+</a>
+</li>
+                                                    <li>
+    
+            
+<a  id="user-favourites-link" href="/users/viewmyfavourites.action" class="   user-item "      title="" >
+        Favourites
+</a>
+</li>
+                                                    <li>
+    
+            
+<a  id="user-watches-link" href="/users/viewnotifications.action" class="   user-item "      title="" >
+        Watches
+</a>
+</li>
+                                                    <li>
+    
+            
+<a  id="user-drafts-link" href="/users/viewmydrafts.action" class="   user-item "      title="" >
+        Drafts
+</a>
+</li>
+                                                    <li>
+    
+            
+<a  id="upm-requests-link" href="/plugins/servlet/upm/requests?source=header_user" class="    "      title="" >
+        Atlassian Marketplace
+</a>
+</li>
+                                            </ul>
+                </div>
+                            <div class="aui-dropdown2-section">
+                    <ul  id="user-menu-link-user-operations"                        class="aui-list-truncate section-user-operations">
+                                                    <li>
+    
+            
+<a  id="logout-link" href="/logout.action" class="   user-item logout-link "      title="" >
+        Log Out
+</a>
+</li>
+                                            </ul>
+                </div>
+                    </nav>
+                    
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>
+</div>
+    <div id="main" class=" aui-page-panel">
+      <div class="cds-funktionsleiste">
+      <div id="main-header">
+  <span class="confluence-anchor-link" id="cds-top"></span>
+  
+    <div id="navigation" class="content-navigation">
+        <ul class="ajs-menu-bar">
+                        </ul>
+    </div>
+
+  
+  <div id="title-heading" class="pagetitle with-breadcrumbs">
+    
+    <div id="breadcrumb-section">
+      
+    
+    
+    <ol id="breadcrumbs">
+        </ol>
+
+
+    </div>
+    
+    <h1 class="with-breadcrumbs" id="title-text">
+      Dashboard
+    </h1>
+  </div>
+</div>
+      </div>
+      <div class="pagebody">
+    <div class="dashboard">
+        <div class="dashboard-section">
+                
+    
+<div id="action-messages">
+                        </div>
+
+    
+    
+    
+    
+    
+        
+    
+    <div class='PageContent'>
+                        
+
+
+
+
+        
+  
+
+    
+    
+        
+    
+    
+
+
+                    
+    
+
+<!-- GENERAL PAGE DECORATING BEGINS -->
+    
+
+    <a class="assistive" href="#dashboard-recently-updated">Skip to Recently Updated</a>
+
+
+                            
+    
+                
+        
+            
+
+    
+    
+    
+    
+
+    
+    <div class="cds-dashboard">
+  <!--Dashboard f?r anonyme Benutzer Start-->
+  
+  <!--Dashboard f?r anonyme Benutzer Ende-->
+  <!--Dashboard f?r eingelogte Benutzer Start-->
+  
+      <div class="PageContent">
+        <div class="dashboard-group left">
+              <div class="aui-message success shadowed information-macro">
+                    <p class="title">Externe Inhalte datenschutzkonform</p>
+                            <span class="aui-icon icon-success">Icon</span>
+                <div class="message-content">
+                            
+              Sie wollen eine Google Karte, ein YouTube Video, eine Prezi-Präsentaion etc. in Ihrem Wiki einbetten? Machen Sie es datenschutzkonform mit der &quot;<strong>Zwei-Klick-Lösung</strong>&quot; für externe Inhalte!<br />
+              <a href="/x/u0GQJg" target="_blank" rel="nofollow">Lesen Sie hier weiter...</a>
+            
+                    </div>
+    </div>
+
+          <h2 id="extra.atb.dashboard.quickstart">
+            
+
+Quick Start
+          </h2>
+          <div id="dashboard-schnellstart">
+            <div id="schnellstart-left">
+              <div id="schnellstart-box-left">
+                <ul>
+                  <li>
+                    <img src="/images/icons/add_space_16.gif" title="Add Space" alt="Add Space" align="left" />
+                    
+
+<a href="/services/mailform/index.php?username=snordhoff&amp;baseMandant=confluence&amp;baseUsage=0:0:template" title="Wiki beantragen" rel="nofollow">Wiki beantragen</a>
+                  </li>
+                  <li>
+                    <img src="/images/icons/user_16.gif" title="Account" alt="Account" align="left" />
+                    <a href="/users/viewmysettings.action" rel="nofollow">
+                      
+
+My Profile
+                    </a>
+                  </li>
+                  <li>
+                    <img src="/images/icons/classic/16/50.png" title="Calendar" alt="Calendar" align="left" />
+                    <a href="/calendar/mycalendar.action" rel="nofollow">
+                      
+
+My Calendar
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div id="schnellstart-right">
+              <div id="schnellstart-box-right">
+                <ul>
+                  <li>
+                    <img src="/images/icons/list_pages_16.gif" title="Terms of Use" alt="Terms of Use" align="left" />
+                    <a href="http://www.cedis.fu-berlin.de/web20/wikis/nutzungsbedingungen/index.html" target="_blank" class="external-link" rel="nofollow">
+                      
+
+Terms of Use
+                    </a>
+                  </li>
+                  <li>
+                    <img src="/images/icons/group_16.gif" title="Wiki FAQ" alt="Wiki FAQ" align="left" />
+                    <a href="http://wikis.fu-berlin.de/x/DwK4Gg" target="_blank" rel="nofollow">
+                    Wiki FAQ
+                  </a>
+                  </li>
+                  <li>
+                    <img src="/images/icons/sinfo_16.gif" title="Help" alt="Help" align="left" />
+                    <a href="http://wikis.fu-berlin.de/x/4YO4Fg" target="_blank" rel="nofollow">
+                      
+
+Help and Documentation
+                    </a>
+                  </li>
+                  <li>
+                    <img src="/images/icons/help_16.gif" title="How To" alt="How To" align="left" />
+                    <a href="http://wikis.fu-berlin.de/x/AYS4Fg" target="_blank" rel="nofollow">
+                      
+
+How To?
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <h2 id="Aktuelles">Aktuelles</h2>
+          <!-- LZ: Ankündigung 
+           <ac:macro ac:name="panel"><ac:parameter ac:name="title">Neues Wiki-System - Neue Herausforderungen; Das Wiki Nutzertreffen</ac:parameter><ac:parameter ac:name="bgColor">#f1f1f1</ac:parameter><ac:parameter ac:name="titleBGColor">#ff9900</ac:parameter><ac:parameter ac:name="titleColor">#003366</ac:parameter><ac:rich-text-body><p>
+                Das erste 
+                <a href="http://www.cedis.fu-berlin.de/e-learning/fortbildung/workshops/social_media/Wiki_Nutzer_20140704.html" target="_blank" title="Anmeldung">Wikinutzertreffen</a> nach der Aktualisierung der Software und der Gestaltung des FU-Wiki Systems findet 
+                <ul><li>am Freitag, <strong>4. Juli 2014</strong></li><li>um <strong>13:00 Uhr</strong></li></ul><br />in dem <a href="http://www.cedis.fu-berlin.de/kontakt/lageplan/index.html" target="_blank" title="Lagepläne">Konferenzraum</a> von CeDiS statt.
+              </p><ul class="cds-ankuend"><li><a href="http://www.cedis.fu-berlin.de/e-learning/fortbildung/workshops/social_media/Wiki_Nutzer_20140704.html" target="_blank" title="Anmeldung">Zur Anmeldung</a></li></ul></ac:rich-text-body></ac:macro> -->
+          <!-- LZ: das RSS Feed aus der CeDiS Webseite zum Thema E-Learning 
+          <ac:macro ac:name="rss"><ac:parameter ac:name="url">http://www.cedis.fu-berlin.de/services/cedis/rss_feed/news/14731053</ac:parameter><ac:parameter ac:name="max">5</ac:parameter><ac:parameter ac:name="titleBar">false</ac:parameter></ac:macro> -->
+          <!-- LZ: das allgemeine RSS Feed aus der CeDiS Webseite -->
+          
+<div class="rssMacro">
+    <table>
+                                            <tr>
+                    <td valign="top">
+                                                    <b><a href="http://www.cedis.fu-berlin.de/newsletter/2015-februar/cedis_news3.html">Happy Birthday - das E-Examination Center wird 2 Jahre alt</a></b>
+                        
+                                                                                                      <br />
+                                                        <span class="smalltext">
+                
+                Seit der Er&ouml;ffnung im Februar 2013 wurden mehr als 19.000 Studierende gepr&uuml;ft                
+              </span>
+                                                                      </td>
+                </tr>
+                                                <tr>
+                    <td valign="top">
+                                                    <b><a href="http://www.cedis.fu-berlin.de/newsletter/2015-februar/cedis_news1.html">GML² 2015 - E-Examinations: Chances &amp; Challenges</a></b>
+                        
+                                                                                                      <br />
+                                                        <span class="smalltext">
+                
+                E-Learning-Tagung am 19. und 20. M&auml;rz an der Freien Universit&auml;t Berlin                
+              </span>
+                                                                      </td>
+                </tr>
+                                                <tr>
+                    <td valign="top">
+                                                    <b><a href="http://www.cedis.fu-berlin.de/newsletter/2015-februar/aktuell2.html">Mobile Learning 2015</a></b>
+                        
+                                                                                                      <br />
+                                                        <span class="smalltext">
+                
+                Tagung zum mobilen Lernen vom 14. bis zum 16. M&auml;rz in Madeira, Portugal                
+              </span>
+                                                                      </td>
+                </tr>
+                                                <tr>
+                    <td valign="top">
+                                                    <b><a href="http://www.cedis.fu-berlin.de/newsletter/2015-februar/cedis_news4.html">Centrum Modernes Griechenland</a></b>
+                        
+                                                                                                      <br />
+                                                        <span class="smalltext">
+                
+                CeMoG &uuml;ber mehrere Video-Kan&auml;le im Internet erreichbar                
+              </span>
+                                                                      </td>
+                </tr>
+                                                <tr>
+                    <td valign="top">
+                                                    <b><a href="http://www.cedis.fu-berlin.de/newsletter/2015-februar/fortbildungen.html">Veranstaltungen und Fortbildungen im Februar und März</a></b>
+                        
+                                                                                                      <br />
+                                                        <span class="smalltext">
+                
+                Termine und Links  Digitale Medien im Sprachunterricht&nbsp;-&nbsp;18.02.2015,&nbsp;14:00 - 16:00 Uhr Adobe Connect in 15 Minuten -&nbsp;02.03.2015, 13:00 - 13:15 Uhr Wiki in 15 Minuten -&nbsp;03.03.2015, 11:00 - 11:15 Uhr Blackboard in 15 Minuten -&nbsp;05.02.2015, 11:00 - 11:15 Uhr CMS-Schulung f&uuml;r Anf&auml;nger&nbsp;-&nbsp;11.03.2015,&nbsp;09:30 - 17:00 Uhr Mit Videos die Lernkultur ver&auml;ndern&nbsp;-&nbsp;12.03.2015,&nbsp;09:00 - 17:00 Uhr Teaching Lab: Soziale Medien in der Lehre&nbsp;-&nbsp;16. - 17.03.2015 Blackboard f&uuml;r Fortgeschrittene: Tests und Umfragen&nbsp;-&nbsp;18.03.2015,&nbsp;09:00 - 17:00 Uhr Blackboard f&uuml;r Einsteiger: Grundlagen&nbsp;-&nbsp;19.03.2015,&nbsp;13:00 - 16:00 Uhr Social Media in Lehre und Forschung: Nutzertreffen&nbsp;-&nbsp;27.03.2015,&nbsp;13:00 - 15:00 Uhr Mediengest&uuml;tzte Lehre und Urheberrecht&nbsp;-&nbsp;27.03.2015,&nbsp;14:00 - 17:00 Uhr  Die Anmeldung und weitere Veranstaltungen finden Sie&nbsp;hier&nbsp;&raquo; Neugierig geworden? Schauen Sie doch bei uns im&nbsp;Fortbildungsblog&nbsp;vorbei oder auf unsere Selbstlernmodule!                
+              </span>
+                                                                      </td>
+                </tr>
+                                                                                                                                                                                                                                                                                                                                    </table>
+</div>
+
+          <h2 id="CeDiSSupport">CeDiS Support</h2>
+          <div id="dashboard-fusupport">
+            <div id="fusupport-cedislogo">
+              <a href="http://www.cedis.fu-berlin.de" target="_blank" class="external-link" rel="nofollow">
+                <img src="/html/img/logo_cedis.png" title="CeDiS Homepage" alt="CeDiS Homepage" align="left" />
+              </a> Dieses zentrale Wikisystem wird durch das 
+              
+              
+              
+              <a href="http://www.cedis.fu-berlin.de" target="_blank" class="external-link" rel="nofollow">Center für Digitale Systeme</a> (CeDiS) der Freien Universität Berlin bereitgestellt.
+            
+            
+            
+            </div>
+            <div id="fusupport-text">
+              Mit Fragen zur Bedienung des Wiki-Systems wenden Sie sich bitte an das 
+              
+              
+              
+              <b>CeDiS Support-Team</b>
+              <p>
+                <ul>
+                  <li> telefonisch unter der Nummer +49.030.838-54900 (Mo - Fr, 10 bis 17 Uhr) oder</li>
+                  <li> per E-Mail an   
+                  
+                  
+                    
+                    <a href="mailto:support@cedis.fu-berlin.de" class="external-link" rel="nofollow">support@cedis.fu-berlin.de</a>
+                  </li>
+                </ul>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="dashboard-group right">
+          <div class="cds-dashboard-wikilists">
+            <div class="cds-dashboard-login-wikilist-meinewikis">
+              <h2 id="extra.atb.dashboard.mywikis">
+                
+
+My Wikis
+              </h2>
+            </div>
+            <a href="/spacedirectory/view.action" class="cds-dashboard-login-wikilist-all" rel="nofollow">
+              <img src="/images/icons/a_16.png" title="Alle FU-Wikis" />
+              
+
+All Wikis
+            </a>
+          </div>
+          <div class="cds-dashboard-login-spacelist">
+            
+                    <div class="dashboard-item">
+                    
+
+
+
+<div class="aui-tabs horizontal-tabs global-entities">
+    <ul class="tabs-menu">
+           <li class="menu-item active-tab first">
+       <a id="spaces-tab-link" href="#spaces-pane"><strong>Spaces</strong></a>
+   </li>
+
+                       <li class="menu-item  ">
+       <a id="pages-tab-link" href="#pages-pane"><strong>Pages</strong></a>
+   </li>
+        
+                       <li class="menu-item  ">
+       <a id="network-tab-link" href="#network-pane"><strong>Network</strong></a>
+   </li>
+            </ul>
+
+        <div class="tabs-pane active-pane" id="spaces-pane">
+        
+<div class="space-list-section entity-list-section global-spaces-section">
+    <div class="section-title">
+        <h2 class="subheading">Site Spaces</h2>
+            </div>
+
+            
+<ul class="space-list entity-list">
+                <li class="space-list-item entity-list-item  first">
+        <div class="entity-attribute entity-logo entity-icon">
+            <a href="/display/austauschbar">
+                <img class="space logo" src="/download/attachments/645045945/austauschbar?version=1&amp;modificationDate=1403603719000&amp;api=v2" alt="Space Logo"/>
+            </a>
+        </div>
+        <div class="entity-attribute space-info entity-info">
+            <a class="space-name" href="/display/austauschbar">AustauschBar</a>
+        </div>
+                    <div class="entity-attribute entity-favourites entity-icon space-favourites right" data-entity-id="austauschbar" data-entity-type="space">
+                                <a class="icon icon-remove-fav hidden" title="Delete Space from Favourites" href="#">Remove &quot;AustauschBar&quot; from your favourites</a>
+                <a class="icon icon-add-fav" title="Add Space to Favourites" href="#">Add &quot;AustauschBar&quot; to your favourites</a>
+                <span class="icon icon-wait hidden">Loading</span>
+            </div>
+            </li>
+                <li class="space-list-item entity-list-item ">
+        <div class="entity-attribute entity-logo entity-icon">
+            <a href="/display/baplus">
+                <img class="space logo" src="/download/attachments/386203983/baplus?version=1&amp;modificationDate=1365458021000&amp;api=v2" alt="Space Logo"/>
+            </a>
+        </div>
+        <div class="entity-attribute space-info entity-info">
+            <a class="space-name" href="/display/baplus">BA Plus Japanologie</a>
+        </div>
+                    <div class="entity-attribute entity-favourites entity-icon space-favourites right" data-entity-id="baplus" data-entity-type="space">
+                                <a class="icon icon-remove-fav hidden" title="Delete Space from Favourites" href="#">Remove &quot;BA Plus Japanologie&quot; from your favourites</a>
+                <a class="icon icon-add-fav" title="Add Space to Favourites" href="#">Add &quot;BA Plus Japanologie&quot; to your favourites</a>
+                <span class="icon icon-wait hidden">Loading</span>
+            </div>
+            </li>
+                <li class="space-list-item entity-list-item ">
+        <div class="entity-attribute entity-logo entity-icon">
+            <a href="/display/BIOCHEPHAKnaus">
+                <img class="space logo" src="/download/attachments/118456548/BIOCHEPHAKnaus?version=20&amp;modificationDate=1250173926000&amp;api=v2" alt="Space Logo"/>
+            </a>
+        </div>
+        <div class="entity-attribute space-info entity-info">
+            <a class="space-name" href="/display/BIOCHEPHAKnaus">BMPedia</a>
+        </div>
+                    <div class="entity-attribute entity-favourites entity-icon space-favourites right" data-entity-id="BIOCHEPHAKnaus" data-entity-type="space">
+                                <a class="icon icon-remove-fav hidden" title="Delete Space from Favourites" href="#">Remove &quot;BMPedia&quot; from your favourites</a>
+                <a class="icon icon-add-fav" title="Add Space to Favourites" href="#">Add &quot;BMPedia&quot; to your favourites</a>
+                <span class="icon icon-wait hidden">Loading</span>
+            </div>
+            </li>
+                <li class="space-list-item entity-list-item ">
+        <div class="entity-attribute entity-logo entity-icon">
+            <a href="/display/basisislam">
+                <img class="space logo" src="/download/attachments/140017979/basisislam?version=2&amp;modificationDate=1302602377000&amp;api=v2" alt="Space Logo"/>
+            </a>
+        </div>
+        <div class="entity-attribute space-info entity-info">
+            <a class="space-name" href="/display/basisislam">Basiswissen Islamwissenschaft</a>
+        </div>
+                    <div class="entity-attribute entity-favourites entity-icon space-favourites right" data-entity-id="basisislam" data-entity-type="space">
+                                <a class="icon icon-remove-fav hidden" title="Delete Space from Favourites" href="#">Remove &quot;Basiswissen Islamwissenschaft&quot; from your favourites</a>
+                <a class="icon icon-add-fav" title="Add Space to Favourites" href="#">Add &quot;Basiswissen Islamwissenschaft&quot; to your favourites</a>
+                <span class="icon icon-wait hidden">Loading</span>
+            </div>
+            </li>
+                <li class="space-list-item entity-list-item ">
+        <div class="entity-attribute entity-logo entity-icon">
+            <a href="/display/clare">
+                <img class="space logo" src="/images/logo/default-space-logo-48.png" alt="Space Logo"/>
+            </a>
+        </div>
+        <div class="entity-attribute space-info entity-info">
+            <a class="space-name" href="/display/clare">CLARE - Corpora for Language and Aging Research</a>
+        </div>
+                    <div class="entity-attribute entity-favourites entity-icon space-favourites right" data-entity-id="clare" data-entity-type="space">
+                                <a class="icon icon-remove-fav hidden" title="Delete Space from Favourites" href="#">Remove &quot;CLARE - Corpora for Language and Aging Research&quot; from your favourites</a>
+                <a class="icon icon-add-fav" title="Add Space to Favourites" href="#">Add &quot;CLARE - Corpora for Language and Aging Research&quot; to your favourites</a>
+                <span class="icon icon-wait hidden">Loading</span>
+            </div>
+            </li>
+                <li class="space-list-item entity-list-item ">
+        <div class="entity-attribute entity-logo entity-icon">
+            <a href="/display/cedisoer">
+                <img class="space logo" src="/download/attachments/468123671/cedisoer?version=2&amp;modificationDate=1369918523000&amp;api=v2" alt="Space Logo"/>
+            </a>
+        </div>
+        <div class="entity-attribute space-info entity-info">
+            <a class="space-name" href="/display/cedisoer">CeDiS OER Workshop</a>
+        </div>
+                    <div class="entity-attribute entity-favourites entity-icon space-favourites right" data-entity-id="cedisoer" data-entity-type="space">
+                                <a class="icon icon-remove-fav hidden" title="Delete Space from Favourites" href="#">Remove &quot;CeDiS OER Workshop&quot; from your favourites</a>
+                <a class="icon icon-add-fav" title="Add Space to Favourites" href="#">Add &quot;CeDiS OER Workshop&quot; to your favourites</a>
+                <span class="icon icon-wait hidden">Loading</span>
+            </div>
+            </li>
+                <li class="space-list-item entity-list-item ">
+        <div class="entity-attribute entity-logo entity-icon">
+            <a href="/display/cedissupportpublic">
+                <img class="space logo" src="/images/logo/default-space-logo-48.png" alt="Space Logo"/>
+            </a>
+        </div>
+        <div class="entity-attribute space-info entity-info">
+            <a class="space-name" href="/display/cedissupportpublic">CeDiS Support - Public</a>
+        </div>
+                    <div class="entity-attribute entity-favourites entity-icon space-favourites right" data-entity-id="cedissupportpublic" data-entity-type="space">
+                                <a class="icon icon-remove-fav hidden" title="Delete Space from Favourites" href="#">Remove &quot;CeDiS Support - Public&quot; from your favourites</a>
+                <a class="icon icon-add-fav" title="Add Space to Favourites" href="#">Add &quot;CeDiS Support - Public&quot; to your favourites</a>
+                <span class="icon icon-wait hidden">Loading</span>
+            </div>
+            </li>
+                <li class="space-list-item entity-list-item ">
+        <div class="entity-attribute entity-logo entity-icon">
+            <a href="/display/wikischulung">
+                <img class="space logo" src="/download/attachments/402489823/wikischulung?version=4&amp;modificationDate=1409825514000&amp;api=v2" alt="Space Logo"/>
+            </a>
+        </div>
+        <div class="entity-attribute space-info entity-info">
+            <a class="space-name" href="/display/wikischulung">CeDiS Wiki Schulung</a>
+        </div>
+                    <div class="entity-attribute entity-favourites entity-icon space-favourites right" data-entity-id="wikischulung" data-entity-type="space">
+                                <a class="icon icon-remove-fav hidden" title="Delete Space from Favourites" href="#">Remove &quot;CeDiS Wiki Schulung&quot; from your favourites</a>
+                <a class="icon icon-add-fav" title="Add Space to Favourites" href="#">Add &quot;CeDiS Wiki Schulung&quot; to your favourites</a>
+                <span class="icon icon-wait hidden">Loading</span>
+            </div>
+            </li>
+                <li class="space-list-item entity-list-item ">
+        <div class="entity-attribute entity-logo entity-icon">
+            <a href="/display/chemlab">
+                <img class="space logo" src="/images/logo/default-space-logo-48.png" alt="Space Logo"/>
+            </a>
+        </div>
+        <div class="entity-attribute space-info entity-info">
+            <a class="space-name" href="/display/chemlab">Chemielaboranten</a>
+        </div>
+                    <div class="entity-attribute entity-favourites entity-icon space-favourites right" data-entity-id="chemlab" data-entity-type="space">
+                                <a class="icon icon-remove-fav hidden" title="Delete Space from Favourites" href="#">Remove &quot;Chemielaboranten&quot; from your favourites</a>
+                <a class="icon icon-add-fav" title="Add Space to Favourites" href="#">Add &quot;Chemielaboranten&quot; to your favourites</a>
+                <span class="icon icon-wait hidden">Loading</span>
+            </div>
+            </li>
+                <li class="space-list-item entity-list-item ">
+        <div class="entity-attribute entity-logo entity-icon">
+            <a href="/display/culpanet">
+                <img class="space logo" src="/download/attachments/219119712/culpanet?version=1&amp;modificationDate=1332943445000&amp;api=v2" alt="Space Logo"/>
+            </a>
+        </div>
+        <div class="entity-attribute space-info entity-info">
+            <a class="space-name" href="/display/culpanet">Culpanet Wiki</a>
+        </div>
+                    <div class="entity-attribute entity-favourites entity-icon space-favourites right" data-entity-id="culpanet" data-entity-type="space">
+                                <a class="icon icon-remove-fav hidden" title="Delete Space from Favourites" href="#">Remove &quot;Culpanet Wiki&quot; from your favourites</a>
+                <a class="icon icon-add-fav" title="Add Space to Favourites" href="#">Add &quot;Culpanet Wiki&quot; to your favourites</a>
+                <span class="icon icon-wait hidden">Loading</span>
+            </div>
+            </li>
+                <li class="space-list-item entity-list-item ">
+        <div class="entity-attribute entity-logo entity-icon">
+            <a href="/display/fce">
+                <img class="space logo" src="/images/logo/default-space-logo-48.png" alt="Space Logo"/>
+            </a>
+        </div>
+        <div class="entity-attribute space-info entity-info">
+            <a class="space-name" href="/display/fce">DFG Scientific Network “Field-Configuring Events&quot;</a>
+        </div>
+                    <div class="entity-attribute entity-favourites entity-icon space-favourites right" data-entity-id="fce" data-entity-type="space">
+                                <a class="icon icon-remove-fav hidden" title="Delete Space from Favourites" href="#">Remove &quot;DFG Scientific Network “Field-Configuring Events&quot;&quot; from your favourites</a>
+                <a class="icon icon-add-fav" title="Add Space to Favourites" href="#">Add &quot;DFG Scientific Network “Field-Configuring Events&quot;&quot; to your favourites</a>
+                <span class="icon icon-wait hidden">Loading</span>
+            </div>
+            </li>
+                <li class="space-list-item entity-list-item ">
+        <div class="entity-attribute entity-logo entity-icon">
+            <a href="/display/projekte">
+                <img class="space logo" src="/images/logo/default-space-logo-48.png" alt="Space Logo"/>
+            </a>
+        </div>
+        <div class="entity-attribute space-info entity-info">
+            <a class="space-name" href="/display/projekte">Demokratiepädagogische Schulentwicklung Projekte</a>
+        </div>
+                    <div class="entity-attribute entity-favourites entity-icon space-favourites right" data-entity-id="projekte" data-entity-type="space">
+                                <a class="icon icon-remove-fav hidden" title="Delete Space from Favourites" href="#">Remove &quot;Demokratiepädagogische Schulentwicklung Projekte&quot; from your favourites</a>
+                <a class="icon icon-add-fav" title="Add Space to Favourites" href="#">Add &quot;Demokratiepädagogische Schulentwicklung Projekte&quot; to your favourites</a>
+                <span class="icon icon-wait hidden">Loading</span>
+            </div>
+            </li>
+                <li class="space-list-item entity-list-item ">
+        <div class="entity-attribute entity-logo entity-icon">
+            <a href="/display/ds">
+                <img class="space logo" src="/download/attachments/53870879/ds?version=1&amp;modificationDate=1278489365000&amp;api=v2" alt="Space Logo"/>
+            </a>
+        </div>
+        <div class="entity-attribute space-info entity-info">
+            <a class="space-name" href="/display/ds">Demonstration Space</a>
+        </div>
+                    <div class="entity-attribute entity-favourites entity-icon space-favourites right" data-entity-id="ds" data-entity-type="space">
+                                <a class="icon icon-remove-fav hidden" title="Delete Space from Favourites" href="#">Remove &quot;Demonstration Space&quot; from your favourites</a>
+                <a class="icon icon-add-fav" title="Add Space to Favourites" href="#">Add &quot;Demonstration Space&quot; to your favourites</a>
+                <span class="icon icon-wait hidden">Loading</span>
+            </div>
+            </li>
+                <li class="space-list-item entity-list-item ">
+        <div class="entity-attribute entity-logo entity-icon">
+            <a href="/display/digispz">
+                <img class="space logo" src="/download/attachments/648742578/digispz?version=1&amp;modificationDate=1421418147000&amp;api=v2" alt="Space Logo"/>
+            </a>
+        </div>
+        <div class="entity-attribute space-info entity-info">
+            <a class="space-name" href="/display/digispz">Digitale Medien im Sprachunterricht</a>
+        </div>
+                    <div class="entity-attribute entity-favourites entity-icon space-favourites right" data-entity-id="digispz" data-entity-type="space">
+                                <a class="icon icon-remove-fav hidden" title="Delete Space from Favourites" href="#">Remove &quot;Digitale Medien im Sprachunterricht&quot; from your favourites</a>
+                <a class="icon icon-add-fav" title="Add Space to Favourites" href="#">Add &quot;Digitale Medien im Sprachunterricht&quot; to your favourites</a>
+                <span class="icon icon-wait hidden">Loading</span>
+            </div>
+            </li>
+                <li class="space-list-item entity-list-item ">
+        <div class="entity-attribute entity-logo entity-icon">
+            <a href="/display/discgeom">
+                <img class="space logo" src="/download/attachments/433946751/discgeom?version=1&amp;modificationDate=1364496622000&amp;api=v2" alt="Space Logo"/>
+            </a>
+        </div>
+        <div class="entity-attribute space-info entity-info">
+            <a class="space-name" href="/display/discgeom">Discrete Geometry</a>
+        </div>
+                    <div class="entity-attribute entity-favourites entity-icon space-favourites right" data-entity-id="discgeom" data-entity-type="space">
+                                <a class="icon icon-remove-fav hidden" title="Delete Space from Favourites" href="#">Remove &quot;Discrete Geometry&quot; from your favourites</a>
+                <a class="icon icon-add-fav" title="Add Space to Favourites" href="#">Add &quot;Discrete Geometry&quot; to your favourites</a>
+                <span class="icon icon-wait hidden">Loading</span>
+            </div>
+            </li>
+                <li class="space-list-item entity-list-item ">
+        <div class="entity-attribute entity-logo entity-icon">
+            <a href="/display/eesfaq">
+                <img class="space logo" src="/images/logo/default-space-logo-48.png" alt="Space Logo"/>
+            </a>
+        </div>
+        <div class="entity-attribute space-info entity-info">
+            <a class="space-name" href="/display/eesfaq">E-Examination-System</a>
+        </div>
+                    <div class="entity-attribute entity-favourites entity-icon space-favourites right" data-entity-id="eesfaq" data-entity-type="space">
+                                <a class="icon icon-remove-fav hidden" title="Delete Space from Favourites" href="#">Remove &quot;E-Examination-System&quot; from your favourites</a>
+                <a class="icon icon-add-fav" title="Add Space to Favourites" href="#">Add &quot;E-Examination-System&quot; to your favourites</a>
+                <span class="icon icon-wait hidden">Loading</span>
+            </div>
+            </li>
+                <li class="space-list-item entity-list-item ">
+        <div class="entity-attribute entity-logo entity-icon">
+            <a href="/display/editionmhd">
+                <img class="space logo" src="/download/attachments/208929109/editionmhd?version=1&amp;modificationDate=1320228353000&amp;api=v2" alt="Space Logo"/>
+            </a>
+        </div>
+        <div class="entity-attribute space-info entity-info">
+            <a class="space-name" href="/display/editionmhd">Edition mittelhochdeutscher Texte WiSe2011</a>
+        </div>
+                    <div class="entity-attribute entity-favourites entity-icon space-favourites right" data-entity-id="editionmhd" data-entity-type="space">
+                                <a class="icon icon-remove-fav hidden" title="Delete Space from Favourites" href="#">Remove &quot;Edition mittelhochdeutscher Texte WiSe2011&quot; from your favourites</a>
+                <a class="icon icon-add-fav" title="Add Space to Favourites" href="#">Add &quot;Edition mittelhochdeutscher Texte WiSe2011&quot; to your favourites</a>
+                <span class="icon icon-wait hidden">Loading</span>
+            </div>
+            </li>
+                <li class="space-list-item entity-list-item ">
+        <div class="entity-attribute entity-logo entity-icon">
+            <a href="/display/eeo">
+                <img class="space logo" src="/download/attachments/519700766/eeo?version=1&amp;modificationDate=1379426777000&amp;api=v2" alt="Space Logo"/>
+            </a>
+        </div>
+        <div class="entity-attribute space-info entity-info">
+            <a class="space-name" href="/display/eeo">Einführung in die Erziehungswissenschaft Online</a>
+        </div>
+                    <div class="entity-attribute entity-favourites entity-icon space-favourites right" data-entity-id="eeo" data-entity-type="space">
+                                <a class="icon icon-remove-fav hidden" title="Delete Space from Favourites" href="#">Remove &quot;Einführung in die Erziehungswissenschaft Online&quot; from your favourites</a>
+                <a class="icon icon-add-fav" title="Add Space to Favourites" href="#">Add &quot;Einführung in die Erziehungswissenschaft Online&quot; to your favourites</a>
+                <span class="icon icon-wait hidden">Loading</span>
+            </div>
+            </li>
+                <li class="space-list-item entity-list-item ">
+        <div class="entity-attribute entity-logo entity-icon">
+            <a href="/display/lmsfaq">
+                <img class="space logo" src="/download/attachments/150438177/lmsfaq?version=2&amp;modificationDate=1401911288000&amp;api=v2" alt="Space Logo"/>
+            </a>
+        </div>
+        <div class="entity-attribute space-info entity-info">
+            <a class="space-name" href="/display/lmsfaq">FAQ Blackboard</a>
+        </div>
+                    <div class="entity-attribute entity-favourites entity-icon space-favourites right" data-entity-id="lmsfaq" data-entity-type="space">
+                                <a class="icon icon-remove-fav hidden" title="Delete Space from Favourites" href="#">Remove &quot;FAQ Blackboard&quot; from your favourites</a>
+                <a class="icon icon-add-fav" title="Add Space to Favourites" href="#">Add &quot;FAQ Blackboard&quot; to your favourites</a>
+                <span class="icon icon-wait hidden">Loading</span>
+            </div>
+            </li>
+                <li class="space-list-item entity-list-item ">
+        <div class="entity-attribute entity-logo entity-icon">
+            <a href="/display/fcrc">
+                <img class="space logo" src="/download/attachments/31687357/fcrc?version=5&amp;modificationDate=1279800106000&amp;api=v2" alt="Space Logo"/>
+            </a>
+        </div>
+        <div class="entity-attribute space-info entity-info">
+            <a class="space-name" href="/display/fcrc">Free Culture Research Conference 2010</a>
+        </div>
+                    <div class="entity-attribute entity-favourites entity-icon space-favourites right" data-entity-id="fcrc" data-entity-type="space">
+                                <a class="icon icon-remove-fav hidden" title="Delete Space from Favourites" href="#">Remove &quot;Free Culture Research Conference 2010&quot; from your favourites</a>
+                <a class="icon icon-add-fav" title="Add Space to Favourites" href="#">Add &quot;Free Culture Research Conference 2010&quot; to your favourites</a>
+                <span class="icon icon-wait hidden">Loading</span>
+            </div>
+            </li>
+    </ul>
+                    <div class="more-entities">
+                Showing 20 of 53 (<a href="/spacedirectory/view.action">View All</a>)
+            </div>
+            </div>
+    </div>
+
+                <div class="tabs-pane " id="pages-pane">
+        
+        
+    
+    <div class="page-list-section entity-list-section favourite-pages-section">
+    <h2 class="subheading">Favourite Pages</h2>
+                    <div>There are currently no pages on your favourites list. You can add pages to this list by selecting Favourite from the Tools menu on the page you're viewing.</div>
+            </div>
+    </div>
+    
+                <div class="tabs-pane " id="network-pane">
+        
+    
+    
+
+<div class="network-macro follow-following follow-dashboard">
+
+            <h2>Following</h2>
+    
+                    <div class="description">You are not following anyone</div>
+            
+    <ul class="avatars">
+        </ul>
+    
+                <form class="follow-user noprint aui" name="follow-user" action="/followuser.action" method="post">
+                    <input type="hidden" name="atl_token" value="2968e01b9f5570026ed5e33c7291db7b10794bcd">
+                <label>
+                <span class="container">
+                                        <input type="text" name="follow-autocomplete" class="follow-user-box text" tabindex="225" autocomplete="off"/>
+                    <input type="hidden" value="" name="username"/>
+                </span>
+                </label>
+                <input type="submit" class="aui-button" name="follow" value="Follow"/>
+                <div class="hidden parameters">
+                    <input type="hidden" class="followUserBoxPlaceholder" id="followUserBoxPlaceholder" value="User name" />
+                </div>
+                <div class="follow-user-result">&nbsp;</div>
+            </form>
+        
+</div>
+
+    
+    
+
+<div class="network-macro follow-followers follow-dashboard">
+
+            <h2>Followers</h2>
+    
+                    <div class="description">You have no followers</div>
+            
+    <ul class="avatars">
+        </ul>
+    
+        
+</div>
+
+    </div>
+    </div>
+
+            </div>
+                    <div class="dashboard-item">
+                    
+<div class="dashboard-calendar-container">
+    <div class="dashboard-calendar">
+                <div class="calendar-heading">
+            <h2 class="upcoming-events-sub-heading">Upcoming Events</h2>
+                            <div class="view-my-calendars">
+                    <a href="http://wikis.fu-berlin.de/calendar/mycalendar.action">My Calendars</a>
+                </div>
+                    </div>
+
+        <div class="aui-message error hidden show-small-sad-calendar-error">
+            <p class="title">
+                <span class="aui-icon icon-error"></span>
+                <strong>Unable to save preference.</strong>
+            </p>
+        </div>
+
+                    <div class="aui-message error hidden">
+                <p class="title">
+                    <span class="aui-icon icon-error"></span>
+                </p>
+                <div>
+                    <p>Unable to load upcoming events.</p>
+                </div>
+            </div>
+            <div class="dashboard-upcoming-events">
+
+<div class="plugin-calendar-container  dashboard">
+    <div class="plugin-calendar">
+        <fieldset class="parameters hidden">
+            <input type="hidden" name="baseUrl" value="http://wikis.fu-berlin.de">
+            <input type="hidden" name="elementIdSuffix" value="VqgHWSjj">
+            <input type="hidden" name="readOnly" value="false">
+            <input type="hidden" name="privateUrlsEnabled" value="true">
+            <input type="hidden" name="calendarContext" value="dashboard">
+
+                                                <input type="hidden" name="include" value="2be8daf6-43c7-441b-8e70-135708948c34">
+                                                        <input type="hidden" name="timeSuggestion" value="00:00">
+                            <input type="hidden" name="timeSuggestion" value="00:30">
+                            <input type="hidden" name="timeSuggestion" value="01:00">
+                            <input type="hidden" name="timeSuggestion" value="01:30">
+                            <input type="hidden" name="timeSuggestion" value="02:00">
+                            <input type="hidden" name="timeSuggestion" value="02:30">
+                            <input type="hidden" name="timeSuggestion" value="03:00">
+                            <input type="hidden" name="timeSuggestion" value="03:30">
+                            <input type="hidden" name="timeSuggestion" value="04:00">
+                            <input type="hidden" name="timeSuggestion" value="04:30">
+                            <input type="hidden" name="timeSuggestion" value="05:00">
+                            <input type="hidden" name="timeSuggestion" value="05:30">
+                            <input type="hidden" name="timeSuggestion" value="06:00">
+                            <input type="hidden" name="timeSuggestion" value="06:30">
+                            <input type="hidden" name="timeSuggestion" value="07:00">
+                            <input type="hidden" name="timeSuggestion" value="07:30">
+                            <input type="hidden" name="timeSuggestion" value="08:00">
+                            <input type="hidden" name="timeSuggestion" value="08:30">
+                            <input type="hidden" name="timeSuggestion" value="09:00">
+                            <input type="hidden" name="timeSuggestion" value="09:30">
+                            <input type="hidden" name="timeSuggestion" value="10:00">
+                            <input type="hidden" name="timeSuggestion" value="10:30">
+                            <input type="hidden" name="timeSuggestion" value="11:00">
+                            <input type="hidden" name="timeSuggestion" value="11:30">
+                            <input type="hidden" name="timeSuggestion" value="12:00">
+                            <input type="hidden" name="timeSuggestion" value="12:30">
+                            <input type="hidden" name="timeSuggestion" value="13:00">
+                            <input type="hidden" name="timeSuggestion" value="13:30">
+                            <input type="hidden" name="timeSuggestion" value="14:00">
+                            <input type="hidden" name="timeSuggestion" value="14:30">
+                            <input type="hidden" name="timeSuggestion" value="15:00">
+                            <input type="hidden" name="timeSuggestion" value="15:30">
+                            <input type="hidden" name="timeSuggestion" value="16:00">
+                            <input type="hidden" name="timeSuggestion" value="16:30">
+                            <input type="hidden" name="timeSuggestion" value="17:00">
+                            <input type="hidden" name="timeSuggestion" value="17:30">
+                            <input type="hidden" name="timeSuggestion" value="18:00">
+                            <input type="hidden" name="timeSuggestion" value="18:30">
+                            <input type="hidden" name="timeSuggestion" value="19:00">
+                            <input type="hidden" name="timeSuggestion" value="19:30">
+                            <input type="hidden" name="timeSuggestion" value="20:00">
+                            <input type="hidden" name="timeSuggestion" value="20:30">
+                            <input type="hidden" name="timeSuggestion" value="21:00">
+                            <input type="hidden" name="timeSuggestion" value="21:30">
+                            <input type="hidden" name="timeSuggestion" value="22:00">
+                            <input type="hidden" name="timeSuggestion" value="22:30">
+                            <input type="hidden" name="timeSuggestion" value="23:00">
+                            <input type="hidden" name="timeSuggestion" value="23:30">
+                        <input type="hidden" name="isNotificationsEnabled" value="true">
+                            <input type="hidden" name="subCalendarColorClass" value="subcalendar-bronze">
+                            <input type="hidden" name="subCalendarColorClass" value="subcalendar-turquoise">
+                            <input type="hidden" name="subCalendarColorClass" value="subcalendar-gray2">
+                            <input type="hidden" name="subCalendarColorClass" value="subcalendar-green2">
+                            <input type="hidden" name="subCalendarColorClass" value="subcalendar-green3">
+                            <input type="hidden" name="subCalendarColorClass" value="subcalendar-gray">
+                            <input type="hidden" name="subCalendarColorClass" value="subcalendar-green">
+                            <input type="hidden" name="subCalendarColorClass" value="subcalendar-red">
+                            <input type="hidden" name="subCalendarColorClass" value="subcalendar-orange">
+                            <input type="hidden" name="subCalendarColorClass" value="subcalendar-blue">
+                            <input type="hidden" name="subCalendarColorClass" value="subcalendar-purple3">
+                            <input type="hidden" name="subCalendarColorClass" value="subcalendar-pink">
+                            <input type="hidden" name="subCalendarColorClass" value="subcalendar-purple4">
+                            <input type="hidden" name="subCalendarColorClass" value="subcalendar-orange2">
+                            <input type="hidden" name="subCalendarColorClass" value="subcalendar-purple">
+                            <input type="hidden" name="subCalendarColorClass" value="subcalendar-yellow">
+                            <input type="hidden" name="subCalendarColorClass" value="subcalendar-green6">
+                            <input type="hidden" name="subCalendarColorClass" value="subcalendar-green5">
+                            <input type="hidden" name="subCalendarColorClass" value="subcalendar-green4">
+                            <input type="hidden" name="subCalendarColorClass" value="subcalendar-purple2">
+                            <input type="hidden" name="subCalendarColorClass" value="subcalendar-blue2">
+            
+                                        <input type="hidden" name="defaultView" value="basicDay">
+                        <input type="hidden" name="firstDayOfWeek" value="1">
+            <input type="hidden" name="startingYear" value="2015">
+            <input type="hidden" name="startingMonth" value="1">
+            <input type="hidden" name="startingDay" value="18">
+                                                <input type="hidden" name="subCalendarNames" value="">
+
+            <input type="hidden" name="isShowCalendarWizard" value="false">
+            <input type="hidden" name="hasJiraLink" value="false">
+            <input type="hidden" name="currentUserSiteAdmin" value="false">
+            <input type="hidden" name="pluginVersion" value="">
+            <input type="hidden" name="autowatch" value="false">
+            <input type="hidden" name="showHiddenSubCalendars" value="false">
+            <input type="hidden" name="showCalendarDiscoveryDialog" value="true">
+            <input type="hidden" name="autoConvertSupported" value="true">
+            <input type="hidden" name="maxEventsToDisplayPerCalendar" value="300">
+            <input type="hidden" name="editSubCalendarId" value="">
+            <input type="hidden" name="editEventUid" value="">
+            <input type="hidden" name="showSubCalendarNameInEventPopup" value="true">
+            <input type="hidden" name="redirectEditInEventPopup" value="true">
+            <input type="hidden" name="hideDeleteInEventPopup" value="true">
+            <input type="hidden" name="maxUpcomingDays" value="5">
+            <input type="hidden" name="maxEventsPerUpcomingDay" value="10">
+            <input type="hidden" name="autoAdjustUpcomingEventsHeight" value="true">
+            <input type="hidden" name="hideMoreEventsButtonInUpcomingEventsOnClick" value="true">
+            <input type="hidden" name="hideCalendarTypes" value="false">
+            <input type="hidden" name="hideWatchMenuItem" value="false">
+            <input type="hidden" name="hideRemoveMenuItem" value="false">
+            <input type="hidden" name="hideEditMenuItem" value="false">
+            <input type="hidden" name="hideColorGrid" value="false">
+            <input type="hidden" name="hideCategories" value="false">
+            <input type="hidden" name="showLegendBottom" value="false">
+            <input type="hidden" name="hideWeekends" value="false">
+        </fieldset>
+
+
+        
+        <div class="aui-message error calendar-error hidden">
+            <p class="title">
+                <span class="aui-icon icon-error"></span>
+                <strong>Error(s) occurred.</strong>
+            </p>
+            <div class="error-content">
+                                <ul class="error-messages  hidden ">
+                                                                                </ul>
+            </div>
+        </div>
+
+        <div class="jira-calendars-oauth-warnings"></div>
+        <div class="events-truncated-message-container"></div>
+
+        
+        <div class="calendar-layout  calendar-layout-without-subcalendars-panel">
+            <div class="calendar-panel">
+                                    <div class="calendar-toolbar">
+    <div class="aui-toolbar2">
+        <div class="aui-toolbar-2-inner">
+            <div class="aui-toolbar2-primary">
+                                    <div id="button-set" class="aui-buttons">
+                        <button class="aui-button today">Today</button>
+                    </div>
+                    <div id="button-set" class="aui-buttons">
+                        <button class="aui-button page-prev">&#9668;</button>
+                        <button class="aui-button page-next">&#9658;</button>
+                    </div>
+                                <span class="date-display"></span>
+            </div>
+                            <div class="aui-toolbar2-secondary">
+                                            <div id="button-set" class="aui-buttons change-view-buttons">
+                            <button class="aui-button change-view change-view-month" data-view-name="month" data-analytics-view-name="month">Month</button>
+                            <button class="aui-button change-view change-view-agendaWeek" data-view-name="agendaWeek" data-analytics-view-name="week">Week</button>
+                            <button class="aui-button change-view change-view-basicDay" data-view-name="basicDay" data-analytics-view-name="list">List</button>
+                            <button class="aui-button change-view change-view-timeline" data-view-name="timeline" data-analytics-view-name="timeline">Timeline</button>
+                        </div>
+                                                        </div>
+                        <img class="spinner invisible" src="http://wikis.fu-berlin.de/images/icons/wait.gif" width="16" height="16">
+                    </div>
+    </div>
+</div>
+                                <div class="calendar"></div>
+            </div>
+        </div>
+
+        <div class="sub-calendar-panel  hidden">
+                        <div class="sub-calendar-names"></div>
+        </div>
+
+        <div class="clear"></div>
+    </div>
+</div>
+</div>
+            </div>
+</div>
+
+            </div>
+            
+          </div>
+          <h2 id="extra.atb.dashboard.lastupdates">
+            
+
+Recently Updated
+          </h2>
+          <div id="recent-updates" class="aui-tabs horizontal-tabs" data-aui-tab-events-bound="true" data-num-updates="20" data-max-updates="50" data-min-updates="10" data-updates-step-size="10" data-show-profile-pic="true" data-show-space-name="true"><ul class="tabs-menu"><li class="menu-item popular first active-tab" data-tab-key="popular"><a href="http://wikis.fu-berlin.de/dashboard.action?updatesSelectedTab=popular"><strong>Popular</strong></a></li><li class="menu-item all" data-tab-key="all"><a href="http://wikis.fu-berlin.de/dashboard.action?updatesSelectedTab=all"><strong>All Updates</strong></a></li><li class="menu-item my" data-tab-key="my"><a href="http://wikis.fu-berlin.de/dashboard.action?updatesSelectedTab=my"><strong>Favourite Spaces</strong></a></li><li class="menu-item network" data-tab-key="network"><a href="http://wikis.fu-berlin.de/dashboard.action?updatesSelectedTab=network"><strong>Network</strong></a></li><li class="menu-item team" data-tab-key="team"><a href="http://wikis.fu-berlin.de/dashboard.action?updatesSelectedTab=team"><strong>Space Categories</strong></a></li><!--<li class="tabletitleops"><a class="tabletitleop icon icon-show-more" href="/dashboard.action?maxRecentlyUpdatedPageCount=30" title="Show More">Show More</a><a class="tabletitleop icon icon-show-less" href="/dashboard.action?maxRecentlyUpdatedPageCount=10" title="Show Fewer">Show Fewer</a></li>--></ul><div class="tabs-pane active-pane"><div class="loading-container"><div class="loading-text">This tab shows popular content. Create, comment on or like content to see it appear here.</div></div><ul class="results-container update-groupings"></ul></div></div>
+        </div>
+      </div>
+    
+  <!--Dashboard f?r eingelogte Benutzer Ende-->
+</div>
+
+
+    
+
+
+
+
+<!-- GENERAL PAGE DECORATING ENDS -->
+
+    </div>
+
+      
+    
+    
+  
+        </div>
+    </div>
+</div>
+
+    </div>
+  </div><!-- \#full-height-container -->
+</div><!-- \#page -->
+
+    <div class="cds-content-footer cds-no-print">
+    <div id="wiki-footer-fu-left">
+      <div id="wiki-footer-text-left">
+        <b>Confluence</b> - ein Enterprise Wiki, bereitgestellt von    
+      </div>
+      <div id="wiki-footer-image-right">
+        <a href="http://www.cedis.fu-berlin.de" target="_blank" class="external-link" rel="nofollow">
+          <img class="cedis-footer-logo" src="/html/img/logo_cedis_klein.png" title="Zur Startseite vom CeDiS" alt="Das Logo des Centers für Digitale Systeme der Freien Universität Berlin" />
+        </a>
+      </div>
+    </div>
+    <div id="wiki-footer-fu-right">
+      <ul>
+        <li>
+          <a title="Wikis Startseite" href="/dashboard.action" rel="nofollow">Wikis-Home</a>
+        </li>
+        <li>
+          <a title="DIe Nutzungsbedingungen dieses Wikis" href="http://www.cedis.fu-berlin.de/web20/wikis/nutzungsbedingungen/index.html" target="_blank" class="external-link" rel="nofollow">Nutzungsbedingungen</a>
+        </li>
+        <li>
+          <a title="H?ufig gestellte Fragen zum Wiki" href="http://wikis.fu-berlin.de/x/DwK4Gg" target="_blank" rel="nofollow">Wikis-FAQ</a>
+        </li>
+      </ul>
+    </div>
+</div>
+  
+
+</div>
+<!--END themebody.vm-->
+        
+            
+        
+
+<div style="display:none;"><a href="http://www.adaptavist.com">Adaptavist ThemeBuilder Engine</a><a href="http://www.atlassian.com/software/confluence">Atlassian Confluence</a></div>
+</body>
+</html>
