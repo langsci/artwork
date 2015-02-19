@@ -17,6 +17,7 @@ nofoldmark,
 %%nospecialtricks,
 %%draft,
 ]{leaflet}
+\setmargins{15mm}{8mm}{12mm}{12mm}
 \usepackage{tabularx}
 \usepackage{lipsum}
 \usepackage{eurosym}
@@ -224,26 +225,26 @@ nofoldmark,
 %%\LARGE
 \color{LIGHTGRAY}
 %%\tableofcontents
-\noindent 
-~
-\parbox{.12\paperwidth}{
-\vspace*{-.5cm}
-\includegraphics[width=.3\paperwidth]{langsci_logo_nocolor.pdf} 
-}
-\parbox{.8\paperwidth}{
-\raggedleft 
-\vspace*{-2.5cm}{
-% \includegraphics[width=.4\paperwidth]{lsp-rainbow-large.png}
-\resizebox{.4\paperwidth}{.5cm}{\lsptable{\paperwidth}{5.5cm}}
-}
-}
+\begin{tabularx}{\paperwidth}{p{.3cm}Xp{4cm}}
+\vspace*{-1cm}
+\hspace*{-.66cm}
+\includegraphics[width=4cm]{langsci_logo_nocolor.pdf} 
+&
+&
+\vspace*{-2cm}
+\hspace*{-1cm}
+\resizebox{4cm}{!}{\lsptable{10cm}{2.4cm}}
+\end{tabularx}
 
 \vspace*{12cm}
 
-\raggedleft{
-\Huge\sffamily \mbox{Language Science Press}\\[.3em]
-\LARGE\sffamily Open Access Monographs}
-\raggedright 
+\hspace*{-6mm}
+\parbox{\textwidth}{
+\sffamily
+\Huge \mbox{Language Science Press}\\
+\LARGE Open Access Monographs
+}
+ 
 
  \newpage
 
@@ -279,17 +280,18 @@ nofoldmark,
 \newpage 
 
 
-\vspace*{8.9cm} 
- \section{ \sffamily   \Large  Philosophy}
+\vspace*{7.62cm} 
+ \section{\sffamily\Large Philosophy}
+ \parbox{\textwidth}{
  For some time now, all scholars have been accustomed to sharing their materials at no cost with their colleagues, often with the help of services like Academia.edu and ResearchGate. Scientific publication thus no longer serves the need of disseminating research results -- its purpose is to make the best work prominent enough to help build careers and to guide scholars in choosing what to read. This task of selecting the best work is carried out by the series editors of Language Science Press.
 
  Our philosophy is that book publishing can be fully under the control of scholars because most of the traditional tasks of commercial publishers can be done more efficiently by scholars. 
  
 As of February 2015, more than 60 scholars have proposed manuscripts to Language Science Press. For the latest publications, see our website www.langsci-press.org.
- 
+ }
 \newpage 
 
-\section{ \sffamily \Large Series}
+\section{\sffamily\Large Series}
 
 \newcommand{\leftseries}[3]{   
   \parbox{.1\textwidth}{~}
@@ -309,7 +311,7 @@ As of February 2015, more than 60 scholars have proposed manuscripts to Language
 \leftseries{Conceptual Foundations of Language Science}{cfls}{Mark Dingemanse, Nick Enfield}
 \rightseries{Contemporary African Linguistics}{cal}{Lee Bickmore, Akinbiyi Akinlabi}
 
-\leftseries{Empirically Oriented Theoretical Morphology and Syntax}{eotms}{Stefan M\"uller, Berthold Crysmann, Laura Kallmeyer}
+\leftseries{Empirically Oriented Theoretical Morphology and Syntax}{eotms}{\mbox{Stefan M\"uller, Berthold Crysmann, Laura Kallmeyer}}
 \rightseries{Implemented Grammars}{eotms-ig}{Stefan M\"uller, Berthold Crysmann, Laura Kallmeyer}
 
 \leftseries{Language Variation}{lv}{John Nerbonne, Dirk Geeraerts}
@@ -319,17 +321,17 @@ As of February 2015, more than 60 scholars have proposed manuscripts to Language
 \rightseries{Studies in Diversity Linguistics}{sidl}{Martin Haspelmath, Fernando Z\'u\~niga, Peter Arkadiev, Ruth Singer, Pilar Valenzuela}
 
 \leftseries{Studies in Laboratory Phonology}{silp}{Martine Vrice, Doris M\"ucke, Taehong Cho}
-\rightseries{Textbooks in Language Sciences}{tbls}{Stefan M\"uller, Martin Haspelmath, Claude Hag\`ege, Marianne Mithun, Anatol Stefanowitsch, Foong Ha Yap} 
+\rightseries{Textbooks in Language Sciences}{tbls}{\mbox{Stefan M\"uller, Martin Haspelmath, Claude Hag\`ege,} \mbox{Marianne Mithun, Anatol Stefanowitsch, Foong Ha Yap}}	 
  
-\leftseries{Topics at the Grammar-Discourse Interface}{tgdi}{Philippa Cook, Anke Holler, Cathrine Fabricius-Hansen}
-\rightseries{Translation and Multilingual Natural Language Processing}{tmnlp}{Reinhard Rapp, Silvia Hansen-Schirra, Oliver \v{C}ulo}
+\leftseries{Topics at the Grammar-Discourse Interface}{tgdi}{\mbox{Philippa Cook, Anke Holler, Cathrine Fabricius-Hansen}}
+\rightseries{Translation and Multilingual Natural Language Processing}{tmnlp}{\mbox{Reinhard Rapp, Silvia Hansen-Schirra, Oliver \v{C}ulo}}
   
     
  
 
 \newpage 
 \color{LIGHTGRAY}
-\section{ \sffamily \Large Advisory Board}
+\section{\sffamily\Large Advisory Board}
 
 \begin{itemize}
  \item[$\rangle$] Artemis Alexiadou (Stuttgart)
@@ -364,7 +366,7 @@ As of February 2015, more than 60 scholars have proposed manuscripts to Language
    
    
 \newpage 
-\section{ \sffamily \Large Submissions}
+\section{\sffamily\Large Submissions}
 
 \resizebox{\textwidth}{!}{
 {\scriptsize\sffamily
@@ -425,7 +427,7 @@ As of February 2015, more than 60 scholars have proposed manuscripts to Language
 % \parbox{4.18cm}{\colorbox{langscicol11}{Prosodic Detail in Neapolitan Italian 418}}
 
 % 
-\section{ \sffamily \Large Support us!}
+\section{\sffamily\Large Support us!}
   
     \begin{itemize}
       \item[$\rangle$] submit your manuscript to one of the series
@@ -436,7 +438,7 @@ As of February 2015, more than 60 scholars have proposed manuscripts to Language
       \item[$\rangle$] donate
     \end{itemize} 
 
-\section{ \sffamily \Large Contact}
+\section{\sffamily\Large Contact}
 \parbox{.7\textwidth}{
 {  \sffamily www.langsci-press.org}
 
