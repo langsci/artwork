@@ -31,6 +31,8 @@
 
 \usepackage{titlesec}
 
+\setmargins{10mm}{8mm}{12mm}{12mm}
+
 \titleformat*{\section}{\color{LIGHTGRAY} \sffamily \Large }
 
 \definecolor{LIGHTGRAY}{gray}{.9}
@@ -82,7 +84,7 @@
 \newcommand{\algad}{algad}
 \newcommand{\tmnlp}{tmnlp}
 \newcommand{\nc}{nc}		
-\newcommand{\lnls}{lnls}	
+\newcommand{\tbls}{tbls}	
 \newcommand{\silp}{silp}	
 \newcommand{\tdgi}{tdgi}	
 \newcommand{\cmle}{cmle}	
@@ -117,8 +119,8 @@
 	\newcommand{\lsSeriesName}{Translation and Multilingual Natural \newlineCover Language Processing}
 	\newcommand{\lsSeriesColor}{lsDarkBlue}
 \fi
-\ifx\lsSeries\lnls
-	\newcommand{\lsSeriesName}{Lecture Notes in Language Sciences}
+\ifx\lsSeries\tbls
+	\newcommand{\lsSeriesName}{\mbox{Textbooks in Language Sciences}}
 	\newcommand{\lsSeriesColor}{lsYellow}
 \fi	
 \ifx\lsSeries\nc
@@ -238,34 +240,45 @@
 \newsavebox{\pagetwo}
 \savebox{\pageone}{
     \parbox{\textwidth}{
-      \color{LIGHTGRAY} 
+    
       \thispagestyle{empty}
+
+      \color{LIGHTGRAY}
+
+\begin{tabularx}{\paperwidth}{p{.3cm}Xp{4cm}}
+\vspace*{-.5cm}
+\hspace*{-.66cm}
+\includegraphics[width=4cm]{langsci_logo_nocolor.pdf} 
+&
+&
+\vspace*{-1.5cm}
+\hspace*{-1cm}
+\resizebox{2cm}{!}{\lsptable{10cm}{2.4cm}}
+\end{tabularx}
+
+
+      \vspace*{11cm}
       
-      \noindent 
-      ~
-      \parbox{.114\paperwidth}{
+      \hspace*{-2mm}
+\resizebox{.9\textwidth}{!}{
+  \parbox{1.1\textwidth}{
+    \sffamily
+    \Huge \mbox{Language Science Press}\\
+    {\LARGE \raggedright{\sffamily  \lsSeriesName}}
+  }
+}
+ 
+ 
+%       \hspace*{-6mm}
+%       \parbox{\textwidth}{
+% 	\sffamily
+% 	\Huge \mbox{Language Science Press}\\
+% 	{\LARGE  \sffamily  \lsSeriesName}
+%       }
+%  
+ \medskip 
 	\color{LIGHTGRAY}
-	\vspace*{-.5cm}
-	\includegraphics[width=.3\paperwidth]{langsci_logo_nocolor.pdf} 
-      }
-      \parbox{.8\paperwidth}{
-	\raggedleft 
-	\vspace*{-2.5cm}{      
-	  \lsptable{.4\paperwidth}{3cm}
-	}
-    }
-
-    \vspace*{11cm}
-
-    \raggedleft{
-    \mbox{\Huge \sffamily Language Science Press}
-    {\LARGE  \sffamily  \lsSeriesName}
-    }
-    \raggedright 
-
-    \medskip 
-	\color{LIGHTGRAY}
-#1
+      #1
 }
 }
 \savebox{\pagetwo}{
@@ -280,7 +293,7 @@
 	  \item[$\rangle$] become a community proofreader 
 	  \item[$\rangle$] become a community typesetter
 	  \item[$\rangle$] become a public supporter
-	  \item[$\rangle$] donate
+% 	  \item[$\rangle$] donate
 	\end{itemize}   
 	
     \section{Contact} 
