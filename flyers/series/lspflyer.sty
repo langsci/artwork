@@ -83,20 +83,20 @@
 \newcommand{\sidl}{sidl}
 \newcommand{\algad}{algad}
 \newcommand{\tmnlp}{tmnlp}
-\newcommand{\nc}{nc}		
+\newcommand{\mcnc}{mcnc}		
 \newcommand{\tbls}{tbls}	
 \newcommand{\silp}{silp}	
-\newcommand{\tdgi}{tdgi}	
+\newcommand{\tgdi}{tgdi}	
 \newcommand{\cmle}{cmle}	
 \newcommand{\cfls}{cfls}	
 \newcommand{\lv}{lv}	
-% \newcommand{\cal}{cal}	
+\renewcommand{\cal}{cal}	
 \newcommand{\scl}{scl}
 % \newcommand{\lsSeries}{}
 % \newcommand{\lsSeriesColor}{}
 
 \ifx\lsSeries\eotms
-	\newcommand{\lsSeriesName}{Empirically Oriented Theoretical Morphology and Syntax}
+	\newcommand{\lsSeriesName}{Empirically Oriented Theoretical\\[-.5em] Morphology and Syntax}
 	\newcommand{\lsSeriesColor}{lsMidBlue}
 \fi
 \ifx\lsSeries\eotmsig
@@ -108,7 +108,7 @@
 	\newcommand{\lsSeriesColor}{lsRichGreen}
 \fi
 \ifx\lsSeries\algad
-	\newcommand{\lsSeriesName}{African Language Grammars \newlineCover and Dictionaries}
+	\newcommand{\lsSeriesName}{African Language Grammars \\[-.5em] and Dictionaries}
 	\newcommand{\lsSeriesColor}{lsLightOrange}
 \fi
 \ifx\lsSeries\scl
@@ -116,15 +116,15 @@
 	\newcommand{\lsSeriesColor}{lsDarkOrange}
 \fi
 \ifx\lsSeries\tmnlp
-	\newcommand{\lsSeriesName}{Translation and Multilingual Natural \newlineCover Language Processing}
+	\newcommand{\lsSeriesName}{Translation and Multilingual  \\[-.5em]Natural  Language Processing}
 	\newcommand{\lsSeriesColor}{lsDarkBlue}
 \fi
 \ifx\lsSeries\tbls
 	\newcommand{\lsSeriesName}{\mbox{Textbooks in Language Sciences}}
 	\newcommand{\lsSeriesColor}{lsYellow}
 \fi	
-\ifx\lsSeries\nc
-	\newcommand{\lsSeriesName}{Monographs on Comparative Niger-Congo}
+\ifx\lsSeries\mcnc
+	\newcommand{\lsSeriesName}{Monographs on Comparative  \\[-.5em] Niger-Congo}
 	\newcommand{\lsSeriesColor}{lsRed}
 \fi	
 \ifx\lsSeries\silp
@@ -132,17 +132,22 @@
 	\newcommand{\lsSeriesColor}{lsLightWine}
 
 \fi	
-\ifx\lsSeries\tdgi
-	\newcommand{\lsSeriesName}{Topics at the Discourse Grammar Interface}
+\ifx\lsSeries\tgdi
+	\newcommand{\lsSeriesName}{\mbox{Topics at the Grammar-Discourse}  \\[-.5em]  Interface}
 	\newcommand{\lsSeriesColor}{lsMidDarkBlue}
 \fi	
 \ifx\lsSeries\cmle
-	\newcommand{\lsSeriesName}{Computational Models of Language Evolution}
+	\newcommand{\lsSeriesName}{Computational Models of \\[-.5em] \mbox{Language Evolution}}
 	\newcommand{\lsSeriesColor}{lsNightBlue}
 \fi	
 \ifx\lsSeries\cfls
-	\newcommand{\lsSeriesName}{Conceptual Foundations of \newlineCover Language Science}
+	\newcommand{\lsSeriesName}{Conceptual Foundations of \\[-.5em] \mbox{Language Science}}
 	\newcommand{\lsSeriesColor}{lsNightGreen}
+
+\fi	 
+\ifx\lsSeries\cal
+\newcommand{\lsSeriesName}{\mbox{Contemporary African Linguistics}}
+\newcommand{\lsSeriesColor}{lsMidWine} 
 
 \fi	
 \ifx\lsSeries\lv

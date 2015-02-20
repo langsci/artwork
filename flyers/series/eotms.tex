@@ -1,151 +1,31 @@
- 
-\def\filename{leaflet-manual.tex}
-\def\fileversion{v1.0d}   % change this when leaflet-manual changed, too.
-\def\filedate{2012/06/04}
-\def\docdate {2012/06/04} % change this when leaflet-manual changed, too.
-\listfiles
-\errorcontextlines=99
 \documentclass[
 notumble,
 nofoldmark,
-%%dvipdfm,
-%%portrait,
-%%titlepage,
-%%nocombine,
-%%a3paper,
-%%debug,
-%%nospecialtricks,
-%%draft,
 ]{leaflet}
-\usepackage{tabularx}
-\usepackage{lipsum}
-\usepackage{eurosym}
-\renewcommand*\foldmarkrule{.3mm}
-\renewcommand*\foldmarklength{5mm}
 
-\usepackage[T1]{fontenc}
-% \usepackage[T3]{inputenc}
-\usepackage{textcomp}
-\usepackage{mathptmx}
-\usepackage{libertine}
-\usepackage[scaled=0.9]{helvet}
-\makeatletter
-\def\ptmTeX{T\kern-.1667em\lower.5ex\hbox{E}\kern-.075emX\@}
-\DeclareRobustCommand{\ptmLaTeX}{L\kern-.3em
-        {\setbox0\hbox{T}%
-         %\vb@xt@ % :-)
-         \vbox to\ht0{\hbox{%
-                            \csname S@\f@size\endcsname
-                            \fontsize\sf@size\z@
-                            \math@fontsfalse\selectfont
-                            A}%
-                      \vss}%
-        }%
-        \kern-.12em
-        \ptmTeX}
-\makeatother
-\let\TeX=\ptmTeX
-\let\LaTeX=\ptmLaTeX
-\usepackage{shortvrb}
-\MakeShortVerb{\|}
-\usepackage{url}
-\usepackage{graphicx}
-\usepackage[dvipsnames,usenames]{color}
-\definecolor{LIGHTGRAY}{gray}{.9}
-\definecolor{lspblue1}{RGB}{208, 236, 246} 
-\definecolor{lspred2}{cmyk}{0.75,0.15,0,0}
-\usepackage{langscicolors} 
-\newcommand\Lpack[1]{\textsf{#1}}
-\newcommand\Lclass[1]{\textsf{#1}}
-\newcommand\Lopt[1]{\texttt{#1}}
-\newcommand\Lprog[1]{\textit{#1}}
+\newcommand{\lsSeries}{eotms}
+\usepackage{lspflyer}
 
-\newcommand*\defaultmarker{\textsuperscript\textasteriskcentered}
-
- 
-
-\CutLine*{1}% Dotted line without scissors
-\CutLine*{3}%   
-\CutLine*{4}%   
-\CutLine*{6}%   
-
-\AddToBackground*{1}{%  Background of a small page
-  \put(0,0){\textcolor{lspred2}{\rule{\paperwidth}{\paperheight}}}}
-
-\AddToBackground*{2}{%  Background of a small page
-  \put(0,0){\textcolor{lspred2}{\rule{\paperwidth}{\paperheight}}}}
- 
-\AddToBackground{2}{
-    \put(-2,0){
-        \includegraphics[width=.3\paperwidth]{lsp-rainbow-large.png}%
-    } 
-}
-
-\AddToBackground{3}{
-    \put(-2,0){
-        \includegraphics[width=.3\paperwidth]{lsp-rainbow-large.png}%
-    } 
-}
-
-\AddToBackground{4}{
-    \put(-2,0){
-        \includegraphics[width=.3\paperwidth]{lsp-rainbow-large.png}%
-    } 
-}
-
-
-\begin{document}
-\newsavebox{\pageone}
-\newsavebox{\pagetwo}
-
-\savebox{\pageone}{
-    \parbox{\textwidth}{
-    \color{LIGHTGRAY} 
-    \thispagestyle{empty}
-    
-    \noindent 
-    ~
-    \parbox{.088\paperwidth}{
-      \color{LIGHTGRAY}
-      \vspace*{-.5cm}
-      \includegraphics[width=.3\paperwidth]{langsci_logo_nocolor.pdf} 
-    }
-    \parbox{.8\paperwidth}{
-      \raggedleft 
-      \vspace*{-2.5cm}{\includegraphics[width=.4\paperwidth]{lsp-rainbow-large.png}}
-    }
-
-    \vspace*{11cm}
-
-    \raggedleft{
-    \mbox{\Huge Language Science Press}
-    {\LARGE Empirically Oriented Theoretical Morphology and Syntax}}
-    \raggedright 
-
-    \medskip 
-\footnotesize  
+\begin{document} 
+\lspflyer{    \footnotesize
 This series aims to publish high quality books that contribute to a better understanding of phenomena in morphology, syntax and the interplay between both. Since the recent history in linguistics showed that basic assumptions may change rather quickly, the ideal submission to this series is one that separates data discussion resulting in pre-theoretic generalizations and analysis. 
-Such a separation ensures that published books will have some value even if the linguistic framework is radically changed or becomes irrelevant one day. The separation of the description of the phenomenon from the analysis ensures that readers that are non-experts in more formal frameworks will find the books useful.
+Such a separation ensures that published books will have some value even if the linguistic framework is radically changed 
+%or becomes irrelevant one day. 
+The separation of the description of the phenomenon from the analysis ensures that readers that are non-experts in more formal frameworks will find the books useful.
  }
-}
-
-\savebox{\pagetwo}{
-  \parbox{\textwidth}{
-    \color{LIGHTGRAY} 
-\footnotesize   
-
-    \section{\color{LIGHTGRAY} \sffamily \Large Requirements}   
-
+{
+    \section{Requirements}   
+\footnotesize
 The data discussion should be theoretically informed: Positive and negative examples appearing in the literature on the phenomena discussed should be included in the discussion, regardless of the specific framework used in the publication. Controversial examples ideally are backed up by experimental or corpus data.
 Thorough formalization of the kind that is known from work in HPSG, LFG, or TAG is not required but is welcome. Work that is backed up by a computer-processable implementation is also eligible to be published in the subseries Implemented Grammars.
 
-    \section{\color{LIGHTGRAY} \sffamily \Large Editors}   
+    \section{Editors}   
     \begin{itemize}
     \item[$\rangle$] Stefan M\"uller (Chief Editor, Freie Universit\"at Berlin), 
     \item[$\rangle$] Berthold Crysmann (CNRS, Paris),
     \item[$\rangle$] Laura Kallmeyer (Univerity of D\"usseldorf)
 \end{itemize}
-    \section{\color{LIGHTGRAY} \sffamily \Large Editorial Board}     
+    \section{Editorial Board}     
 \begin{itemize}
     \item[$\rangle$] Doug Arnold (University of Essex)
     \item[$\rangle$] Anne Abeill\'e (Universit\'e Paris 7)
@@ -157,47 +37,6 @@ Thorough formalization of the kind that is known from work in HPSG, LFG, or TAG 
     \item[$\rangle$] Louisa Sadler (University of Essex)
     \item[$\rangle$] Gert Webelhuth (Goethe-Universit\"at Frankfurt am Main)
     \item[$\rangle$] Susi Wurmbrand (University of Connecticut)
-    \end{itemize}
-    
-    \section{\color{LIGHTGRAY} \sffamily \Large Support us!}
-	\begin{itemize}
-	  \item[$\rangle$] submit your manuscript 
-	  \item[$\rangle$] become a community proofreader 
-	  \item[$\rangle$] become a community typesetter
-	  \item[$\rangle$] become a public supporter
-	  \item[$\rangle$] donate
-	\end{itemize} 
-    \section{\color{LIGHTGRAY} \sffamily \Large Contact} 
-	\begin{itemize}
-	  \item[$\rangle$] \sffamily www.langsci-press.org/catalog/series/eotms
-	  \item[$\rangle$]\sffamily  eotms@langsci-press.org 
-	\end{itemize} 
-  }
-}
-
-\usebox{\pageone}
-
-\newpage
-
-\usebox{\pagetwo}
-
-\newpage
-
-\usebox{\pagetwo}
-
-\newpage
-
-\usebox{\pagetwo}
-
-\newpage
-
-\usebox{\pageone}
-
-\newpage
-
-\usebox{\pageone}
- 
-
-\loggingall
+    \end{itemize}}
 \end{document}
-\endinput 
+

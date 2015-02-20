@@ -1,190 +1,28 @@
- 
-\def\filename{leaflet-manual.tex}
-\def\fileversion{v1.0d}   % change this when leaflet-manual changed, too.
-\def\filedate{2012/06/04}
-\def\docdate {2012/06/04} % change this when leaflet-manual changed, too.
-\listfiles
-\errorcontextlines=99
 \documentclass[
 notumble,
 nofoldmark,
-%%dvipdfm,
-%%portrait,
-%%titlepage,
-%%nocombine,
-%%a3paper,
-%%debug,
-%%nospecialtricks,
-%%draft,
 ]{leaflet}
-\usepackage{tabularx}
-\usepackage{lipsum}
-\usepackage{eurosym}
-\renewcommand*\foldmarkrule{.3mm}
-\renewcommand*\foldmarklength{5mm}
 
-\usepackage[T1]{fontenc}
-% \usepackage[T3]{inputenc}
-\usepackage{textcomp}
-\usepackage{mathptmx}
-\usepackage{libertine}
-\usepackage[scaled=0.9]{helvet}
-\makeatletter
-\def\ptmTeX{T\kern-.1667em\lower.5ex\hbox{E}\kern-.075emX\@}
-\DeclareRobustCommand{\ptmLaTeX}{L\kern-.3em
-        {\setbox0\hbox{T}%
-         %\vb@xt@ % :-)
-         \vbox to\ht0{\hbox{%
-                            \csname S@\f@size\endcsname
-                            \fontsize\sf@size\z@
-                            \math@fontsfalse\selectfont
-                            A}%
-                      \vss}%
-        }%
-        \kern-.12em
-        \ptmTeX}
-\makeatother
-\let\TeX=\ptmTeX
-\let\LaTeX=\ptmLaTeX
-\usepackage{shortvrb}
-\MakeShortVerb{\|}
-\usepackage{url}
-\usepackage{graphicx}
-\usepackage[dvipsnames,usenames]{color}
-\definecolor{LIGHTGRAY}{gray}{.1}
-\definecolor{lspblue1}{RGB}{208, 236, 246} 
-\definecolor{lspred2}{cmyk}{0,0.50,1,0}
-\usepackage{langscicolors} 
-\newcommand\Lpack[1]{\textsf{#1}}
-\newcommand\Lclass[1]{\textsf{#1}}
-\newcommand\Lopt[1]{\texttt{#1}}
-\newcommand\Lprog[1]{\textit{#1}}
+\newcommand{\lsSeries}{algad}
+\usepackage{lspflyer}
 
-\newcommand*\defaultmarker{\textsuperscript\textasteriskcentered}
-
- 
-
-\CutLine*{1}% Dotted line without scissors
-\CutLine*{3}%   
-\CutLine*{4}%   
-\CutLine*{6}%   
-
-\AddToBackground*{1}{%  Background of a small page
-  \put(0,0){\textcolor{lspred2}{\rule{\paperwidth}{\paperheight}}}}
-
-\AddToBackground*{2}{%  Background of a small page
-  \put(0,0){\textcolor{lspred2}{\rule{\paperwidth}{\paperheight}}}}
- 
-\AddToBackground{2}{
-    \put(-2,0){
-        \includegraphics[width=.3\paperwidth]{lsp-rainbow-large.png}%
-    } 
+\begin{document} 
+\lspflyer{    \small
+ African Languages are still among some of the least documented languages in the world. One of the aims of this series is to contribute to rectifying this state of affairs by focusing on the description, analysis, and documentation of languages within the African continent and contact languages within the African Diaspora. A distinctive aspect of this series is that each contribution is either (i) a comprehensive grammar, along with a (bilingual) lexicon as an appendix or (ii) a comprehensive monolingual or bilingual dictionary along with a sketch of the grammar of the language in question as an appendix.  
 }
-
-\AddToBackground{3}{
-    \put(-2,0){
-        \includegraphics[width=.3\paperwidth]{lsp-rainbow-large.png}%
-    } 
-}
-
-\AddToBackground{4}{
-    \put(-2,0){
-        \includegraphics[width=.3\paperwidth]{lsp-rainbow-large.png}%
-    } 
-}
-
-
-\begin{document}
-\newsavebox{\pageone}
-\newsavebox{\pagetwo}
-
-\savebox{\pageone}{
-    \parbox{\textwidth}{
-    \color{LIGHTGRAY} 
-    \thispagestyle{empty}
-    
-    \noindent 
-    ~
-    \parbox{.088\paperwidth}{
-      \color{LIGHTGRAY}
-      \vspace*{-.5cm}
-      \includegraphics[width=.3\paperwidth]{langsci_logo_nocolor.pdf} 
-    }
-    \parbox{.8\paperwidth}{
-      \raggedleft 
-      \vspace*{-2.5cm}{\includegraphics[width=.4\paperwidth]{lsp-rainbow-large.png}}
-    }
-
-    \vspace*{11cm}
-
-    \raggedleft{
-    \mbox{\Huge Language Science Press}
-    {\LARGE African Language Grammars and Dictionaries}}
-    \raggedright 
-
-    \medskip 
-\footnotesize 
- African Languages are still among some of the least documented languages in the world. One of the aims of this series is to contribute to rectifying this state of affairs by focusing on the description, analysis, and documentation of languages within the African continent and contact languages within the African Diaspora. A distinctive aspect of this series is that each contribution is either (i) a comprehensive grammar, along with a (bilingual) lexicon as an appendix or (ii) a comprehensive monolingual or bilingual dictionary along with a sketch of the grammar of the language in question as an appendix. 
-
-  }
-}
-
-\savebox{\pagetwo}{
-  \parbox{\textwidth}{
-    \color{LIGHTGRAY}
-
-    \section{\color{LIGHTGRAY} \sffamily \Large Further scope}    
+{
+    \section{Further scope}    
 
 Different linguists of different specializations and interests, whether they are descriptive, theoretical linguists or lexicographers, are given the opportunity to make substantial contributions from their particular area of specialization towards documenting, preserving, and revitalizing African languages. 
 As a second aim, even for African languages that are already quite well documented, our editors will recruit scholars well versed in contemporary linguistic theories and descriptive techniques to write newer and updated grammars of these African languages that have existing grammars, dictionaries and other resources.
 
-    \section{\color{LIGHTGRAY} \sffamily \Large Editorial Board}    
-
+    \section{Editorial Board}    
+\raggedright
     \begin{itemize}
     \item[$\rangle$] Adams Bodomo (Chief Editor, University of Vienna)
     \item[$\rangle$]Ken Hiraiwa (Meiji Gakuin University, Japan)
     \item[$\rangle$]Firmin Ahoua (University of Abidjan, Cote d'Ivoire)
     \end{itemize}
-    
-    \section{\color{LIGHTGRAY} \sffamily \Large Support us!}
-	\begin{itemize}
-	  \item[$\rangle$] submit your manuscript 
-	  \item[$\rangle$] become a community proofreader 
-	  \item[$\rangle$] become a community typesetter
-	  \item[$\rangle$] become a public supporter
-	  \item[$\rangle$] donate
-	\end{itemize} 
-    \section{\color{LIGHTGRAY} \sffamily \Large Contact} 
-	\begin{itemize}
-	  \item[$\rangle$] \sffamily www.langsci-press.org/catalog/series/silp
-	  \item[$\rangle$]\sffamily  silp@langsci-press.org 
-	\end{itemize} 
-  }
-}
-
-\usebox{\pageone}
-
-\newpage
-
-\usebox{\pagetwo}
-
-\newpage
-
-\usebox{\pagetwo}
-
-\newpage
-
-\usebox{\pagetwo}
-
-\newpage
-
-\usebox{\pageone}
-
-\newpage
-
-\usebox{\pageone}
+     }
  
-
-\loggingall
-\end{document}
-\endinput 
+\end{document} 
