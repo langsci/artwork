@@ -28,6 +28,17 @@
 \usepackage{graphicx}
 \usepackage[dvipsnames,usenames]{color}
 \usepackage[table]{xcolor}
+\usepackage{fontspec}
+% \newcommand{\fontpath}{..}
+\setsansfont[
+	%Ligatures={TeX,Common},		% not supported by ttf
+	Scale=MatchLowercase,
+% 	Path=\fontpath,
+	BoldFont = Arimo-Bold_B.ttf ,
+	ItalicFont = Arimo-Italic_B.ttf ,				
+	BoldItalicFont = Arimo-BoldItalic_B.ttf 		
+	]{Arimo_B.ttf}
+
 
 \usepackage{titlesec}
 
@@ -96,7 +107,7 @@
 % \newcommand{\lsSeriesColor}{}
 
 \ifx\lsSeries\eotms
-	\newcommand{\lsSeriesName}{Empirically Oriented Theoretical\\[-.5em] Morphology and Syntax}
+	\newcommand{\lsSeriesName}{\mbox{Empirically Oriented Theoretical}\\[-.5em] Morphology and Syntax}
 	\newcommand{\lsSeriesColor}{lsMidBlue}
 \fi
 \ifx\lsSeries\eotmsig
@@ -104,19 +115,19 @@
 	\newcommand{\lsSeriesColor}{lsMidBlue}
 \fi
 \ifx\lsSeries\sidl
-	\newcommand{\lsSeriesName}{Studies in Diversity Linguistics}
+	\newcommand{\lsSeriesName}{\mbox{Studies in Diversity Linguistics}}
 	\newcommand{\lsSeriesColor}{lsRichGreen}
 \fi
 \ifx\lsSeries\algad
-	\newcommand{\lsSeriesName}{African Language Grammars \\[-.5em] and Dictionaries}
+	\newcommand{\lsSeriesName}{\mbox{African Language Grammars}\\[-.5em] and Dictionaries}
 	\newcommand{\lsSeriesColor}{lsLightOrange}
 \fi
 \ifx\lsSeries\scl
-	\newcommand{\lsSeriesName}{Studies in Caribbean Languages}
+	\newcommand{\lsSeriesName}{\mbox{Studies in Caribbean Languages}}
 	\newcommand{\lsSeriesColor}{lsDarkOrange}
 \fi
 \ifx\lsSeries\tmnlp
-	\newcommand{\lsSeriesName}{Translation and Multilingual  \\[-.5em]Natural  Language Processing}
+	\newcommand{\lsSeriesName}{Translation and Multilingual\\[-.5em]  \mbox{Natural  Language Processing}}
 	\newcommand{\lsSeriesColor}{lsDarkBlue}
 \fi
 \ifx\lsSeries\tbls
@@ -124,20 +135,20 @@
 	\newcommand{\lsSeriesColor}{lsYellow}
 \fi	
 \ifx\lsSeries\mcnc
-	\newcommand{\lsSeriesName}{Monographs on Comparative  \\[-.5em] Niger-Congo}
+	\newcommand{\lsSeriesName}{\mbox{Monographs on Comparative}\\[-.5em]  Niger-Congo}
 	\newcommand{\lsSeriesColor}{lsRed}
 \fi	
 \ifx\lsSeries\silp
-	\newcommand{\lsSeriesName}{Studies in Laboratory Phonology}
+	\newcommand{\lsSeriesName}{\mbox{Studies in Laboratory Phonology}}
 	\newcommand{\lsSeriesColor}{lsLightWine}
 
 \fi	
 \ifx\lsSeries\tgdi
-	\newcommand{\lsSeriesName}{\mbox{Topics at the Grammar-Discourse}  \\[-.5em]  Interface}
+	\newcommand{\lsSeriesName}{\mbox{Topics at the Grammar-Discourse}\\[-.5em]  Interface}
 	\newcommand{\lsSeriesColor}{lsMidDarkBlue}
 \fi	
 \ifx\lsSeries\cmle
-	\newcommand{\lsSeriesName}{Computational Models of \\[-.5em] \mbox{Language Evolution}}
+	\newcommand{\lsSeriesName}{\mbox{Computational Models of}\\[-.5em] Language Evolution}
 	\newcommand{\lsSeriesColor}{lsNightBlue}
 \fi	
 \ifx\lsSeries\cfls
@@ -222,25 +233,25 @@
   \put(0,0){\textcolor{\lsSeriesColor}{\rule{\paperwidth}{\paperheight}}}}
   
 \AddToBackground{2}{
-    \put(-5,0){
-	\lsptable{.3\paperwidth}{3cm}
+    \put(-7,0){
+% 	\lsptable{.3\paperwidth}{3cm}
 %         \includegraphics[width=.3\paperwidth]{lsp-rainbow-large.png}%
     } 
 }
 \AddToBackground{3}{
-    \put(-5,0){
-	\lsptable{.3\paperwidth}{3cm}
+    \put(-7,0){
+% 	\lsptable{.3\paperwidth}{3cm}
     } 
 }
 
 \AddToBackground{4}{
-    \put(-5,0){
-	\lsptable{.3\paperwidth}{3cm}
+    \put(-7,0){
+% 	\lsptable{.3\paperwidth}{3cm}
     } 
 }
 
 
-\newcommand{\lspflyer}[2]{
+\newcommand{\lspflyer}[3]{
 \newsavebox{\pageone}
 \newsavebox{\pagetwo}
 \savebox{\pageone}{
@@ -248,7 +259,7 @@
     
       \thispagestyle{empty}
 
-      \color{LIGHTGRAY}
+      \color{#3}
 
 \begin{tabularx}{\paperwidth}{p{.3cm}Xp{4cm}}
 \vspace*{-.5cm}
@@ -257,8 +268,8 @@
 &
 &
 \vspace*{-1.5cm}
-\hspace*{-1cm}
-\resizebox{2cm}{!}{\lsptable{10cm}{2.4cm}}
+\hspace*{-.97cm}
+% \resizebox{2cm}{!}{\lsptable{10cm}{2.4cm}}
 \end{tabularx}
 
 
@@ -266,10 +277,10 @@
       
       \hspace*{-2mm}
 \resizebox{.9\textwidth}{!}{
-  \parbox{1.1\textwidth}{
-    \sffamily
+  \parbox{\textwidth}{
+    \sffamily     
     \Huge \mbox{Language Science Press}\\
-    {\LARGE \raggedright{\sffamily  \lsSeriesName}}
+    {\huge \raggedright{\sffamily  \lsSeriesName}}
   }
 }
  
@@ -282,12 +293,12 @@
 %       }
 %  
  \medskip 
-	\color{LIGHTGRAY}
+	\color{#3}
       #1
 }
 }
 \savebox{\pagetwo}{
-  \color{LIGHTGRAY} 
+  \color{#3} 
   \parbox{\textwidth}{
     #2
     
