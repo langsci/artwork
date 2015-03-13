@@ -1,0 +1,369 @@
+\documentclass{article}
+\usepackage[paperwidth=301mm,paperheight=214mm]{geometry}% http://ctan.org/pkg/geometry
+\usepackage{pdfpages}% http://ctan.org/pkg/pdfpages
+\pagestyle{empty}% Empty header/footer
+% \usepackage[table]{xcolor}
+\usepackage{colortbl}
+\usepackage{graphicx}
+\usepackage[absolute]{textpos}
+\usepackage{tabularx}
+
+\definecolor{LIGHTGRAY}{gray}{.9}
+\definecolor{seriescolor}{cmyk}{0.6,0,0.9,0.35} 
+\definecolor{langscicol1}{cmyk}{0.6,0.05,0.05,0}
+\definecolor{langscicol2}{cmyk}{0.75,0.15,0,0}
+\definecolor{langscicol3}{cmyk}{0.9,0.4,0.05,0}
+\definecolor{langscicol4}{cmyk}{0.9,0.5,0.15,0.3}
+\definecolor{langscicol5}{cmyk}{1,0.47,0.22,0.68}
+\definecolor{langscicol6}{cmyk}{0,0.25,1,0}
+\definecolor{langscicol7}{cmyk}{0,0.50,1,0}
+\definecolor{langscicol8}{cmyk}{0,0.64,1,0}
+\definecolor{langscicol9}{cmyk}{0,0.78,1,0}
+\definecolor{langscicol10}{cmyk}{0.05,1,0.8,0}
+\definecolor{langscicol11}{cmyk}{0.3,1,0.6,0}
+\definecolor{langscicol12}{cmyk}{0.54,1,0.65,0.1}
+\definecolor{langscicol13}{cmyk}{0.58,1,0.70,0.35}
+\definecolor{langscicol14}{cmyk}{0.32,0.02,0.72,0}
+\definecolor{langscicol15}{cmyk}{0.4,0,1,0}
+\definecolor{langscicol16}{cmyk}{0.55,0,0.9,0.1}
+\definecolor{langscicol17}{cmyk}{0.6,0,0.9,0.35}
+\definecolor{langscicol18}{cmyk}{0.85,0.02,0.95,0.38}
+\definecolor{langscicol19}{cmyk}{0.85,0.05,1,0.5}
+\definecolor{langscicol20}{cmyk}{0.88,0.15,1,0.66}
+\definecolor{lsLightBlue}{cmyk}{0.6,0.05,0.05,0}
+\definecolor{lsMidBlue}{cmyk}{0.75,0.15,0,0}
+\definecolor{lsMidDarkBlue}{cmyk}{0.9,0.4,0.05,0}
+\definecolor{lsDarkBlue}{cmyk}{0.9,0.5,0.15,0.3}
+\definecolor{lsNightBlue}{cmyk}{1,0.47,0.22,0.68}
+\definecolor{lsYellow}{cmyk}{0,0.25,1,0}
+\definecolor{lsLightOrange}{cmyk}{0,0.50,1,0}
+\definecolor{lsMidOrange}{cmyk}{0,0.64,1,0}
+\definecolor{lsDarkOrange}{cmyk}{0,0.78,1,0}
+\definecolor{lsRed}{cmyk}{0.05,1,0.8,0}
+\definecolor{lsLightWine}{cmyk}{0.3,1,0.6,0}
+\definecolor{lsMidWine}{cmyk}{0.54,1,0.65,0.1}
+\definecolor{lsDarkWine}{cmyk}{0.58,1,0.70,0.35}
+\definecolor{lsSoftGreen}{cmyk}{0.32,0.02,0.72,0}
+\definecolor{lsLightGreen}{cmyk}{0.4,0,1,0}
+\definecolor{lsMidGreen}{cmyk}{0.55,0,0.9,0.1}
+\definecolor{lsRichGreen}{cmyk}{0.6,0,0.9,0.35}
+\definecolor{lsDarkGreen1}{cmyk}{0.85,0.02,0.95,0.38}
+\definecolor{lsDarkGreen2}{cmyk}{0.85,0.05,1,0.5}
+\definecolor{lsNightGreen}{cmyk}{0.88,0.15,1,0.66}
+
+\newcommand{\eotms}{eotms}
+\newcommand{\eotmsig}{eotmsig}
+\newcommand{\sidl}{sidl}
+\newcommand{\algad}{algad}
+\newcommand{\tmnlp}{tmnlp}
+\newcommand{\mcnc}{mcnc}		
+\newcommand{\tbls}{tbls}	
+\newcommand{\silp}{silp}	
+\newcommand{\tgdi}{tgdi}	
+\newcommand{\cmle}{cmle}	
+\newcommand{\cfls}{cfls}	
+\newcommand{\lv}{lv}	
+\renewcommand{\cal}{cal}	
+\newcommand{\scl}{scl}
+% \newcommand{\lsSeries}{}
+% \newcommand{\lsSeriesColor}{}
+
+\ifx\lsSeries\eotms
+	\newcommand{\lsSeriesName}{Empirically Oriented Theoretical\\[-.5em] Morphology and Syntax}
+	\newcommand{\lsSeriesColor}{lsMidBlue}
+\fi
+\ifx\lsSeries\eotmsig
+	\newcommand{\lsSeriesName}{Implemented Grammars}
+	\newcommand{\lsSeriesColor}{lsMidBlue}
+\fi
+\ifx\lsSeries\sidl
+	\newcommand{\lsSeriesName}{Studies in Diversity Linguistics}
+	\newcommand{\lsSeriesColor}{lsRichGreen}
+\fi
+\ifx\lsSeries\algad
+	\newcommand{\lsSeriesName}{African Language Grammars \\[-.5em] and Dictionaries}
+	\newcommand{\lsSeriesColor}{lsLightOrange}
+\fi
+\ifx\lsSeries\scl
+	\newcommand{\lsSeriesName}{Studies in Caribbean Languages}
+	\newcommand{\lsSeriesColor}{lsDarkOrange}
+\fi
+\ifx\lsSeries\tmnlp
+	\newcommand{\lsSeriesName}{Translation and Multilingual  \\[-.5em]Natural  Language Processing}
+	\newcommand{\lsSeriesColor}{lsDarkBlue}
+\fi
+\ifx\lsSeries\tbls
+	\newcommand{\lsSeriesName}{\mbox{Textbooks in Language Sciences}}
+	\newcommand{\lsSeriesColor}{lsYellow}
+\fi	
+\ifx\lsSeries\mcnc
+	\newcommand{\lsSeriesName}{Monographs on Comparative  \\[-.5em] Niger-Congo}
+	\newcommand{\lsSeriesColor}{lsRed}
+\fi	
+\ifx\lsSeries\silp
+	\newcommand{\lsSeriesName}{Studies in Laboratory Phonology}
+	\newcommand{\lsSeriesColor}{lsLightWine}
+
+\fi	
+\ifx\lsSeries\tgdi
+	\newcommand{\lsSeriesName}{\mbox{Topics at the Grammar-Discourse}  \\[-.5em]  Interface}
+	\newcommand{\lsSeriesColor}{lsMidDarkBlue}
+\fi	
+\ifx\lsSeries\cmle
+	\newcommand{\lsSeriesName}{Computational Models of \\[-.5em] \mbox{Language Evolution}}
+	\newcommand{\lsSeriesColor}{lsNightBlue}
+\fi	
+\ifx\lsSeries\cfls
+	\newcommand{\lsSeriesName}{Conceptual Foundations of \\[-.5em] \mbox{Language Science}}
+	\newcommand{\lsSeriesColor}{lsNightGreen}
+
+\fi	 
+\ifx\lsSeries\cal
+\newcommand{\lsSeriesName}{\mbox{Contemporary African Linguistics}}
+\newcommand{\lsSeriesColor}{lsMidWine} 
+
+\fi	
+\ifx\lsSeries\lv
+	\newcommand{\lsSeriesName}{Language Variation}
+	\newcommand{\lsSeriesColor}{lsDarkWine}
+\fi	
+
+
+% \newcommand\Lpack[1]{\textsf{#1}}
+% \newcommand\Lclass[1]{\textsf{#1}}
+% \newcommand\Lopt[1]{\texttt{#1}}
+% \newcommand\Lprog[1]{\textit{#1}}
+
+% \newcommand*\defaultmarker{\textsuperscript\textasteriskcentered}
+
+\newcommand{\lsptable}[2]{
+\resizebox{#1}{!}{
+\begin{tabularx}{\textwidth}{XXXXXXXXXXXXXXXXXXXXX}
+\cellcolor{langscicol1}
+&
+\cellcolor{langscicol2}
+&
+\cellcolor{langscicol3}
+&
+\cellcolor{langscicol4}
+&
+\cellcolor{langscicol5}
+&
+\cellcolor{langscicol6}
+&
+\cellcolor{langscicol7}
+&
+\cellcolor{langscicol8}
+&
+\cellcolor{langscicol9}
+&
+\cellcolor{langscicol10}
+&
+\cellcolor{langscicol11}
+&
+\cellcolor{langscicol12}
+&
+\cellcolor{langscicol13}
+&
+\cellcolor{langscicol14}
+&
+\cellcolor{langscicol15}
+&
+\cellcolor{langscicol16}
+&
+\cellcolor{langscicol17}
+&
+\cellcolor{langscicol18}
+&
+\cellcolor{langscicol19}
+\rule{0pt}{#2}
+\end{tabularx}
+}
+}
+
+\newcommand{\lsptablel}[2]{
+\resizebox{#1}{!}{
+\begin{tabularx}{\textwidth}{XXXXXXXXXXXXXXXXXXXXXX}
+\cellcolor{langscicol1}
+&
+\cellcolor{langscicol1}
+&
+\cellcolor{langscicol2}
+&
+\cellcolor{langscicol3}
+&
+\cellcolor{langscicol4}
+&
+\cellcolor{langscicol5}
+&
+\cellcolor{langscicol6}
+&
+\cellcolor{langscicol7}
+&
+\cellcolor{langscicol8}
+&
+\cellcolor{langscicol9}
+&
+\cellcolor{langscicol10}
+&
+\cellcolor{langscicol11}
+&
+\cellcolor{langscicol12}
+&
+\cellcolor{langscicol13}
+&
+\cellcolor{langscicol14}
+&
+\cellcolor{langscicol15}
+&
+\cellcolor{langscicol16}
+&
+\cellcolor{langscicol17}
+&
+\cellcolor{langscicol18}
+&
+\cellcolor{langscicol19}
+\rule{0pt}{#2}
+\end{tabularx}
+}
+}
+
+\newcommand{\lsptabler}[2]{
+\resizebox{#1}{!}{
+\begin{tabularx}{\textwidth}{XXXXXXXXXXXXXXXXXXXXXX}
+\cellcolor{langscicol1}
+&
+\cellcolor{langscicol2}
+&
+\cellcolor{langscicol3}
+&
+\cellcolor{langscicol4}
+&
+\cellcolor{langscicol5}
+&
+\cellcolor{langscicol6}
+&
+\cellcolor{langscicol7}
+&
+\cellcolor{langscicol8}
+&
+\cellcolor{langscicol9}
+&
+\cellcolor{langscicol10}
+&
+\cellcolor{langscicol11}
+&
+\cellcolor{langscicol12}
+&
+\cellcolor{langscicol13}
+&
+\cellcolor{langscicol14}
+&
+\cellcolor{langscicol15}
+&
+\cellcolor{langscicol16}
+&
+\cellcolor{langscicol17}
+&
+\cellcolor{langscicol18}
+&
+\cellcolor{langscicol19}
+&
+\cellcolor{langscicol19}
+\rule{0pt}{#2}
+\end{tabularx}
+}
+}
+
+\newcommand{\lsptablelr}[2]{
+\resizebox{#1}{!}{
+\begin{tabularx}{\textwidth}{XXXXXXXXXXXXXXXXXXXXXXX}
+\cellcolor{langscicol1}
+&
+\cellcolor{langscicol1}
+&
+\cellcolor{langscicol1}
+&
+\cellcolor{langscicol2}
+&
+\cellcolor{langscicol3}
+&
+\cellcolor{langscicol4}
+&
+\cellcolor{langscicol5}
+&
+\cellcolor{langscicol6}
+&
+\cellcolor{langscicol7}
+&
+\cellcolor{langscicol8}
+&
+\cellcolor{langscicol9}
+&
+\cellcolor{langscicol10}
+&
+\cellcolor{langscicol11}
+&
+\cellcolor{langscicol12}
+&
+\cellcolor{langscicol13}
+&
+\cellcolor{langscicol14}
+&
+\cellcolor{langscicol15}
+&
+\cellcolor{langscicol16}
+&
+\cellcolor{langscicol17}
+&
+\cellcolor{langscicol18}
+&
+\cellcolor{langscicol19}
+&
+\cellcolor{langscicol19}
+\rule{0pt}{#2}
+\end{tabularx}
+}
+}
+
+
+
+\definecolor{lspblue1}{cmyk}{0.9,0.4,0.05,0}
+\pagecolor{lspblue1}
+\begin{document}
+
+\begin{textblock*}{22mm}(254.5mm,-5mm) 
+\lsptabler{.645cm}{5cm}
+\end{textblock*}
+
+\begin{textblock*}{12.3mm}(194.5mm,177mm) 
+\lsptabler{.99cm}{20cm}
+\end{textblock*}
+
+\includepdf[pages=-,noautoscale]{1}
+
+\begin{textblock*}{17.5mm}(-6mm,204mm) 
+\lsptablel{.645cm}{3.5cm}
+\end{textblock*}
+
+\begin{textblock*}{11.3mm}(-40mm,-18mm) 
+\lsptablelr{2.8cm}{1cm}
+\end{textblock*}
+
+
+\includepdf[pages=-,noautoscale]{2}
+
+% \includepdf[pages=-,noautoscale]{series/algad	}
+% \includepdf[pages=-,noautoscale]{series/cal}
+% \includepdf[pages=-,noautoscale]{series/cfls}
+% \includepdf[pages=-,noautoscale]{series/cmle}
+% \includepdf[pages=-,noautoscale]{series/eotms}
+% \includepdf[pages=-,noautoscale]{series/lv}
+% \includepdf[pages=-,noautoscale]{series/mcnc}
+% \includepdf[pages=-,noautoscale]{series/scl}
+% \includepdf[pages=-,noautoscale]{series/sidl}
+% \includepdf[pages=-,noautoscale]{series/silp}
+% \includepdf[pages=-,noautoscale]{series/tbls}
+% \includepdf[pages=-,noautoscale]{series/tgdi}
+% \includepdf[pages=-,noautoscale]{series/tmnlp}
+\end{document}
