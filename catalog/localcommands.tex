@@ -1,7 +1,18 @@
+ 	\usepackage[ 					% if output != cover
+ 	papersize={210mm,294mm}
+ 	,top=-3mm % TODO nachgemessen, nach Vermassung eigentlich 30mm-16pt = 25.8mm
+ 	,inner=0mm 
+ 	,outer=0mm 
+ 	,bottom=0mm
+%  	%,showframe,pass
+%  	,marginparwidth=50pt
+ 	]{geometry}
+
 \pagestyle{empty}
 \setlength{\parindent}{0pt} 
 
 \newcommand\lsptitle{titel}
+\newcommand\lspsubtitle{titel}
 \newcommand\lspauthor{autor}
 \newcommand\lspisbn{1234}
 \newcommand\lspdoi{12x34x45}
@@ -12,8 +23,21 @@
 \newcommand\lspblurb{blurb}
 \newcommand\lspnumber{0}
 \newcommand\lspcover{books/0.png}
+\newcommand\lsppages{0}
+\newcommand\lspappeared{1999}
+\newcommand\lsplanguage{English}
+
+
+\newcommand{\priceXXS}{15 EUR SC / 30 EUR HC}
+\newcommand{\priceXS}{20 EUR SC / 40 EUR HC}
+\newcommand{\priceS}{25 EUR SC / 50 EUR HC} 
+\newcommand{\priceM}{30 EUR SC / 60 EUR HC}
+\newcommand{\priceL}{35 EUR SC / 70 EUR HC}
+\newcommand{\priceXL}{40 EUR  SC/ 80 EUR HC}
+\newcommand{\priceXXL}{45 EUR SC / 90 EUR HC}
 
 \newcommand\btitle[1]{\renewcommand{\lsptitle}{#1}}
+\newcommand\bsubtitle[1]{\renewcommand{\lspsubtitle}{#1}}
 \newcommand\bauthor[1]{\renewcommand{\lspauthor}{#1}}
 \newcommand\bisbn[1]{\renewcommand{\lspisbn}{#1}}
 \newcommand\bdoi[1]{\renewcommand{\lspdoi}{#1}}
@@ -24,6 +48,9 @@
 \newcommand\bblurb[1]{\renewcommand{\lspblurb}{#1}}
 \newcommand\bnumber[1]{\renewcommand{\lspnumber}{#1}}
 \newcommand\bcover[1]{\renewcommand{\lspcover}{#1}}
+\newcommand\bpages[1]{\renewcommand{\lsppages}{#1}}
+\newcommand\bappeared[1]{\renewcommand{\lspappeared}{#1}}
+\newcommand\blanguage[1]{\renewcommand{\lsplanguage}{#1}}
 
 \newcommand{\bbook}[1]{%
 \bcover{covers/#1.png}%
@@ -31,47 +58,84 @@
 \input{books/#1.tex}%
 }
 
-\newcommand{\metadata}{ISBN:\lspisbn~ DOI:\lspdoi~Price:\lspprice \\URL:\lspurl~ }
+\newcommand{\metadata}{\mbox{Pages:\lsppages} \mbox{Price:\lspprice} \mbox{Language:\lsplanguage}   \mbox{Published:\lspappeared}      \mbox{ISBN:\lspisbn}  \mbox{DOI:\lspdoi} \mbox{\lspurl}  }
 
-\newcommand{\imgblock}[1]{\parbox[t]{.3\textwidth}{\includegraphics[height=#1\textheight]{\lspcover}}}
+\newcommand{\imgblock}[1]{\parbox[t]{.3\textwidth}{\includegraphics[width=#1\textwidth]{\lspcover}}}
+
 \newcommand{\txtblock}[3]{\parbox[b]{#3\textwidth}{%
-  {#1\bfseries\begin{flushleft}\lsptitle \end{flushleft}}%
-  {#2\itshape\lspauthor}\newline%
-  {#2\lsptagline}\newline%
+  {#1\bfseries\begin{flushleft}\lsptitle\\ #2 \lspsubtitle \end{flushleft}}%
+  {#2\itshape\lspauthor}\medskip\newline%
+  {#2\lspblurb}\medskip\newline%
   {\footnotesize \metadata}%
   } \vfill}
 
+
+\definecolor{gray1}{cmyk}{0.04,0.0,0,0.005}
+\definecolor{gray2}{cmyk}{0.08,0.0,0,0.005}
+\definecolor{gray3}{cmyk}{0.12,0.0,0,0.005}
+
 \newcommand{\leftbook}[1]{%
   \bbook{#1}%
-  \begin{tabular}{p{.44\textwidth}p{.55\textwidth}}   %
-    \imgblock{.4} & \txtblock{\LARGE}{\normalsize}{.5} 
+\colorbox{gray1}{
+\parbox[t][.49\textheight][t]{\textwidth}{
+  \vspace*{.48\spacer}
+  \begin{tabular}{lp{.44\textwidth}p{.5\textwidth}l}   %
+   & \imgblock{.4} & \txtblock{\LARGE}{\normalsize}{.44} 
   \end{tabular}%
 }
-
+}}
 \newcommand{\rightbook}[1]{%
   \bbook{#1}%
-  \begin{tabular}{p{.55\textwidth}p{.44\textwidth}}   %
-    \txtblock{\LARGE}{\normalsize}{.5}  &  \imgblock{.4}   
+\colorbox{gray2}{
+\parbox[t][.49\textheight][t]{\textwidth}{
+  \vspace*{.5\spacer}
+  \begin{tabular}{lp{.5\textwidth}p{.44\textwidth}l}   %
+   & \txtblock{\LARGE}{\normalsize}{.44}  &  \imgblock{.4}   
   \end{tabular}%
 }
+}
+}
+
+\newlength{\spacer}
+\setlength{\spacer}{1cm}
+\setlength{\parindent}{0pt}
 
 
 \newcommand{\firstbook}[1]{%
   \bbook{#1}%
-  \begin{tabular}{p{.22\textwidth}p{.77\textwidth}}   % 
-    \imgblock{.2} & \txtblock{\large}{\small}{.7}  %
-  \end{tabular}%
+  \colorbox{gray1}{%
+  \hspace*{1.4em}
+  \parbox[t][\textheight][t]{.3\textwidth}{ 
+  \vspace*{2.5\spacer}
+    \imgblock{.25} %
+%   \hline%
+ \txtblock{\Large}{\normalsize}{.25}  % 
 }
+}\hspace*{-2.5em}
+}
+
 \newcommand{\secondbook}[1]{%
   \bbook{#1}%
-  \begin{tabular}{p{.22\textwidth}p{.77\textwidth}}   % 
-    \imgblock{.2} & \txtblock{\large}{.7} % 
-  \end{tabular}\\%
+  \colorbox{gray2}{%
+  \hspace*{1.4em}
+  \parbox[t][\textheight][t]{.3\textwidth}{ 
+  \vspace*{1.5\spacer}
+    \imgblock{.25} %
+%   \hline%
+ \txtblock{\Large}{\normalsize}{.25}  % 
 }
+}\hspace*{-2.6em}
+}
+
 \newcommand{\thirdbook}[1]{%
   \bbook{#1}%
-  \begin{tabular}{p{.22\textwidth}p{.77\textwidth}}   % 
-    \imgblock{.2} & \txtblock{\large}{.7}  %
-  \end{tabular}\\%
+  \colorbox{gray3}{%
+  \hspace*{1.4em}
+  \parbox[t][\textheight][t]{.3\textwidth}{ 
+  \vspace*{.5\spacer}
+    \imgblock{.25} %
+%   \hline%
+ \txtblock{\Large}{\normalsize}{.25}  % 
+}}
 }
  

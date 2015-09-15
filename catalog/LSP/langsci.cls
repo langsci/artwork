@@ -189,17 +189,17 @@
   \usetikzlibrary{calc}
   \hyphenpenalty 750
   
- \else 
- 
- 	\usepackage[ 					% if output != cover
- 	papersize={170mm,240mm}
- 	,top=27.4mm % TODO nachgemessen, nach Vermassung eigentlich 30mm-16pt = 25.8mm
- 	,inner=20.5mm, 
- 	,outer=24.5mm
- 	%,showframe,pass
- 	,marginparwidth=50pt
- 	]{geometry}
- \fi
+%  \else 
+%  
+%  	\usepackage[ 					% if output != cover
+%  	papersize={170mm,240mm}
+%  	,top=27.4mm % TODO nachgemessen, nach Vermassung eigentlich 30mm-16pt = 25.8mm
+%  	,inner=20.5mm, 
+%  	,outer=24.5mm
+%  	%,showframe,pass
+%  	,marginparwidth=50pt
+%  	]{geometry}
+%  \fi
 \fi
  
 
