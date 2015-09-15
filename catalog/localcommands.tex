@@ -1,0 +1,77 @@
+\pagestyle{empty}
+\setlength{\parindent}{0pt} 
+
+\newcommand\lsptitle{titel}
+\newcommand\lspauthor{autor}
+\newcommand\lspisbn{1234}
+\newcommand\lspdoi{12x34x45}
+\newcommand\lspurl{test.de}
+\newcommand\lspprice{123EUR}
+\newcommand\lspimg{images/cover.png}
+\newcommand\lsptagline{tag line}
+\newcommand\lspblurb{blurb}
+\newcommand\lspnumber{0}
+\newcommand\lspcover{books/0.png}
+
+\newcommand\btitle[1]{\renewcommand{\lsptitle}{#1}}
+\newcommand\bauthor[1]{\renewcommand{\lspauthor}{#1}}
+\newcommand\bisbn[1]{\renewcommand{\lspisbn}{#1}}
+\newcommand\bdoi[1]{\renewcommand{\lspdoi}{#1}}
+\newcommand\burl[1]{\renewcommand{\lspurl}{#1}}
+\newcommand\bprice[1]{\renewcommand{\lspprice}{#1}}
+\newcommand\bimg[1]{\renewcommand{\lspimg}{#1}}
+\newcommand\btagline[1]{\renewcommand{\lsptagline}{#1}}
+\newcommand\bblurb[1]{\renewcommand{\lspblurb}{#1}}
+\newcommand\bnumber[1]{\renewcommand{\lspnumber}{#1}}
+\newcommand\bcover[1]{\renewcommand{\lspcover}{#1}}
+
+\newcommand{\bbook}[1]{%
+\bcover{covers/#1.png}%
+\burl{\url{http://langsci-press.org/catalog/book//#1}}%
+\input{books/#1.tex}%
+}
+
+\newcommand{\metadata}{ISBN:\lspisbn~ DOI:\lspdoi~Price:\lspprice \\URL:\lspurl~ }
+
+\newcommand{\imgblock}[1]{\parbox[t]{.3\textwidth}{\includegraphics[height=#1\textheight]{\lspcover}}}
+\newcommand{\txtblock}[3]{\parbox[b]{#3\textwidth}{%
+  {#1\bfseries\begin{flushleft}\lsptitle \end{flushleft}}%
+  {#2\itshape\lspauthor}\newline%
+  {#2\lsptagline}\newline%
+  {\footnotesize \metadata}%
+  } \vfill}
+
+\newcommand{\leftbook}[1]{%
+  \bbook{#1}%
+  \begin{tabular}{p{.44\textwidth}p{.55\textwidth}}   %
+    \imgblock{.4} & \txtblock{\LARGE}{\normalsize}{.5} 
+  \end{tabular}%
+}
+
+\newcommand{\rightbook}[1]{%
+  \bbook{#1}%
+  \begin{tabular}{p{.55\textwidth}p{.44\textwidth}}   %
+    \txtblock{\LARGE}{\normalsize}{.5}  &  \imgblock{.4}   
+  \end{tabular}%
+}
+
+
+\newcommand{\firstbook}[1]{%
+  \bbook{#1}%
+  \begin{tabular}{p{.22\textwidth}p{.77\textwidth}}   % 
+    \imgblock{.2} & \txtblock{\large}{\small}{.7}  %
+  \end{tabular}%
+}
+\newcommand{\secondbook}[1]{%
+  \bbook{#1}%
+  \begin{tabular}{p{.22\textwidth}p{.77\textwidth}}   % 
+    \imgblock{.2} & \txtblock{\large}{.7} % 
+  \end{tabular}\\%
+}
+\newcommand{\thirdbook}[1]{%
+  \bbook{#1}%
+  \begin{tabular}{p{.22\textwidth}p{.77\textwidth}}   % 
+    \imgblock{.2} & \txtblock{\large}{.7}  %
+  \end{tabular}\\%
+}
+ 
