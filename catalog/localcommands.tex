@@ -9,7 +9,7 @@
  	]{geometry}
 
 \hypersetup{colorlinks=false, pdfborder={0 0 0}}
-\pagestyle{empty}
+% \pagestyle{empty}
 \setlength{\parindent}{0pt} 
 
 \newcommand\lsptitle{titel}
@@ -55,11 +55,11 @@
 
 \newcommand{\bbook}[1]{%
 \bcover{covers/#1.png}%
-\burl{\url{http://langsci-press.org/catalog/book//#1}}%
+\burl{\url{http://langsci-press.org/catalog/book/#1}}%
 \input{books/#1.tex}%
 }
 
-\newcommand{\metadata}{\mbox{Pages:\lsppages} \mbox{Price:\lspprice} \mbox{Language:\lsplanguage}   \mbox{Published:\lspappeared}      \mbox{ISBN:\lspisbn}  \mbox{DOI:\lspdoi} \mbox{\lspurl}  }
+\newcommand{\metadata}{\mbox{Pages:~\lsppages} \mbox{Price:~\lspprice} \mbox{Language:~\lsplanguage}   \mbox{Published:~\lspappeared}      \mbox{ISBN:~\lspisbn}  \mbox{DOI:~\lspdoi} \mbox{\lspurl}  }
 
 \newcommand{\imgblock}[1]{{\includegraphics[width=#1\textwidth]{\lspcover}}}
 
