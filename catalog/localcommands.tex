@@ -15,10 +15,13 @@
 \newcommand\lsptitle{titel}
 \newcommand\lspsubtitle{titel}
 \newcommand\lspauthor{autor}
-\newcommand\lspisbn{1234}
+\newcommand\lspisbnsc{1234}
+\newcommand\lspisbnhc{1234}
 \newcommand\lspdoi{12x34x45}
 \newcommand\lspurl{test.de}
-\newcommand\lspprice{123EUR}
+\newcommand\scprice{1}
+\newcommand\hcprice{2}
+\newcommand\lspprice{EUR {\scprice} SC/EUR {\hcprice} HC}
 \newcommand\lspimg{images/cover.png}
 \newcommand\lsptagline{tag line}
 \newcommand\lspblurb{blurb}
@@ -29,21 +32,15 @@
 \newcommand\lsplanguage{English}
 
 
-\newcommand{\priceXXS}{15 EUR SC / 30 EUR HC}
-\newcommand{\priceXS}{20 EUR SC / 40 EUR HC}
-\newcommand{\priceS}{25 EUR SC / 50 EUR HC} 
-\newcommand{\priceM}{30 EUR SC / 60 EUR HC}
-\newcommand{\priceL}{35 EUR SC / 70 EUR HC}
-\newcommand{\priceXL}{40 EUR  SC/ 80 EUR HC}
-\newcommand{\priceXXL}{45 EUR SC / 90 EUR HC}
 
 \newcommand\btitle[1]{\renewcommand{\lsptitle}{#1}}
 \newcommand\bsubtitle[1]{\renewcommand{\lspsubtitle}{#1}}
 \newcommand\bauthor[1]{\renewcommand{\lspauthor}{#1}}
-\newcommand\bisbn[1]{\renewcommand{\lspisbn}{#1}}
+\newcommand\bisbnsc[1]{\renewcommand{\lspisbnsc}{#1}}
+\newcommand\bisbnhc[1]{\renewcommand{\lspisbnhc}{#1}}
 \newcommand\bdoi[1]{\renewcommand{\lspdoi}{#1}}
 \newcommand\burl[1]{\renewcommand{\lspurl}{#1}}
-\newcommand\bprice[1]{\renewcommand{\lspprice}{#1}}
+\newcommand\bprice[2]{\renewcommand{\scprice}{#1}\renewcommand{\hcprice}{#2}}
 \newcommand\bimg[1]{\renewcommand{\lspimg}{#1}}
 \newcommand\btagline[1]{\renewcommand{\lsptagline}{#1}}
 \newcommand\bblurb[1]{\renewcommand{\lspblurb}{#1}}
@@ -53,13 +50,33 @@
 \newcommand\bappeared[1]{\renewcommand{\lspappeared}{#1}}
 \newcommand\blanguage[1]{\renewcommand{\lsplanguage}{#1}}
 
+
+
+% \newcommand{\priceXXS}{15 EUR SC / 30 EUR HC}
+% \newcommand{\priceXS}{20 EUR SC / 40 EUR HC}
+% \newcommand{\priceS}{25 EUR SC / 50 EUR HC} 
+% \newcommand{\priceM}{30 EUR SC / 60 EUR HC}
+% \newcommand{\priceL}{35 EUR SC / 70 EUR HC}
+% \newcommand{\priceXL}{40 EUR  SC/ 80 EUR HC}
+% \newcommand{\priceXXL}{45 EUR SC / 90 EUR HC}
+
+
 \newcommand{\bbook}[1]{%
 \bcover{covers/#1.png}%
 \burl{\url{http://langsci-press.org/catalog/book/#1}}%
 \input{books/#1.tex}%
 }
 
-\newcommand{\metadata}{\mbox{Pages:~\lsppages} \mbox{Price:~\lspprice} \mbox{Language:~\lsplanguage}   \mbox{Published:~\lspappeared}      \mbox{ISBN:~\lspisbn}  \mbox{DOI:~\lspdoi} \mbox{\lspurl}  }
+\newcommand{\metadata}{ 
+ \mbox{Pages:~\lsppages} 
+ \mbox{Price:~\lspprice} 
+ \mbox{Language:~\lsplanguage}   
+ \mbox{Published:~\lspappeared}      
+ \mbox{ISBN softcover:~\lspisbnsc}   
+ \mbox{ISBN hardcover:~\lspisbnhc}  
+%  \mbox{DOI:~\lspdoi} 
+ \mbox{\lspurl}  
+}
 
 \newcommand{\imgblock}[1]{{\includegraphics[width=#1\textwidth]{\lspcover}}}
 
