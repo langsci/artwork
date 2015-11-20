@@ -667,7 +667,7 @@ al desirabilite de un nov lingua franca: On refusa continuar payar custosi tradu
 \newcommand{\lsCoverBlock}{
 	\begin{textblock}{155}(7.6,7.5)
 	\color{\lsCoverBlockColor}
-	\raggedright\rule{155mm}{225mm}
+	\raggedright\rule{195mm}{279mm}
 	\end{textblock}
 	\iflsDraft
 	   \begin{textblock}{155}(30,80)
@@ -719,7 +719,7 @@ al desirabilite de un nov lingua franca: On refusa continuar payar custosi tradu
 	\end{textblock}}
 
 \newcommand{\lsCoverSeries}{
-	\begin{textblock}{95}(7.4,209)
+	\begin{textblock}{95}(7.4,263)
 	\color{white}
 	\raggedright\rule{3.6mm}{3.5mm}
 	\color{\lsCoverFontColor}
@@ -728,7 +728,7 @@ al desirabilite de un nov lingua franca: On refusa continuar payar custosi tradu
 	\end{textblock}}
 
 \newcommand{\lsCoverLogo}{		
-	\begin{textblock}{33}(124.6,205)
+	\begin{textblock}{33}(164.6,259)
 		\raggedright\IfFileExists{\logopath/langsci_logo_nocolor.pdf}{\includegraphics{\logopath/langsci_logo_nocolor.pdf}}{langsci logo}  
 	\end{textblock}}
 
