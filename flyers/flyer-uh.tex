@@ -364,18 +364,18 @@ As of September 2015, more than 120 scholars have proposed manuscripts to Langua
    
 \newpage 
 \newlength{\submissionfactor}
-\setlength{\submissionfactor}{.9mm}
+\setlength{\submissionfactor}{.7mm}
 \newcommand{\submission}[3]{
 \parbox[m][.1cm][c]{2.5cm}{\color{LIGHTGRAY} #1}\colorbox{#2}{\parbox[m][.3cm][c]{#3\submissionfactor}{\bfseries\sffamily #3}}\\ 
 }
 
 \section{\sffamily\Large\bfseries Submissions}
-\submission{desk rejection}{lsRed}{19}
-\submission{in preparation}{lsLightBlue}{66}
-\submission{under review}{lsDarkBlue}{2}
+\submission{desk rejection}{lsRed}{21}
+\submission{in preparation}{lsLightBlue}{73}
+\submission{under review}{lsDarkBlue}{3}
 \submission{rejected}{lsLightOrange}{6}
-\submission{forthcoming}{lsSoftGreen}{15}
-\submission{published}{lsRichGreen}{14}
+\submission{forthcoming}{lsSoftGreen}{19}
+\submission{published}{lsRichGreen}{16}
 
 % \color{LIGHTGRAY}
 % \begin{tabular}{ll}
@@ -396,14 +396,14 @@ As of September 2015, more than 120 scholars have proposed manuscripts to Langua
 % \includegraphics[width=\textwidth]{statistiks.png}
 \parbox[b][0cm][b]{0cm}{
 \raisebox{0cm}{
-\hspace{.7\textwidth}\tiny\color{LIGHTGRAY} Numbers as of 2015-09-30
+\hspace{.7\textwidth}\tiny\color{LIGHTGRAY} Numbers as of 2015-12-31
 }
 }
 
 \setlength{\tabcolsep}{0pt}
 \newlength{\downloadfactor}
-\setlength{\downloadfactor}{1.5mm}
-\newcommand{\downloadbox}[4]{\begin{tabular}{p{#1\downloadfactor}}\cellcolor{#2}\sffamily\bfseries~#3\rule{0pt}{1.5em}\\\mbox{#4}\end{tabular}\\[.1em]
+\setlength{\downloadfactor}{1.3mm}
+\newcommand{\downloadbox}[4]{\begin{tabular}{p{{#1.#2}\downloadfactor}}\cellcolor{#3}\sffamily\bfseries~#1#2\rule{0pt}{1.5em}\\\mbox{#4}\end{tabular}\\[.1em]
 \\}
 
 \resizebox{2\textwidth}{!}{
@@ -411,16 +411,23 @@ As of September 2015, more than 120 scholars have proposed manuscripts to Langua
 \color{LIGHTGRAY}
 \noindent
   \parbox{19cm}{
-    \downloadbox{62.80}{lsRichGreen}{6280}{The Alor-Pantar languages}
-    \downloadbox{46.79}{lsYellow}{4679}{Einführung in die grammatische Beschreibung des Deutschen}
-    \downloadbox{37.77}{lsNightBlue}{3777}{The Talking Heads experiment}
-    \downloadbox{35.30}{lsDarkBlue}{3530}{New directions in corpus-based translation studies}
-    \downloadbox{26.67}{lsRichGreen}{2667}{A grammar of Pite Saami}
-    \downloadbox{20.49}{lsNightGreen}{2049}{Natural causes of language}
-    \downloadbox{17.46}{lsYellow}{1746}{Grammatical theory}
-    \downloadbox{15.29}{lsRichGreen}{1529}{A typology of marked-S languages}
-    \downloadbox{11.99}{lsRichGreen}{1199}{Grammaticalization in the North}
-    \downloadbox{8.04}{lsLightWine}{804}{Prosodic detail in Neapolitan Italian}
+    \downloadbox{72}{53}{lsRichGreen}{The Alor-Pantar languages}
+    \downloadbox{65}{76}{lsYellow}{Einführung in die grammatische Beschreibung des Deutschen}
+    \downloadbox{50}{63}{lsDarkBlue}{New directions in corpus-based translation studies}
+    \downloadbox{42}{68}{lsNightBlue}{The Talking Heads experiment}
+    \downloadbox{31}{05}{lsRichGreen}{A grammar of Pite Saami}
+    \downloadbox{26}{02}{lsNightGreen}{Natural causes of language}
+    \downloadbox{18}{46}{lsYellow}{Grammatical theory}
+    \downloadbox{18}{60}{lsRichGreen}{A typology of marked-S languages}
+    \downloadbox{14}{61}{lsRichGreen}{Grammaticalization in the North}
+    \downloadbox{12}{84}{black}{Thoughts on grammaticalization}
+    \downloadbox{9}{47}{lsLightWine}{Prosodic detail in Neapolitan Italian}
+%     \downloadbox{}{}{lsLightWine}{Linguistic variation}
+%     \downloadbox{}{}{lsLightWine}{A grammar of Yakkha}
+%     \downloadbox{}{}{lsLightWine}{A grammar of Mauwake}
+%     \downloadbox{}{}{lsLightWine}{Language strategies for the domain of colour}
+%     \downloadbox{2}{53}{lsLightWine}{Syntax und Valenz}
+%     \downloadbox{1}{21}{lsLightWine}{How mobile robots can self-organise a vocabulary}
   }
 } 
 
