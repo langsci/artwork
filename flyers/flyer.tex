@@ -7,7 +7,7 @@
 \errorcontextlines=99
 \documentclass[
 notumble,
-nofoldmark,
+% nofoldmark,
 %%dvipdfm,
 %%portrait,
 %%titlepage,
@@ -295,38 +295,48 @@ As of February 2015, more than 60 scholars have proposed manuscripts to Language
 \section{\sffamily\Large Series}
 
 \newcommand{\leftseries}[3]{   
-  \parbox{.1\textwidth}{~}
-  \parbox{.7\textwidth}{\raggedleft\small #1\\{\scriptsize #3}}
-  \parbox{.1\textwidth}{\includegraphics[width=.8cm]{#2.png}} 
+%   \resizebox{6cm}{!}{
+    \parbox{64mm}{\raggedleft\footnotesize #1\\{\scriptsize #3}}
+    \parbox{1mm}{~}
+    \parbox{6mm}{\includegraphics[width=6mm]{#2.png}} 
+%   }
 }
 
 \newcommand{\rightseries}[3]{   
-  \parbox{.1\textwidth}{\includegraphics[width=.8cm]{#2.png}}
-  \parbox{.01\textwidth}{~} 
-  \parbox{.7\textwidth}{\raggedright\small #1\\{\scriptsize #3}}
-  \parbox{.05\textwidth}{~} 
+%   \resizebox{6cm}{!}{
+    \parbox{6mm}{\includegraphics[width=6mm]{#2.png}}
+%     \parbox{1mm}{~} 
+    \parbox{64mm}{\raggedright\footnotesize #1\\{\scriptsize #3}}    
+%   }
 }
 
-\leftseries{African Language Grammars and Dictionaries}{algad}{Adams Bodomo, Ken Hiraiwa, Firmin Ahoua}
+\rightseries{African Language Grammars and Dictionaries}{algad}{Adams Bodomo, Ken Hiraiwa, Firmin Ahoua}
+\leftseries{Classics in Linguistics}{classics}{Martin Haspelmath, Stefan Müller}
+
 \rightseries{Computational Models of Language Evolution}{cmle}{Luc Steels, Remi van Trijp}
-
 \leftseries{Conceptual Foundations of Language Science}{cfls}{Mark Dingemanse, Nick Enfield}
+
 \rightseries{Contemporary African Linguistics}{cal}{Lee Bickmore, Akinbiyi Akinlabi}
+\leftseries{EuroSLA studies}{eurosla}{Gabriele Pallotti}
 
-\leftseries{Empirically Oriented Theoretical Morphology and Syntax}{eotms}{\mbox{Stefan M\"uller, Berthold Crysmann, Laura Kallmeyer}}
-\rightseries{Implemented Grammars}{eotms-ig}{Stefan M\"uller, Berthold Crysmann, Laura Kallmeyer}
-
+\rightseries{Empirically Oriented Theoretical Morphology and Syntax}{eotms}{\mbox{Stefan M\"uller, Berthold Crysmann, Laura Kallmeyer}}
+% \leftseries{Implemented Grammars}{eotms-ig}{Stefan M\"uller, Berthold Crysmann, Laura Kallmeyer}
 \leftseries{Language Variation}{lv}{John Nerbonne, Dirk Geeraerts}
-\rightseries{\mbox{Monographs on Comparative Niger-Congo}}{mcnc}{Valentin Vydrin, Larry Hyman, Konstantin Pozdniakov, Guillaume Segerer, John Watters}
 
-\leftseries{Studies in Caribbean Languages}{scl}{John R. Rickford, Joseph Farquharson}
-\rightseries{Studies in Diversity Linguistics}{sidl}{Martin Haspelmath, Fernando Z\'u\~niga, Peter Arkadiev, Ruth Singer, Pilar Valenzuela}
+\rightseries{\mbox{Monographs on Comparative Niger-Congo}}{mcnc}{Valentin Vydrin, Larry Hyman, Konstantin Pozdniakov, \\[-.5mm]Guillaume Segerer, John Watters}
+\leftseries{Morphological Investigations}{mi}{James P. Blevins, Petar Milin, Michael Ramscar}
 
-\leftseries{Studies in Laboratory Phonology}{silp}{Martine Grice, Doris M\"ucke, Taehong Cho}
-\rightseries{Textbooks in Language Sciences}{tbls}{\mbox{Stefan M\"uller, Martin Haspelmath, Claude Hag\`ege,} \mbox{Marianne Mithun, Anatol Stefanowitsch, Foong Ha Yap}}	 
- 
-\leftseries{\mbox{Topics at the Grammar-Discourse Interface}}{tgdi}{\mbox{Philippa Cook, Anke Holler, Cathrine Fabricius-Hansen}}
-\rightseries{Translation and Multilingual Natural Language Processing}{tmnlp}{\mbox{Reinhard Rapp, Silvia Hansen-Schirra, Oliver \v{C}ulo}}
+\rightseries{Open Generative Syntax}{ogs}{Elena Anagnostopoulou, Mark Baker, Roberta \\[-.5mm]D’Alessandro, David Pesetsky, Susi Wurmbrand}
+\leftseries{Phraseology and Multiword Expressions}{pmwe}{Manfred Sailer, Agata Savary}
+
+\rightseries{Studies in Caribbean Languages}{scl}{John R. Rickford, Joseph Farquharson}
+\leftseries{Studies in Diversity Linguistics}{sidl}{Martin Haspelmath, Fernando Z\'u\~niga, Peter Arkadiev,\\[-.5mm] Ruth Singer, Pilar Valenzuela}
+
+\rightseries{Studies in Laboratory Phonology}{silp}{Martine Grice, Doris M\"ucke, Taehong Cho}
+\leftseries{Textbooks in Language Sciences}{tbls}{\mbox{Stefan M\"uller, Martin Haspelmath, Claude Hag\`ege,}\\[-.5mm]  \mbox{Marianne Mithun, Anatol Stefanowitsch, Foong Ha Yap}}	 
+
+\rightseries{\mbox{Topics at the Grammar-Discourse Interface}}{tgdi}{\mbox{Philippa Cook, Anke Holler, Cathrine Fabricius-Hansen}}
+\leftseries{Translation and Multilingual Natural Language Processing}{tmnlp}{\mbox{Reinhard Rapp, Silvia Hansen-Schirra, Oliver \v{C}ulo}}
   
     
  
@@ -372,25 +382,25 @@ As of February 2015, more than 60 scholars have proposed manuscripts to Language
 
 \resizebox{.9\textwidth}{!}{
 {\scriptsize\sffamily
-\begin{tabular}{p{10mm}p{28mm}p{5mm}p{3mm}p{10mm}p{5mm}}
+\begin{tabular}{p{28mm}p{59mm}p{6mm}p{10mm}p{22mm}p{27mm}}
 \cellcolor{lsRed}  &
 \cellcolor{lsLightBlue} &  
 \cellcolor{lsDarkBlue}  & 
 \cellcolor{lsLightWine} & 
 \cellcolor{lsMidGreen}  & 
 \cellcolor{lsRichGreen}\\
-\cellcolor{lsRed} \normalsize\centering  10 &
-\cellcolor{lsLightBlue} \normalsize\centering 28 &  
-\cellcolor{lsDarkBlue} \normalsize\centering 5 & 
-\cellcolor{lsLightWine} \normalsize \centering 3 & 
-\cellcolor{lsMidGreen} \normalsize\centering  10 & 
-{\centering\cellcolor{lsRichGreen} \normalsize ~~5 }  \\
-\cellcolor{lsRed} {\rotatebox{90}{\parbox{1cm}{desk\\rejection}}}   &
-\cellcolor{lsLightBlue} {\rotatebox{90}{\parbox{1cm}{in\\preparation}}}   &
-\cellcolor{lsDarkBlue} {\rotatebox{90}{\parbox{1cm}{under\\ review }}} &
-\cellcolor{lsLightWine} {\rotatebox{90}{rejected}}   &
-\cellcolor{lsMidGreen}  {\rotatebox{90}{forthcoming}}   &
-\cellcolor{lsRichGreen} {\rotatebox{90}{published}} \\
+\cellcolor{lsRed} \Large\centering  28 &
+\cellcolor{lsLightBlue} \Large\centering 59 &  
+\cellcolor{lsDarkBlue} \Large\centering 6 & 
+\cellcolor{lsLightWine} \Large \centering 10 & 
+\cellcolor{lsMidGreen} \Large\centering  22 & 
+{\centering\cellcolor{lsRichGreen} \Large ~27 }  \\
+\cellcolor{lsRed} {\rotatebox{90}{\parbox{1cm}{\Large desk\\rejection}}}   &
+\cellcolor{lsLightBlue} {\rotatebox{90}{\parbox{1cm}{\Large in\\preparation}}}   &
+\cellcolor{lsDarkBlue} {\rotatebox{90}{\parbox{1cm}{\Large under\,review }}} &
+\cellcolor{lsLightWine} {\rotatebox{90}{\Large rejected}}   &
+\cellcolor{lsMidGreen}  {\rotatebox{90}{\Large forthcoming}}   &
+\cellcolor{lsRichGreen} {\rotatebox{90}{\Large published}} \\
 \cellcolor{lsRed}  &
 \cellcolor{lsLightBlue} &  
 \cellcolor{lsDarkBlue}  & 
@@ -410,15 +420,15 @@ As of February 2015, more than 60 scholars have proposed manuscripts to Language
 \sffamily
 \noindent
 \parbox{19cm}{
-\begin{tabular}{p{18.69em}}\cellcolor{langscicol17}1869\\The Alor-Pantar languages\end{tabular}
+\begin{tabular}{p{156.43em}}\cellcolor{langscicol17} 15643\\\mbox{The future of dialects}\end{tabular}
 \\
-\begin{tabular}{p{16.72em}}\cellcolor{langscicol17}1672\\A grammar of Pite Saami\end{tabular}
+\begin{tabular}{p{112.47em}}\cellcolor{langscicol17} 11247\\Einführung in die grammatische Beschreibung des Deutschen\end{tabular}
 \\
-\begin{tabular}{p{8.79em}}\cellcolor{langscicol17} 879\\\mbox{A typology of marked-S languages}\end{tabular}
+\begin{tabular}{p{98.85em}}\cellcolor{langscicol17} 9885\\The Alor-Pantar languages\end{tabular}
 \\
-\begin{tabular}{p{7.14em}}\cellcolor{langscicol20} 714\\\mbox{Natural causes of  language}\end{tabular}
+\begin{tabular}{p{90.72em}}\cellcolor{langscicol20} 9072\\\mbox{New directions in corpus based translation studies}\end{tabular}
 \\
-\begin{tabular}{p{4.18em}}\cellcolor{langscicol11}418\\\mbox{Prosodic detail in Neapolitan Italian}\end{tabular}
+\begin{tabular}{p{82.12em}}\cellcolor{langscicol11} 8212\\\mbox{Grammatical theory}\end{tabular}
 }}
 % \parbox{16.72cm}{\colorbox{langscicol17}{A grammar of Pite Saami 1672}}
 % 
