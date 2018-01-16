@@ -30,6 +30,7 @@ nofoldmark,
 \usepackage{textcomp}
 \usepackage{mathptmx}
 \usepackage{libertine}
+\usepackage{setspace} 
 % \usepackage[scaled=0.9]{helvet}
 \makeatletter
 \def\ptmTeX{T\kern-.1667em\lower.5ex\hbox{E}\kern-.075emX\@}
@@ -303,7 +304,7 @@ nofoldmark,
 \newcommand{\series}[3]{   
   \parbox{.1\textwidth}{\includegraphics[width=.6cm]{#2.png}}
   \parbox{.01\textwidth}{~} 
-  \parbox{.7\textwidth}{\raggedright{\small\bfseries #1}\\{\scriptsize #3}}
+  \parbox{.7\textwidth}{\raggedright{\begin{spacing}{0.7}\small\bfseries #1\vphantom{jf}\\[.7em]\end{spacing}}{\begin{spacing}{0.7}\scriptsize #3\vphantom{jf}\end{spacing}}}
   \parbox{.05\textwidth}{~\smallskip}\\[.5em]
 } 
 
@@ -315,21 +316,21 @@ nofoldmark,
 \series{Empirically Oriented Theoretical Morphology and Syntax}{eotms}{\mbox{Stefan M\"uller, Berthold Crysmann, Laura Kallmeyer}}
 \series{EuroSLA studies}{eurosla}{Gabriele Pallotti} 
 \series{Language Variation}{lv}{John Nerbonne, Dirk Geeraerts}
-\series{\mbox{Monographs on Comparative Niger-Congo}}{mcnc}{Valentin Vydrin, Larry Hyman, Konstantin Pozdniakov, Guillaume Segerer, John Watters}
+\series{\mbox{Niger-Congo Comparative Series}}{mcnc}{Valentin Vydrin, Larry Hyman, Konstantin Pozdniakov,Guillaume Segerer, John Watters}
  
 
    
-\vspace*{7.72cm} 
+\vspace*{6.55cm} 
 \series{\mbox{Morphological Investigations}}{mi}{\mbox{James P. Blevins, Petar Milin, Michael Ramscar}}
-% \series{Open Generative Syntax}{ogs}{Elena Anagnostopoulou, Mark Baker, Roberta D’Alessandro, David Pesetsky, Susi Wurmbrand}
-\series{Open Slavic Linguistics}{osl}{\mbox{Denisa Lenertová, Roland Meyer, Radek Šimík, Luka Szucsich}}
+\series{Open Generative Syntax}{ogs}{\mbox{Elena Anagnostopoulou, Mark Baker, Roberta D’Alessandro,} David Pesetsky, Susi Wurmbrand}
+\series{Open Slavic Linguistics}{osl}{Denisa Lenertová, Roland Meyer, Radek Šimík, Luka Szucsich}
 \series{Phraseology and Multiword Expressions}{pmwe}{Manfred Sailer, Agata Savary}
 \series{Studies in Caribbean Languages}{scl}{John R. Rickford, Joseph Farquharson}
 \series{Studies in Diversity Linguistics}{sidl}{Martin Haspelmath, Fernando Z\'u\~niga, Peter Arkadiev, Ruth Singer, Pilar Valenzuela}
 \series{Studies in Laboratory Phonology}{silp}{Martine Grice, Doris M\"ucke, Taehong Cho}
 \series{Textbooks in Language Sciences}{tbls}{\mbox{Stefan M\"uller, Martin Haspelmath, Claude Hag\`ege,} \mbox{Marianne Mithun, Anatol Stefanowitsch, Foong Ha Yap}}	 
 \series{\mbox{Topics at the Grammar-Discourse Interface}}{tgdi}{\mbox{Philippa Cook, Anke Holler, Cathrine Fabricius-Hansen}}
-\series{Translation and Multilingual Natural Language Processing}{tmnlp}{{Oliver \v{C}ulo, Silvia Hansen-Schirra,   Reinhard Rapp}}
+\series{Translation and Multilingual Natural Language Processing}{tmnlp}{{Oliver Czulo, Silvia Hansen-Schirra,   Reinhard Rapp}}
   
       
 \newpage
@@ -338,12 +339,12 @@ nofoldmark,
 \setlength{\itemsep}{-3pt} 
  \item[›] Language Science Press is a scholar-owned press
  \item[›]  High quality, peer-reviewed open-access books in linguistics
-  \item[›] Currently 18 series with editorial board members from all over the world
+  \item[›] Currently 19 series with editorial board members from all over the world
  \item[›] Published under a Creative Commons licence
  \item[›] Free for both authors and readers
 %  \item[›] General Editors are Stefan M\"uller (FU Berlin) and Martin Haspelmath (MPI for Evolutionary Anthropology)
 %  \item[›] Supported by a high-profile Advisory Board
- \item[›] Supported by the DFG with 500k{\euro} during the startup phase
+ \item[›] Supported by a network of 100 institutions worldwide, including Harvard, MIT, Yale. 
 
  \item[›] All books appear in a book series, and the series editors are responsible for acquiring, reviewing and selecting manuscripts for publication
 %  \item[›] The authors are responsible for typesetting in LaTeX (together with the series editors); automatic conversion from Word is possible in principle.
@@ -360,7 +361,7 @@ nofoldmark,
 
  Our philosophy is that book publishing can be fully under the control of scholars because most of the traditional tasks of commercial publishers can be done more efficiently by scholars. 
  
-As of December 2016, more than 220 scholars have proposed manuscripts to Language Science Press. For the latest publications, see our website www.langsci-press.org. 
+As of December 2017, more than 320 scholars have proposed manuscripts to Language Science Press. For the latest publications, see our website www.langsci-press.org. 
    
 \newpage 
 \newlength{\submissionfactor}
@@ -370,12 +371,12 @@ As of December 2016, more than 220 scholars have proposed manuscripts to Languag
 }
 
 \section{\sffamily\Large\bfseries Submissions}
-\submission{desk rejection}{lsRed}{41}
-\submission{in preparation}{lsLightBlue}{66}
-\submission{under review}{lsDarkBlue}{8}
-\submission{rejected}{lsLightOrange}{13}
-\submission{forthcoming}{lsSoftGreen}{28}
-\submission{published}{lsRichGreen}{42}
+\submission{desk rejection}{lsRed}{50}
+\submission{in preparation}{lsLightBlue}{43}
+\submission{under review}{lsDarkBlue}{5}
+\submission{rejected}{lsLightOrange}{14}
+\submission{forthcoming}{lsSoftGreen}{33}
+\submission{published}{lsRichGreen}{51}
 
 % \color{LIGHTGRAY}
 % \begin{tabular}{ll}
@@ -396,13 +397,13 @@ As of December 2016, more than 220 scholars have proposed manuscripts to Languag
 % \includegraphics[width=\textwidth]{statistiks.png}
 \parbox[b][0cm][b]{0cm}{
 \raisebox{0cm}{
-\hspace{.7\textwidth}\tiny\color{LIGHTGRAY} Numbers as of 2016-12-31
+\hspace{.7\textwidth}\tiny\color{LIGHTGRAY} Numbers as of 2017-12-31
 }
 }
 
 \setlength{\tabcolsep}{0pt}
 \newlength{\downloadfactor}
-\setlength{\downloadfactor}{.7mm}
+\setlength{\downloadfactor}{.4mm}
 \newcommand{\downloadbox}[4]{\begin{tabular}{p{#1.#2\downloadfactor}}\cellcolor{#3}\sffamily\bfseries~#1#2\rule{0pt}{1.5em}\\\mbox{#4}\end{tabular}\\[.1em]
 \\}
 
@@ -411,11 +412,11 @@ As of December 2016, more than 220 scholars have proposed manuscripts to Languag
 \color{LIGHTGRAY}
 \noindent
   \parbox{19cm}{
-    \downloadbox{156}{43}{lsMidWine}{The future of dialects}
-    \downloadbox{112}{74}{lsYellow}{Einführung in die grammatische Beschreibung des Deutschen}
-    \downloadbox{98}{85}{lsRichGreen}{The Alor-Pantar languages}
-    \downloadbox{90}{72}{lsDarkBlue}{New directions in corpus-based translation studies}
-    \downloadbox{82}{12}{lsYellow}{Grammatical theory}    
+    \downloadbox{220}{84}{lsMidWine}{The future of dialects}
+    \downloadbox{192}{47}{lsYellow}{Einführung in die grammatische Beschreibung des Deutschen}
+    \downloadbox{145}{35}{lsYellow}{Grammatical theory}    
+    \downloadbox{133}{27}{lsDarkBlue}{New directions in corpus-based translation studies}
+    \downloadbox{118}{10}{lsRichGreen}{The Alor-Pantar languages}
   }
 } 
 
@@ -445,7 +446,7 @@ As of December 2016, more than 220 scholars have proposed manuscripts to Languag
 
 \begin{itemize}
 \setlength{\itemsep}{-3pt} 
- \item[›] Artemis Alexiadou (Stuttgart)
+ \item[›] Artemis Alexiadou (Berlin)
  \item[›] Jim Blevins (Cambridge)
  \item[›] Balthasar Bickel (Z\"urich)
  \item[›] Geert Booij (Leiden)
