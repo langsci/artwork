@@ -1,1 +1,339 @@
-series/lspflyer.sty
+\usepackage{tabularx}
+\usepackage{eurosym}
+\renewcommand*\foldmarkrule{.3mm}
+\renewcommand*\foldmarklength{5mm}
+
+\usepackage[T1]{fontenc}
+% \usepackage[T3]{inputenc}
+\usepackage{textcomp}
+\usepackage{mathptmx}
+\usepackage{libertine}
+% \usepackage[scaled=0.9]{helvet}
+\makeatletter
+\def\ptmTeX{T\kern-.1667em\lower.5ex\hbox{E}\kern-.075emX\@}
+\DeclareRobustCommand{\ptmLaTeX}{L\kern-.3em
+        {\setbox0\hbox{T}%
+         %\vb@xt@ % :-)
+         \vbox to\ht0{\hbox{%
+                            \csname S@\f@size\endcsname
+                            \fontsize\sf@size\z@
+                            \math@fontsfalse\selectfont
+                            A}%
+                      \vss}%
+        }%
+        \kern-.12em
+        \ptmTeX}
+\makeatother
+\usepackage{url}
+\usepackage{graphicx}
+\usepackage[dvipsnames,usenames]{color}
+\usepackage[table]{xcolor}
+\usepackage{fontspec}
+% \newcommand{\fontpath}{..}
+\setsansfont[
+	%Ligatures={TeX,Common},		% not supported by ttf
+	Scale=MatchLowercase,
+% 	Path=\fontpath,
+	BoldFont = Arimo-Bold_B.ttf ,
+	ItalicFont = Arimo-Italic_B.ttf ,				
+	BoldItalicFont = Arimo-BoldItalic_B.ttf 		
+	]{Arimo_B.ttf}
+
+
+\usepackage{titlesec}
+
+\setmargins{10mm}{8mm}{12mm}{12mm}
+
+\titleformat*{\section}{\color{LIGHTGRAY} \sffamily \Large }
+
+\definecolor{LIGHTGRAY}{gray}{.9}
+\definecolor{seriescolor}{cmyk}{0.6,0,0.9,0.35} 
+\definecolor{langscicol1}{cmyk}{0.6,0.05,0.05,0}
+\definecolor{langscicol2}{cmyk}{0.75,0.15,0,0}
+\definecolor{langscicol3}{cmyk}{0.9,0.4,0.05,0}
+\definecolor{langscicol4}{cmyk}{0.9,0.5,0.15,0.3}
+\definecolor{langscicol5}{cmyk}{1,0.47,0.22,0.68}
+\definecolor{langscicol6}{cmyk}{0,0.25,1,0}
+\definecolor{langscicol7}{cmyk}{0,0.50,1,0}
+\definecolor{langscicol8}{cmyk}{0,0.64,1,0}
+\definecolor{langscicol9}{cmyk}{0,0.78,1,0}
+\definecolor{langscicol10}{cmyk}{0.05,1,0.8,0}
+\definecolor{langscicol11}{cmyk}{0.3,1,0.6,0}
+\definecolor{langscicol12}{cmyk}{0.54,1,0.65,0.1}
+\definecolor{langscicol13}{cmyk}{0.58,1,0.70,0.35}
+\definecolor{langscicol14}{cmyk}{0.32,0.02,0.72,0}
+\definecolor{langscicol15}{cmyk}{0.4,0,1,0}
+\definecolor{langscicol16}{cmyk}{0.55,0,0.9,0.1}
+\definecolor{langscicol17}{cmyk}{0.6,0,0.9,0.35}
+\definecolor{langscicol18}{cmyk}{0.85,0.02,0.95,0.38}
+\definecolor{langscicol19}{cmyk}{0.85,0.05,1,0.5}
+\definecolor{langscicol20}{cmyk}{0.88,0.15,1,0.66}
+\definecolor{lsLightBlue}{cmyk}{0.6,0.05,0.05,0}
+\definecolor{lsMidBlue}{cmyk}{0.75,0.15,0,0}
+\definecolor{lsMidDarkBlue}{cmyk}{0.9,0.4,0.05,0}
+\definecolor{lsDarkBlue}{cmyk}{0.9,0.5,0.15,0.3}
+\definecolor{lsNightBlue}{cmyk}{1,0.47,0.22,0.68}
+\definecolor{lsYellow}{cmyk}{0,0.25,1,0}
+\definecolor{lsLightOrange}{cmyk}{0,0.50,1,0}
+\definecolor{lsMidOrange}{cmyk}{0,0.64,1,0}
+\definecolor{lsDarkOrange}{cmyk}{0,0.78,1,0}
+\definecolor{lsRed}{cmyk}{0.05,1,0.8,0}
+\definecolor{lsLightWine}{cmyk}{0.3,1,0.6,0}
+\definecolor{lsMidWine}{cmyk}{0.54,1,0.65,0.1}
+\definecolor{lsDarkWine}{cmyk}{0.58,1,0.70,0.35}
+\definecolor{lsSoftGreen}{cmyk}{0.32,0.02,0.72,0}
+\definecolor{lsLightGreen}{cmyk}{0.4,0,1,0}
+\definecolor{lsMidGreen}{cmyk}{0.55,0,0.9,0.1}
+\definecolor{lsRichGreen}{cmyk}{0.6,0,0.9,0.35}
+\definecolor{lsDarkGreen1}{cmyk}{0.85,0.02,0.95,0.38}
+\definecolor{lsDarkGreen2}{cmyk}{0.85,0.05,1,0.5}
+\definecolor{lsNightGreen}{cmyk}{0.88,0.15,1,0.66}
+
+\newcommand{\eotms}{eotms}
+\newcommand{\eotmsig}{eotmsig}
+\newcommand{\sidl}{sidl}
+\newcommand{\algad}{algad}
+\newcommand{\tmnlp}{tmnlp}
+\newcommand{\mcnc}{mcnc}		
+\newcommand{\tbls}{tbls}	
+\newcommand{\silp}{silp}	
+\newcommand{\tgdi}{tgdi}	
+\newcommand{\cmle}{cmle}	
+\newcommand{\cfls}{cfls}	
+\newcommand{\lv}{lv}	
+\renewcommand{\cal}{cal}	
+\newcommand{\scl}{scl}
+\newcommand{\osl}{osl}
+% \newcommand{\lsSeries}{}
+% \newcommand{\lsSeriesColor}{}
+
+\ifx\lsSeries\eotms
+	\newcommand{\lsSeriesName}{\mbox{Empirically Oriented Theoretical}\\[-.5em] Morphology and Syntax}
+	\newcommand{\lsSeriesColor}{lsMidBlue}
+\fi
+\ifx\lsSeries\eotmsig
+	\newcommand{\lsSeriesName}{Implemented Grammars}
+	\newcommand{\lsSeriesColor}{lsMidBlue}
+\fi
+\ifx\lsSeries\sidl
+	\newcommand{\lsSeriesName}{\mbox{Studies in Diversity Linguistics}}
+	\newcommand{\lsSeriesColor}{lsRichGreen}
+\fi
+\ifx\lsSeries\algad
+	\newcommand{\lsSeriesName}{\mbox{African Language Grammars}\\[-.5em] and Dictionaries}
+	\newcommand{\lsSeriesColor}{lsLightOrange}
+\fi
+\ifx\lsSeries\scl
+	\newcommand{\lsSeriesName}{\mbox{Studies in Caribbean Languages}}
+	\newcommand{\lsSeriesColor}{lsDarkOrange}
+\fi
+\ifx\lsSeries\tmnlp
+	\newcommand{\lsSeriesName}{Translation and Multilingual\\[-.5em]  \mbox{Natural  Language Processing}}
+	\newcommand{\lsSeriesColor}{lsDarkBlue}
+\fi
+\ifx\lsSeries\osl
+	\newcommand{\lsSeriesName}{Open Slavic Linguistics}
+	\newcommand{\lsSeriesColor}{lsMidGreen}
+\fi
+\ifx\lsSeries\tbls
+	\newcommand{\lsSeriesName}{\mbox{Textbooks in Language Sciences}}
+	\newcommand{\lsSeriesColor}{lsYellow}
+\fi	
+\ifx\lsSeries\mcnc
+	\newcommand{\lsSeriesName}{\mbox{Monographs on Comparative}\\[-.5em]  Niger-Congo}
+	\newcommand{\lsSeriesColor}{lsRed}
+\fi	
+\ifx\lsSeries\silp
+	\newcommand{\lsSeriesName}{\mbox{Studies in Laboratory Phonology}}
+	\newcommand{\lsSeriesColor}{lsLightWine}
+
+\fi	
+\ifx\lsSeries\tgdi
+	\newcommand{\lsSeriesName}{\mbox{Topics at the Grammar-Discourse}\\[-.5em]  Interface}
+	\newcommand{\lsSeriesColor}{lsMidDarkBlue}
+\fi	
+\ifx\lsSeries\cmle
+	\newcommand{\lsSeriesName}{\mbox{Computational Models of}\\[-.5em] Language Evolution}
+	\newcommand{\lsSeriesColor}{lsNightBlue}
+\fi	
+\ifx\lsSeries\cfls
+	\newcommand{\lsSeriesName}{Conceptual Foundations of \\[-.5em] \mbox{Language Science}}
+	\newcommand{\lsSeriesColor}{lsNightGreen}
+
+\fi	 
+\ifx\lsSeries\cal
+\newcommand{\lsSeriesName}{\mbox{Contemporary African Linguistics}}
+\newcommand{\lsSeriesColor}{lsMidWine} 
+
+\fi	
+\ifx\lsSeries\lv
+	\newcommand{\lsSeriesName}{Language Variation}
+	\newcommand{\lsSeriesColor}{lsDarkWine}
+\fi	
+
+
+% \newcommand\Lpack[1]{\textsf{#1}}
+% \newcommand\Lclass[1]{\textsf{#1}}
+% \newcommand\Lopt[1]{\texttt{#1}}
+% \newcommand\Lprog[1]{\textit{#1}}
+
+% \newcommand*\defaultmarker{\textsuperscript\textasteriskcentered}
+
+\newcommand{\lsptable}[2]{
+\resizebox{#1}{!}{
+\begin{tabularx}{\textwidth}{XXXXXXXXXXXXXXXXXXX}
+\cellcolor{langscicol1}
+&
+\cellcolor{langscicol2}
+&
+\cellcolor{langscicol3}
+&
+\cellcolor{langscicol4}
+&
+\cellcolor{langscicol5}
+&
+\cellcolor{langscicol6}
+&
+\cellcolor{langscicol7}
+&
+\cellcolor{langscicol8}
+&
+\cellcolor{langscicol9}
+&
+\cellcolor{langscicol10}
+&
+\cellcolor{langscicol11}
+&
+\cellcolor{langscicol12}
+&
+\cellcolor{langscicol13}
+&
+\cellcolor{langscicol14}
+&
+\cellcolor{langscicol15}
+&
+\cellcolor{langscicol16}
+&
+\cellcolor{langscicol17}
+&
+\cellcolor{langscicol18}
+&
+\cellcolor{langscicol19}
+\rule{0pt}{#2}
+\end{tabularx}
+}
+}
+
+ 
+
+% \CutLine*{1}% Dotted line without scissors
+% \CutLine*{3}%   
+% \CutLine*{4}%   
+% \CutLine*{6}%   
+
+\AddToBackground*{1}{%  Background of a small page
+  \put(0,0){\textcolor{\lsSeriesColor}{\rule{\paperwidth}{\paperheight}}}}
+
+\AddToBackground*{2}{%  Background of a small page
+  \put(0,0){\textcolor{\lsSeriesColor}{\rule{\paperwidth}{\paperheight}}}}
+  
+\AddToBackground{2}{
+    \put(-7,0){
+% 	\lsptable{.3\paperwidth}{3cm}
+%         \includegraphics[width=.3\paperwidth]{lsp-rainbow-large.png}%
+    } 
+}
+\AddToBackground{3}{
+    \put(-7,0){
+% 	\lsptable{.3\paperwidth}{3cm}
+    } 
+}
+
+\AddToBackground{4}{
+    \put(-7,0){
+% 	\lsptable{.3\paperwidth}{3cm}
+    } 
+}
+
+
+\newcommand{\lspflyer}[3]{
+\newsavebox{\pageone}
+\newsavebox{\pagetwo}
+\savebox{\pageone}{
+    \parbox{\textwidth}{
+    
+      \thispagestyle{empty}
+
+      \color{#3}
+
+\begin{tabularx}{\paperwidth}{p{.3cm}Xp{4cm}}
+\vspace*{-.5cm}
+\hspace*{-.66cm}
+\includegraphics[width=4cm]{langsci_logo_nocolor.pdf} 
+&
+&
+\vspace*{-1.5cm}
+\hspace*{-.97cm}
+% \resizebox{2cm}{!}{\lsptable{10cm}{2.4cm}}
+\end{tabularx}
+
+
+      \vspace*{11cm}
+      
+      \hspace*{-2mm}
+\resizebox{.9\textwidth}{!}{
+  \parbox{\textwidth}{
+    \sffamily     
+    \Huge \mbox{Language Science Press}\\
+    {\huge \raggedright{\sffamily  \lsSeriesName}}
+  }
+}
+ 
+ 
+%       \hspace*{-6mm}
+%       \parbox{\textwidth}{
+% 	\sffamily
+% 	\Huge \mbox{Language Science Press}\\
+% 	{\LARGE  \sffamily  \lsSeriesName}
+%       }
+%  
+ \medskip 
+	\color{#3}
+      #1
+}
+}
+\savebox{\pagetwo}{
+  \color{#3} 
+  \parbox{\textwidth}{
+    #2
+    
+    
+    \section{Support us!}
+	\begin{itemize}
+	  \item[$\rangle$] submit your manuscript 
+	  \item[$\rangle$] become a community proofreader 
+	  \item[$\rangle$] become a community typesetter
+	  \item[$\rangle$] become a public supporter
+% 	  \item[$\rangle$] donate
+	\end{itemize}   
+	
+    \section{Contact} 
+	  \begin{itemize}
+	    \item[$\rangle$] \sffamily www.langsci-press.org/catalog/series/\lsSeries
+	    \item[$\rangle$]\sffamily  \lsSeries{}@langsci-press.org 
+	  \end{itemize} 
+  }
+}
+\usebox{\pageone}
+\newpage
+\usebox{\pagetwo}
+\newpage
+\usebox{\pagetwo}
+\newpage
+\usebox{\pagetwo}
+\newpage
+\usebox{\pageone}
+\newpage
+\usebox{\pageone}
+\loggingall
+}
