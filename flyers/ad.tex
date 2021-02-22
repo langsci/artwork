@@ -214,11 +214,19 @@ nofoldmark,
 % }
 
 
-\AddToBackground{6}{
-    \put(277,580){
-	\lsptable{\paperwidth}{1.5cm}
+\AddToBackground{3}{
+    \put(280,590){
+	\lsptable{\paperwidth}{.4cm}
 %         \includegraphics[width=1\paperwidth,height=3.5cm]{lsp-rainbow-large.png}%
-    } 
+    }
+}
+
+
+\AddToBackground{2}{
+    \put(-8,3){
+	\lsptable{\paperwidth}{.4cm}
+%         \includegraphics[width=1\paperwidth,height=3.5cm]{lsp-rainbow-large.png}%
+    }
 }
 
 
@@ -229,12 +237,12 @@ nofoldmark,
     } 
 }
 
-\AddToBackground{2}{
-    \put(-5,13){    
-% 	\resizebox{.5\paperwidth}{.5cm}{\lsptable{\paperwidth}{5.5cm}}
-%         \includegraphics[width=.3\paperwidth]{lsp-rainbow-large.png}%
-    } 
-}
+% \AddToBackground{2}{
+%     \put(-5,13){
+% % 	\resizebox{.5\paperwidth}{.5cm}{\lsptable{\paperwidth}{5.5cm}}
+% %         \includegraphics[width=.3\paperwidth]{lsp-rainbow-large.png}%
+%     }
+% }
 
 % \AddToBackground{3}{
 %     \put(-2,10){
@@ -281,64 +289,41 @@ nofoldmark,
 \newpage
 
 
-\vspace*{-1.5cm}
+\vspace*{-1cm}
 % \includegraphics[width=2.6\textwidth]{worldmapdots2.png}
 % \includegraphics[width=2.6\textwidth]{WORLDMAPDOTSdots.png}
-\includegraphics[width=2.6\textwidth]{WORLDMAPDOTSlargedots.png}
+\includegraphics[width=2.3\textwidth]{langsci_logo_nocolor.pdf}
 
 % \vspace*{-20mm}
 
 %   
 % \newpage
-\section{\sffamily\Large\bfseries About} 
+\section{\sffamily\Large\bfseries ~}
 %  \raggedright
-\begin{itemize}  
-\setlength{\itemsep}{-3pt} 
- \item[›] Scholar-owned press
-\item[›]  High quality, peer-reviewed open-access books  
- \item[›] Published under a Creative Commons licence
-\item[›] Free for both authors and readers
-%  \item[›] General Editors are Stefan Müller (FU Berlin) and Martin Haspelmath (MPI for Evolutionary Anthropology)
-%  \item[›] Supported by a high-profile Advisory Board
- \item[›] Supported by a network of 115 institutions worldwide, including Yale, MIT, Zürich, Sydney.
- \item[›] PDFs are available free of charge 
- \item[›] Printed copies available at low cost (20--50 EUR) via print-on-demand
-%  \item[›] 
-%  \item[›] 
-%  \item[›] 
+{\LARGE\bfseries\sffamily
+% \LARGE
+\raggedright
+Language Science Press is the leading open access publisher for books in linguistics.
+\begin{itemize}
+\setlength{\itemsep}{-3pt}
+\item[›] Excellent,  scholar-led, open
+\item[›] \raggedright Free for both authors and readers\medskip
+
+ \item[›] 26 series
+ \item[›] 170+ titles
+ \item[›] 1\,000+ authors
+ \item[›] 1\,000\,000+ downloads
+ \item[›] {www.langsci-press.org}
 \end{itemize}
- 
- \section{\sffamily\Large\bfseries Philosophy} 
-%  \raggedright 
 
- Our philosophy is that book publishing can be fully under the control of scholars because most of the traditional tasks of commercial publishers can be done more efficiently by scholars. 
- 
-As of February 2021, more than 1\,000 scholars have published a book or a chapter with Language Science Press.
-
-\newpage 
-\newlength{\submissionfactor}
-\setlength{\submissionfactor}{.35mm}
-\newcommand{\submission}[3]{
-\parbox[m][.1cm][c]{2.5cm}{\color{LIGHTGRAY} #1}\colorbox{#2}{\parbox[m][.3cm][c]{#3\submissionfactor}{\bfseries\sffamily #3}}\\ 
 }
 
 
 
-\vspace*{6.2cm}
-\vfill
-\section{\sffamily\Large\bfseries Series}
 
-% \newcommand{\series}[3]{   
-%   \parbox{.1\textwidth}{~}
-%   \parbox{.7\textwidth}{\raggedleft\small #1\\{\scriptsize #3}}
-%   \parbox{.1\textwidth}{\includegraphics[width=.8cm]{#2.png}} 
-% }
-% 
-% \newcommand{\series}[3]{   
-%   \parbox{.1\textwidth}{~}
-%   \parbox{.7\textwidth}{\raggedleft\small #1\\{\scriptsize #3}}
-%   \parbox{.1\textwidth}{\includegraphics[width=.8cm]{#2.png}} 
-% }
+\vspace*{8.1cm}
+% \section{\sffamily\Large\bfseries Series}
+
 
 \newcommand{\series}[3]{   
   \parbox{.1\textwidth}{\includegraphics[width=.6cm]{#2.png}}
@@ -348,6 +333,9 @@ As of February 2021, more than 1\,000 scholars have published a book or a chapte
 } 
 
 
+
+
+\vfill
 \series{African Language Grammars and Dictionaries}{algad}{Adams Bodomo, Firmin Ahoua}
 \series{Contact and Multilingualism}{cam}{Isabelle Léglise, Stefano Manfredi}
 \series{Classics in Linguistics}{classics}{\mbox{Stefan Müller, Martin Haspelmath}}
@@ -363,7 +351,7 @@ As of February 2021, more than 1\,000 scholars have published a book or a chapte
 
 \vfill
 
-\series{History and Philosophy of the Language Sciences}{hpls}{James McElvenny}
+\series{History and Philosophy of the Language Sciences}{hpls}{James McElvenny} 
 \series{Language Variation}{lv}{John Nerbonne, Martijn Wieling}
 \series{Languages of the Caucasus}{loc}{\mbox{Diana Forker, Nina Dobrushina, Timur Maisak}, \mbox{Oleg Belyaev}}
 \series{\mbox{Niger-Congo Comparative Series}}{mcnc}{Valentin Vydrin, Larry Hyman, Konstantin Pozdniakov, Guillaume Segerer, John Watters}
@@ -376,169 +364,13 @@ As of February 2021, more than 1\,000 scholars have published a book or a chapte
 \series{Studies in Caribbean Languages}{scl}{John R. Rickford, Joseph Farquharson}
 \series{Studies in Diversity Linguistics}{sidl}{Martin Haspelmath}
 \series{Studies in Laboratory Phonology}{silp}{Martine Grice, Doris Mücke, Taehong Cho}
-\series{Textbooks in Language Sciences}{tbls}{Stefan Müller, Martin Haspelmath}
+\series{Textbooks in Language Sciences}{tbls}{Stefan Müller, Martin Haspelmath}	 
 \series{\mbox{Topics at the Grammar-Discourse Interface}}{tgdi}{\mbox{Philippa Cook, Anke Holler, Cathrine Fabricius-Hansen}}
 \series{Topics in Phonological Diversity}{tpd}{\mbox{Natalia Kuznetsova, Cormac Anderson,} \mbox{Shelece Easterday}}
 \series{Translation and Multilingual Natural Language Processing}{tmnlp}{{Oliver Czulo, Silvia Hansen-Schirra,   Reinhard Rapp}}
 
 
 
-\newpage 
-\section{\sffamily\Large\bfseries Submissions}
-\submission{desk rejection}{lsRed}{121}
-\submission{in preparation}{lsLightBlue}{88}
-\submission{under review}{lsDarkBlue}{8}
-\submission{rejected}{lsLightOrange}{21}
-\submission{forthcoming}{lsSoftGreen}{17}
-\submission{published}{lsRichGreen}{148}
-
-% \color{LIGHTGRAY}
-% \begin{tabular}{ll}
-% desk rejection & \colorbox{lsRed}{\parbox{12mm}{15}}\\
-% in preparation &  \colorbox{lsLightBlue}{\parbox{30mm}{34}}\\
-% under review & \colorbox{lsDarkBlue}{\parbox{6mm}{7}} \\
-% rejected & \colorbox{lsLightWine}{\parbox{3mm}{4}} \\
-% forthcoming &  \colorbox{lsMidGreen}{\parbox{14mm}{13}}\\
-% published & \colorbox{lsRichGreen}{\parbox{6mm}{9}} \\
-% \end{tabular}
-
-
- 
-
-
-\section{\sffamily\Large\bfseries Downloads}
-\vspace*{-1em}
-% \includegraphics[width=\textwidth]{statistiks.png}
-\parbox[b][0cm][b]{0cm}{
-\raisebox{0cm}{
-\hspace{.7\textwidth}\tiny\color{LIGHTGRAY} Numbers as of 2020-12-31
-}
-}
-
-\setlength{\tabcolsep}{0pt}
-\newlength{\downloadfactor}
-\setlength{\downloadfactor}{.17mm}
-\newcommand{\downloadbox}[4]{\begin{tabular}{p{#1.#2\downloadfactor}}\cellcolor{#3}\sffamily\bfseries~#1#2\rule{0pt}{1.5em}\\\mbox{#4}\end{tabular}\\[.1em]
-\\}
-
-\resizebox{2\textwidth}{!}{
-\sffamily
-\color{LIGHTGRAY}
-\noindent
-  \parbox{19cm}{
-    \downloadbox{612}{62}{lsYellow}{A aquisição de língua materna e não materna}
-    \downloadbox{606}{59}{lsYellow}{Einführung in die grammatische Beschreibung des Deutschen}
-    \downloadbox{494}{97}{lsYellow}{Grammatical theory}
-    \downloadbox{439}{74}{lsDarkWine}{The future of dialects}
-    \downloadbox{382}{55}{lsMidWine}{African linguistics on the prairie}
-  }
-} 
-
-\vspace*{-1em}
-% 
-\section{\sffamily\Large\bfseries Support us!}
-  
-\color{LIGHTGRAY}
-    \begin{itemize}
-\setlength{\itemsep}{-3pt} 
-      \item[›] submit your manuscript to one of the series
-      \item[›] start a series for your subfield of linguistics
-      \item[›] become a community proofreader  
-      \item[›] become a public supporter
-      \item[›] donate
-      \item[›] have your library support us via Knowledge\\ Unlatched
-    \end{itemize} 
-
-
-  
- 
-
-\newpage 
-\color{LIGHTGRAY}
-\section{\sffamily\Large\bfseries Advisory Board}
-
-\begin{itemize}
-\setlength{\itemsep}{-3pt} 
- \item[›]     Ana Aguilar (Universidad Nacional Autónoma de México)
- \item[›]      Stephen R. Anderson (Yale)
- \item[›]     Mark Dingemanse (University of Nijmegen)
- \item[›]     Bruna Franchetto (Universidade Federal do Rio de Janeiro)
- \item[›]     Alexis Michaud (CNRS)
- \item[›]     Steven Moran (Universität Zürich)
- \item[›]     Doris Payne (University of Oregon)
- \item[›]     Timo Roettger (University of Oslo)
- \item[›]     Johan Rooryck (Universiteit Leiden)
- \item[›]     Agata Savary (Université François Rabelais Tours)
- \item[›]     Jane Simpson (Australian National University)
- \item[›]     Jeroen van de Weijer (Shenzhen University)
- \item[›]     Viola Voß (Universität Münster)
- \item[›]
-\end{itemize}
-
-\section{\sffamily\Large\bfseries Contact}  
-
-\setlength{\tabcolsep}{0pt}
-\begin{tabular}{ll}
- 
-% \begin{tabular}{p{.6\textwidth}l} 
-\parbox{.64\textwidth}{www.langsci-press.org\\
-contact@langsci-press.org\\
-@langscipress \\
-\\
-Stefan Müller 
-{\\\scriptsize Press Director}
-\\
-Martin Haspelmath
-{\\\scriptsize Press Director}\\
-Sebastian Nordhoff  
-{\\\scriptsize Coordinator}
-}&
-\\%[-1em]
-&
-\parbox[b][0cm][b]{0cm}{
-\includegraphics[width=.35\textwidth]{qrcode.eps}  
-}
-\end{tabular}
-% Stefan Müller \\
-% Martin Haspelmath\\
-% Sebastian Nordhoff  
-% }
-
- 
-
-
-
-% \framebox[3cm]{ \textbf{Mitmachen?}\\ Author\par Editor}
-
-
-
-
-% \fbox{
-% \textbf{Mitmachen?}
-% \\
-% Author
-% \\
-% Editor
-% \\
-% Proofreader
-% \\
-% Typesetter
-% \\
-% Membership
-% \\
-% Donate
-% 
-% }
-
-% \begin{itemize}
-%  \item[›] autor
-% \item[›] hrsg
-% \item[›] proofreader
-% \end{itemize}
- 
-
 \loggingall
 \end{document}
 \endinput
-%%
-%% End of file `leaflet-manual.tex'.
