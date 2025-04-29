@@ -270,7 +270,7 @@ nofoldmark,
   \large\sffamily \parbox[t][.2cm][t]{3cm}{Language} \\[-.2em]
   \parbox[t][.2cm][t]{3cm}{Science} \\[-.2em]
   \parbox[t][.2cm][t]{3cm}{Press} \\[-.3em]
-   \resizebox{1.5cm}{!}{\rmfamily \tiny Platinum open access books} 
+   \resizebox{1.5cm}{!}{\rmfamily \scriptsize Diamond open access books}
   }
 }
   
@@ -300,9 +300,9 @@ nofoldmark,
 \item[›] Free for both authors and readers
 %  \item[›] General Editors are Stefan Müller (FU Berlin) and Martin Haspelmath (MPI for Evolutionary Anthropology)
 %  \item[›] Supported by a high-profile Advisory Board
- \item[›] Supported by a network of 115 institutions worldwide, including Yale, MIT, Zürich, Sydney.
+ \item[›] Supported by a network of 115 institutions worldwide, including Yale, MIT, Zürich, Sydney
  \item[›] PDFs are available free of charge 
- \item[›] Printed copies available at low cost (20--50 EUR) via print-on-demand
+ \item[›] Printed copies available at low cost (20--90 EUR) via print-on-demand
 %  \item[›] 
 %  \item[›] 
 %  \item[›] 
@@ -313,11 +313,11 @@ nofoldmark,
 
  Our philosophy is that book publishing can be fully under the control of scholars because most of the traditional tasks of commercial publishers can be done more efficiently by scholars. 
  
-As of February 2021, more than 1\,000 scholars have published a book or a chapter with Language Science Press.
+As of February 2025, more than 1\,500 scholars have published a book or a chapter with Language Science Press.
 
 \newpage 
 \newlength{\submissionfactor}
-\setlength{\submissionfactor}{.27mm}
+\setlength{\submissionfactor}{.2mm}
 \newcommand{\submission}[3]{
 \parbox[m][.1cm][c]{2.5cm}{\color{LIGHTGRAY} #1}\colorbox{#2}{\parbox[m][.3cm][c]{#3\submissionfactor}{\bfseries\sffamily #3}}\\ 
 }
@@ -341,10 +341,13 @@ As of February 2021, more than 1\,000 scholars have published a book or a chapte
 % }
 
 \newcommand{\series}[3]{   
-  \parbox{.1\textwidth}{\includegraphics[width=.6cm]{#2.png}}
+  \parbox{.07\textwidth}{\includegraphics[width=.57cm]{#2.png}}
   \parbox{.01\textwidth}{~} 
-  \parbox{.7\textwidth}{\raggedright{\begin{spacing}{0.7}\small\bfseries #1\vphantom{jf}\\[.7em]\end{spacing}}{\begin{spacing}{0.7}\scriptsize #3\vphantom{jf}\end{spacing}}}
-  \parbox{.05\textwidth}{~\smallskip}\\[.5em]
+  \parbox{.7\textwidth}{\raggedright{\begin{spacing}{0.7}\small\bfseries #1\vphantom{jf}\\[.7em]\end{spacing}}{\begin{spacing}{0.7}\scriptsize
+  #3
+  \vphantom{jf}\end{spacing}}
+  }
+  \parbox{.05\textwidth}{~\smallskip}\\[.46em]
 } 
 
 
@@ -352,42 +355,52 @@ As of February 2021, more than 1\,000 scholars have published a book or a chapte
 \series{African Language Grammars and Dictionaries}{algad}{Adams Bodomo, Firmin Ahoua}
 \series{Contact and Multilingualism}{cam}{Isabelle Léglise, Stefano Manfredi}
 \series{Classics in Linguistics}{classics}{\mbox{Stefan Müller, Martin Haspelmath}}
+\series{Comprehensive Grammar Library}{cogl}{Martin Haspelmath}
 \series{Computational Models of Language Evolution}{cmle}{Luc Steels, Remi van Trijp}
 \series{Conceptual Foundations of Language Science}{cfls}{Mark Dingemanse, Nick Enfield}
 \series{Contemporary African Linguistics}{cal}{Lee Bickmore, Akinbiyi Akinlabi}
 \series{Current Issues in Bilingualism}{cib}{Andrea C. Schalley, M Carmen Parafita Couto,\mbox{ Susana Eisenchlas,  Galina Putjata, Jorge Valdés Kroff}}
+\series{Current Issues in Celtic Linguistics}{cicl}{Andrew Carnie, Michael Hammond, Diane Ohala}
 \series{Empirically Oriented Theoretical Morphology and Syntax}{eotms}{\mbox{Stefan Müller, Berthold Crysmann, Ana R. Luís}}
 \series{Estudios de Lingüística Amerindia}{ela}{Carolina González, Siri Tuttle, Thiago Chacon, Heriberto Avelino}
+\medskip
+
+~\medskip
+
+\vspace*{-1.5cm}
 \series{EuroSLA studies}{eurosla}{Gabriele Pallotti}
+\series{Frame-Based Approaches to Semantics}{frats}{Voula Giouli, Ana Ostroški Anić, Alexander Ziem}
 \series{History and Philosophy of the Language Sciences}{hpls}{James McElvenny}%
 \series{Language Variation}{lv}{John Nerbonne, Martijn Wieling}
 \series{Languages of the Caucasus}{loc}{\mbox{Diana Forker, Nina Dobrushina, Timur Maisak}, \mbox{Oleg Belyaev}}
 \series{\mbox{Niger-Congo Comparative Series}}{mcnc}{Valentin Vydrin, Larry Hyman, Konstantin Pozdniakov, Guillaume Segerer, John Watters}
-\series{\mbox{Morphological Investigations}}{mi}{\mbox{James P. Blevins, Petar Milin, Michael Ramscar}}
+% \series{\mbox{Morphological Investigations}}{mi}{\mbox{James P. Blevins, Petar Milin, Michael Ramscar}}
 \series{Open Generative Syntax}{ogs}{\mbox{Elena Anagnostopoulou, Mark Baker, Roberta D’Alessandro,} David Pesetsky, Susi Wurmbrand}
 \series{Open Germanic Linguistics}{ogl}{Michael T. Putnam, B. Richard Page, Laura Catharine Smith}
 \series{Open Romance Linguistics}{orl}{Lorenzo Filipponio, Richard Waltereit, Esme Winter-Froemel, Anne Wolfsgruber}
 \series{Open Slavic Linguistics}{osl}{\mbox{Denisa Lenertová, Roland Meyer, Radek Šimík,} \mbox{Luka Szucsich}}
+\series{Open Text Collections}{otc}{Christian Döhler}
 \series{Phraseology and Multiword Expressions}{pmwe}{Manfred Sailer, Agata Savary}
 \series{Studies in Caribbean Languages}{scl}{John R. Rickford, Joseph Farquharson}
 \series{Studies in Diversity Linguistics}{sidl}{Martin Haspelmath}
 \series{Studies in Laboratory Phonology}{silp}{Martine Grice, Doris Mücke, Taehong Cho}
 \series{Textbooks in Language Sciences}{tbls}{Stefan Müller, Antonio Machicao y Priemer}
-\series{\mbox{Topics at the Grammar-Discourse Interface}}{tgdi}{\mbox{Philippa Cook, Anke Holler, Cathrine Fabricius-Hansen}}
+% \series{\mbox{Topics at the Grammar-Discourse Interface}}{tgdi}{\mbox{Philippa Cook, Anke Holler, Cathrine Fabricius-Hansen}}
 \series{Topics in Phonological Diversity}{tpd}{\mbox{Natalia Kuznetsova, Cormac Anderson,} \mbox{Shelece Easterday}}
 \series{Translation and Multilingual Natural Language Processing}{tmnlp}{{Oliver Czulo, Silvia Hansen-Schirra,   Reinhard Rapp}}
-\series{Comprehensive Grammar Library}{cogl}{Martin Haspelmath}
-\series{Research on Comparative Grammar}{rcg}{Martin Haspelmath}\vspace*{-2cm}
+\series{Research on Comparative Grammar}{rcg}{Martin Haspelmath}
+\series{World Histories of Lexicography and Lexicology}{whll}{Fredric T. Dolezal, Roderick W. McConchie}\vspace*{-1cm}
+
 
 
 \newpage
 \section{\sffamily\Large\bfseries Submissions}
-\submission{desk rejection}{lsRed}{153}
-\submission{in preparation}{lsLightBlue}{78}
-\submission{under review}{lsDarkBlue}{11}
-\submission{rejected}{lsLightOrange}{24}
-\submission{forthcoming}{lsSoftGreen}{23}
-\submission{published}{lsRichGreen}{200}
+\submission{desk rejection}{lsRed}{203}
+\submission{in preparation}{lsLightBlue}{55}
+\submission{under review}{lsDarkBlue}{12}
+\submission{rejected}{lsLightOrange}{28}
+\submission{forthcoming}{lsSoftGreen}{40}
+\submission{published}{lsRichGreen}{276}
 
 % \color{LIGHTGRAY}
 % \begin{tabular}{ll}
@@ -408,14 +421,14 @@ As of February 2021, more than 1\,000 scholars have published a book or a chapte
 % \includegraphics[width=\textwidth]{statistiks.png}
 \parbox[b][0cm][b]{0cm}{
 \raisebox{0cm}{
-\hspace{.7\textwidth}\tiny\color{LIGHTGRAY} Numbers as of 2022-11-01
+\hspace{.7\textwidth}\tiny\color{LIGHTGRAY} Numbers as of 2025-04-02
 }
 }
 
 \setlength{\tabcolsep}{0pt}
 \newlength{\downloadfactor}
 \setlength{\downloadfactor}{.11mm}
-\newcommand{\downloadbox}[4]{\begin{tabular}{p{#1.#2\downloadfactor}}\cellcolor{#3}\sffamily\bfseries~#1#2\rule{0pt}{1.5em}\\\mbox{#4}\end{tabular}\\[.1em]
+\newcommand{\downloadbox}[4]{\begin{tabular}{p{#1.#2\downloadfactor}}\cellcolor{#3}{\sffamily\bfseries~\textcolor{gray}{#1#2}}\rule{0pt}{1.5em}\\\mbox{#4}\end{tabular}\\[.1em]
 \\}
 
 \resizebox{2\textwidth}{!}{
@@ -423,11 +436,16 @@ As of February 2021, more than 1\,000 scholars have published a book or a chapte
 \color{LIGHTGRAY}
 \noindent
   \parbox{19cm}{
-    \downloadbox{861}{50}{lsYellow}{A aquisição de língua materna e não materna}
-    \downloadbox{844}{36}{lsYellow}{Einführung in die grammatische Beschreibung des Deutschen}
-    \downloadbox{692}{64}{lsYellow}{Grammatical theory}
-    \downloadbox{559}{27}{lsMidWine}{African linguistics on the prairie}
-    \downloadbox{554}{97}{lsYellow}{The future of dialects}
+    \downloadbox{1016}{56}{lsYellow}{A aquisição de língua materna e não materna}
+    \downloadbox{969}{47}{lsYellow}{Grammatical theory}
+    \downloadbox{968}{48}{lsYellow}{Einführung in die grammatische Beschreibung des Deutschen}
+    \downloadbox{711}{03}{lsYellow}{Analyzing meaning}
+    \downloadbox{682}{53}{lsMidWine}{African linguistics on the prairie}
+    \downloadbox{596}{99}{lsDarkWine}{The future of dialects}
+    \downloadbox{581}{19}{lsMidBlue}{On looking into words (and beyond)}
+    \downloadbox{536}{34}{lsDarkBlue}{Empirical modelling of translation and interpreting}
+    \downloadbox{534}{97}{lsRed}{Arabic and contact-induced change}
+    \downloadbox{532}{64}{lsMidBlue}{The lexeme in descriptive and theoretical morphology}
   }
 } 
 
@@ -438,12 +456,12 @@ As of February 2021, more than 1\,000 scholars have published a book or a chapte
 \color{LIGHTGRAY}
     \begin{itemize}
 \setlength{\itemsep}{-3pt} 
-      \item[›] submit your manuscript to one of the series
-      \item[›] start a series for your subfield of linguistics
-      \item[›] become a community proofreader  
-      \item[›] become a public supporter
-      \item[›] donate
-      \item[›] have your library support us via Knowledge\\ Unlatched
+      \item[›] Submit your manuscript to one of the series
+      \item[›] Start a series for your subfield of linguistics
+      \item[›] Become a community proofreader
+      \item[›] Become a public supporter
+      \item[›] Donate
+      \item[›] Have your library support us via Knowledge\\ Unlatched
     \end{itemize} 
 
 
@@ -454,21 +472,23 @@ As of February 2021, more than 1\,000 scholars have published a book or a chapte
 \color{LIGHTGRAY}
 \section{\sffamily\Large\bfseries Advisory Board}
 
+
+
 \begin{itemize}
 \setlength{\itemsep}{-3pt} 
- \item[›]     Ana Aguilar (Universidad Nacional Autónoma de México)
- \item[›]      Stephen R. Anderson (Yale)
- \item[›]     Mark Dingemanse (University of Nijmegen)
- \item[›]     Bruna Franchetto (Universidade Federal do Rio de Janeiro)
- \item[›]     Alexis Michaud (CNRS)
- \item[›]     Steven Moran (Universität Zürich)
- \item[›]     Doris Payne (University of Oregon)
- \item[›]     Timo Roettger (University of Oslo)
- \item[›]     Johan Rooryck (Universiteit Leiden)
- \item[›]     Agata Savary (Université François Rabelais Tours)
- \item[›]     Jane Simpson (Australian National University)
- \item[›]     Jeroen van de Weijer (Shenzhen University)
- \item[›]     Viola Voß (Universität Münster)
+ \item[›]   Ana Aguilar Guevara (UNAM)
+ \item[›]   Stephen R. Anderson (Yale)
+ \item[›]   Mark Dingemanse (Radboud University Nijmegen)
+ \item[›]   Johann-Mattis List (Universität Passau)
+ \item[›]   Alexis Michaud (CNRS)
+ \item[›]   Doris Payne (University of Oregon)
+ \item[›]   Timo Roettger (University of Oslo)
+ \item[›]   Jane Simpson (Australian National University)
+ \item[›]   Jeroen van de Weijer (Shenzhen University)
+ \item[›]   Kilu von Prince (Universität Düsseldorf)
+ \item[›]   Viola Voß (Universität Münster)
+ \item[›]   George Walkden (Universität Konstanz)
+ \item[›]   Alena Witzlack-Makarevich (The Hebrew University of Jerusalem)
 %  \item[›]
 \end{itemize}
 
@@ -480,7 +500,7 @@ As of February 2021, more than 1\,000 scholars have published a book or a chapte
 % \begin{tabular}{p{.6\textwidth}l} 
 \parbox{.64\textwidth}{www.langsci-press.org\\
 contact@langsci-press.org\\
-@langscipress \\
+% @langscipress \\
 \\
 Stefan Müller 
 {\\\scriptsize Press Director}
